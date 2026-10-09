@@ -4,7 +4,8 @@ import { fileURLToPath } from 'node:url';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const projects=JSON.parse(fs.readFileSync(path.join(root,'data/projects.json'),'utf8'));
-const pages=Object.fromEntries(['index.html',...projects.map(p=>`cases/${p.id}.html`)].map(file=>[file,fs.readFileSync(path.join(root,file),'utf8')]));
+const pageFiles=['index.html',...projects.map(p=>`cases/${p.id}.html`)];
+const pages=Object.fromEntries([...pageFiles,...pageFiles.map(file=>'en/'+file)].map(file=>[file,fs.readFileSync(path.join(root,file),'utf8')]));
 const files=['assets/favicon.svg',...fs.readdirSync(path.join(root,'assets/renders')).map(f=>'assets/renders/'+f),...fs.readdirSync(path.join(root,'assets/source')).map(f=>'assets/source/'+f)];
 const mime=filename=>filename.endsWith('.webp')?'image/webp':filename.endsWith('.jpg')?'image/jpeg':'image/svg+xml';
 const assets=Object.fromEntries(files.map(file=>[file,{type:mime(file),data:fs.readFileSync(path.join(root,file)).toString('base64')}])) ;
@@ -29,7 +30,7 @@ window.navigatePortfolio=(key='index.html',hash='',language=window.previewLangua
  let html=pages[key].replace(/<script[^>]*src="[^"]*"[^>]*><\\/script>/g,'').replace(/<link rel="stylesheet"[^>]*>/g,'');
  html=html.replace(/\\b(src|href|data-lightbox)="([^"]+)"/g,(all,attribute,value)=>{try{const file=new URL(value,base).pathname.slice(1);if(assetUrls[file])return attribute+'="'+assetUrls[file]+'"';}catch{}return all;});
  html=html.replace('<head>','<head><base href="'+base+'"><style>'+css+'</style>');
- html=html.replace('<html lang="ru">','<html lang="'+window.previewLanguage+'">');
+ html=html.replace(/(<html[^>]* lang=")[^"]*(")/,'$1'+window.previewLanguage+'$2');
  const navigationCode='document.addEventListener("click",event=>{const a=event.target.closest("a[href]");if(!a)return;const url=new URL(a.getAttribute("href"),document.baseURI);if(url.hostname!=="portfolio-preview.invalid")return;const file=url.pathname.slice(1);if(!parent.hasPortfolioPage(file))return;event.preventDefault();parent.navigatePortfolio(file,url.hash,document.documentElement.lang);});document.querySelectorAll("[data-set-lang]").forEach(button=>button.addEventListener("click",()=>{parent.previewLanguage=document.documentElement.lang;}));';
  html=html.replace('</body>','<script>'+appCode+'<\\/script><script>'+navigationCode+'<\\/script></body>');
  frame.addEventListener('load',()=>{document.title=frame.contentDocument.title;if(hash){const target=frame.contentDocument.getElementById(hash.slice(1));if(target)target.scrollIntoView();}},{once:true});

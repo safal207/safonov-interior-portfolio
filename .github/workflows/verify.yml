@@ -16,4 +16,4 @@ jobs:
       - name: Verify links, sources and content
         run: node scripts/verify.mjs
       - name: Check generated pages are current
-        run: git diff --exit-code -- index.html cases/ docs/CASEBOOK.md
+        run: git diff --exit-code -- index.html cases/ en/ sitemap.xml docs/CASEBOOK.md

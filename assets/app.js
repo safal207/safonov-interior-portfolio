@@ -4,10 +4,15 @@
     const lang = language === 'en' ? 'en' : 'ru';
     document.documentElement.lang = lang;
     document.title = document.body.dataset[lang === 'en' ? 'titleEn' : 'titleRu'];
-    for (const button of languageButtons) button.setAttribute('aria-pressed', String(button.dataset.setLang === lang));
+    for (const button of languageButtons) {
+      if (button.tagName === 'A') {
+        if(button.dataset.setLang === lang) button.setAttribute('aria-current','page');
+        else button.removeAttribute('aria-current');
+      } else button.setAttribute('aria-pressed', String(button.dataset.setLang === lang));
+    }
     for (const node of document.querySelectorAll('[data-alt-ru]')) node.alt = node.dataset[lang === 'en' ? 'altEn' : 'altRu'];
     for (const node of document.querySelectorAll('[data-label-ru]')) node.setAttribute('aria-label', node.dataset[lang === 'en' ? 'labelEn' : 'labelRu']);
-    for (const anchor of document.querySelectorAll('a[href]')) {
+    for (const anchor of document.body.dataset.languageRoutes ? [] : document.querySelectorAll('a[href]')) {
       const href = anchor.getAttribute('href');
       if (!href || href.startsWith('#') || /^(https?:|mailto:|tel:)/.test(href)) continue;
       const url = new URL(href, document.baseURI);
@@ -23,7 +28,13 @@
     }
   }
   applyLanguage(document.documentElement.lang);
-  languageButtons.forEach(button => button.addEventListener('click', () => applyLanguage(button.dataset.setLang, true)));
+  languageButtons.forEach(button => button.addEventListener('click', () => {
+    if(button.tagName==='A' && window.parent===window) {
+      try { localStorage.setItem('safonov-interiors-language',button.dataset.setLang); } catch {}
+      return;
+    }
+    applyLanguage(button.dataset.setLang, true);
+  }));
 
   const cards = [...document.querySelectorAll('[data-project-type]')];
   const filters = [...document.querySelectorAll('[data-filter]')];

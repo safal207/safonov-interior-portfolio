@@ -49,9 +49,13 @@ try {
     checks.push(`Filter ${filter}: ${count}`);
   }
   await page.locator('[data-set-lang="en"]').click();
+  await page.waitForURL('**/en/index.html');
+  await page.waitForLoadState('networkidle');
   assert.equal(await page.locator('html').getAttribute('lang'),'en');
   assert((await page.locator('h1').innerText()).includes('Small apartment'));
   await page.locator('.project-title').first().click();
+  await page.waitForURL('**/en/cases/white-grad-37-2.html');
+  await page.waitForLoadState('networkidle');
   assert.equal(await page.locator('html').getAttribute('lang'),'en');
   assert((await page.locator('h1').innerText()).includes('Quiet light'));
   await page.locator('[data-lightbox]').focus();
@@ -64,12 +68,12 @@ try {
   for (const width of [320,1440]) {
     await page.setViewportSize({width,height:960});
     for(const lang of width===320?['ru','en']:['ru']) for(const p of projects) {
-      await page.goto(`${origin}/cases/${p.id}.html?lang=${lang}`,{waitUntil:'networkidle'});
+      await page.goto(`${origin}/${lang==='en'?'en/':''}cases/${p.id}.html`,{waitUntil:'networkidle'});
       await page.locator('img').evaluateAll(async imgs=>{await Promise.all(imgs.filter(i=>!i.closest('dialog')&&i.getAttribute('src')).map(i=>{i.loading='eager';return i.decode();}));});
       await noOverflow(`${p.id} ${lang} ${width}`);
       const missing=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>i.src&&!i.closest('dialog')&&(!i.complete||i.naturalWidth===0)).map(i=>i.src));
       assert.deepEqual(missing,[],`${p.id}: missing image`);
-      assert.equal(await page.locator('.source-plan image').getAttribute('href'),'../assets/source/'+p.source.file);
+      assert.equal(await page.locator('.source-plan image').getAttribute('href'),(lang==='en'?'../../':'../')+'assets/source/'+p.source.file);
       if(width===320&&lang==='ru'&&p.id==='white-grad-37-2')await page.screenshot({path:path.join(out,'case-320.png'),fullPage:true});
     }
     checks.push(`All 13 cases at ${width}px ${width===320?'RU + EN':'RU'}`);
@@ -79,9 +83,24 @@ try {
   await page.locator('#source').scrollIntoViewIfNeeded();
   await page.screenshot({path:path.join(out,'granel-source-390.png')});
   await page.goto(origin+'/index.html?lang=en',{waitUntil:'networkidle'});
+  await page.waitForURL('**/en/index.html');
+  assert.equal(await page.locator('html').getAttribute('lang'),'en');
+  assert((await page.title()).includes('Aleksey Safonov'));
+  checks.push('Legacy ?lang=en redirects to the static EN route and matching metadata');
   await page.locator('img').evaluateAll(async imgs=>{await Promise.all(imgs.map(i=>{i.loading='eager';return i.decode();}));});
   const broken=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src));
   assert.deepEqual(broken,[]);
+  const noScript=await browser.newContext({javaScriptEnabled:false});
+  const staticPage=await noScript.newPage();
+  await staticPage.goto(origin+'/en/index.html',{waitUntil:'networkidle'});
+  assert.equal(await staticPage.locator('html').getAttribute('lang'),'en');
+  assert((await staticPage.locator('h1').innerText()).includes('Small apartment'));
+  assert((await staticPage.title()).includes('Aleksey Safonov'));
+  await staticPage.locator('[data-set-lang="ru"]').click();
+  await staticPage.waitForURL('**/index.html');
+  assert.equal(await staticPage.locator('html').getAttribute('lang'),'ru');
+  await noScript.close();
+  checks.push('Static EN content and RU/EN navigation work without JavaScript');
   assert.deepEqual(errors,[],'Browser JavaScript errors');
   assert.deepEqual(failures,[],'HTTP failures');
   const report={status:'PASS',checkedAt:new Date().toISOString(),checks,errors,httpFailures:failures};

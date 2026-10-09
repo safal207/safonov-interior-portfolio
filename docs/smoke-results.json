@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "checkedAt": "2026-10-09T05:16:21.045Z",
+  "checkedAt": "2026-10-09T17:47:55.991Z",
   "checks": [
     "Homepage 320px",
     "Homepage 390px",
@@ -12,7 +12,9 @@
     "Filter all: 13",
     "English language survives navigation; lightbox keyboard open/Escape/focus restoration",
     "All 13 cases at 320px RU + EN",
-    "All 13 cases at 1440px RU"
+    "All 13 cases at 1440px RU",
+    "Legacy ?lang=en redirects to the static EN route and matching metadata",
+    "Static EN content and RU/EN navigation work without JavaScript"
   ],
   "errors": [],
   "httpFailures": []

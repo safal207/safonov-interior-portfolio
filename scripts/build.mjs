@@ -1,10 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { pageHead, languageLink, localizeAssets, writeSitemap } from './seo.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const projects = JSON.parse(fs.readFileSync(path.join(root, 'data/projects.json'), 'utf8'));
-const siteURL = process.env.PORTFOLIO_SITE_URL?.replace(/\/$/, '');
+let buildLanguage = 'ru';
+let currentPagePath = 'index.html';
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const text = (ru, en) => `<span data-lang="ru" lang="ru">${esc(ru)}</span><span data-lang="en" lang="en">${esc(en)}</span>`;
 const dual = obj => text(obj.ru, obj.en);
@@ -12,29 +14,9 @@ const area = n => text(String(n).replace('.', ',') + ' м²', String(n) + ' m²'
 const arrow = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>';
 const type = value => ({studio: {ru:'Студия',en:'Studio'}, 'one-bedroom': {ru:'Отдельная спальня',en:'Separate bedroom'}, family: {ru:'Две спальни',en:'Two bedrooms'}}[value]);
 
-function head(title, description, prefix, image, languageTitle, pagePath='index.html') {
-  return `<!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${esc(title)}</title>
-  <meta name="description" content="${esc(description)}">
-  <meta name="theme-color" content="#364336">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="${esc(title)}">
-  <meta property="og:description" content="${esc(description)}">
-  <meta property="og:image" content="${esc(siteURL ? siteURL+'/assets/renders/'+image : prefix+'assets/renders/'+image)}">
-${siteURL ? `  <link rel="canonical" href="${esc(siteURL+'/'+pagePath)}"><meta property="og:url" content="${esc(siteURL+'/'+pagePath)}">` : ''}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="${prefix}assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="${prefix}assets/style.css">
-  <script src="${prefix}assets/language-init.js"></script>
-  <script src="${prefix}assets/app.js" defer></script>
-</head>
-<body data-title-ru="${esc(title)}" data-title-en="${esc(languageTitle)}">
-<a class="skip-link" href="#main">${text('К содержанию','Skip to content')}</a>`;
+function head(title, description, prefix, image, languageTitle, pagePath='index.html', englishDescription='13 interior design concepts for 25.3–44.4 m² apartments. Floor plans, colour palettes, storage, lighting and AI visualizations.', project=null) {
+  currentPagePath = pagePath;
+  return pageHead({title, description, prefix, image, languageTitle, pagePath, englishDescription, project, projects, language:buildLanguage});
 }
 
 function header(prefix) {
@@ -46,7 +28,7 @@ function header(prefix) {
       <a href="${prefix}index.html#contact">${text('Контакт','Contact')}</a>
     </nav>
     <div class="language-switch" role="group" aria-label="Язык" data-label-ru="Язык" data-label-en="Language">
-      <button type="button" data-set-lang="ru" aria-pressed="true">RU</button><span aria-hidden="true">/</span><button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      <a href="${languageLink(currentPagePath,buildLanguage,'ru')}" data-set-lang="ru" lang="ru" hreflang="ru" aria-label="Русская версия"${buildLanguage==='ru'?' aria-current="page"':''}>RU</a><span aria-hidden="true">/</span><a href="${languageLink(currentPagePath,buildLanguage,'en')}" data-set-lang="en" lang="en" hreflang="en" aria-label="English version"${buildLanguage==='en'?' aria-current="page"':''}>EN</a>
     </div>
   </header>`;
 }
@@ -86,21 +68,26 @@ function casePage(p, index) {
   const next = projects[(index + 1) % projects.length];
   const [x,y,w,h] = p.source.crop;
   const sourceLabel = {ru:`Исходная планировка: ${p.complex.ru}, ${String(p.area).replace('.',',')} м²`,en:`Source layout: ${p.complex.en}, ${p.area} m²`};
-  return head(`${p.name.ru} · ${String(p.area).replace('.',',')} м² — Алексей Сафонов`, p.intro.ru, prefix, p.render, `${p.name.en} · ${p.area} m² — Aleksey Safonov`, `cases/${p.id}.html`) + header(prefix) + `
+  return head(`${p.name.ru} — концепция интерьера ${String(p.area).replace('.',',')} м² | Алексей Сафонов`, p.intro.ru, prefix, p.render, `${p.name.en} — ${p.area} m² interior concept | Aleksey Safonov`, `cases/${p.id}.html`, p.intro.en, p) + header(prefix) + `
   <main id="main" class="case-main">
     <section class="case-intro shell"><a class="back-link" href="../index.html#projects">← ${text('Все проекты','All projects')}</a><p class="eyebrow">${p.number} / ${dual(p.complex)} · ${area(p.area)} · ${text('Концепт','Concept')}</p><div class="case-title-row"><h1>${dual(p.name)}</h1><p>${dual(p.intro)}</p></div><div class="case-meta"><span>${dual(p.location)}</span><span>${dual(type(p.type))}</span><span>${dual(p.style)}</span></div></section>
     <figure class="case-cover shell"><button type="button" class="image-open" data-lightbox="../assets/renders/${p.render}" aria-label="Увеличить визуализацию" data-label-ru="Увеличить визуализацию" data-label-en="Enlarge visualization"><img src="../assets/renders/${p.render}" width="1536" height="1024" alt="${esc(p.name.ru)} — AI-визуализация интерьерной концепции" data-alt-ru="${esc(p.name.ru)} — AI-визуализация интерьерной концепции" data-alt-en="${esc(p.name.en)} — AI interior concept visualization" fetchpriority="high"><span class="enlarge-symbol" aria-hidden="true">↗</span></button><figcaption>${text('AI-визуализация · Атмосфера и материалы концепции','AI visualization · Concept atmosphere and materials')}</figcaption></figure>
     <section class="case-story shell"><div class="case-story-label"><p class="eyebrow">${text('Идея проекта','Project idea')}</p><h2>${text('Как здесь','How life')}<br><em>${text('будет жить человек.','fits here.')}</em></h2></div><div class="case-story-body"><p class="brief">${dual(p.brief)}</p><ol class="solution-list">${p.solutions.map((s,i) => `<li><span>0${i+1}</span><p>${dual(s)}</p></li>`).join('')}</ol><div class="lighting-note"><h3>${text('Свет в течение дня','Light throughout the day')}</h3><p>${dual(p.lighting)}</p></div></div></section>
     <section class="palette-section shell"><div class="section-head compact"><div><p class="eyebrow">${text('Цвет и материал','Colour & material')}</p><h2>${text('Палитра проекта','Project palette')}</h2></div><p class="section-note">${text('Ориентиры для отделки и текстиля','A direction for finishes and textiles')}</p></div><ul class="palette">${p.palette.map(c=>`<li><div class="swatch" style="background-color:${c.hex}" aria-hidden="true"></div><span>${text(c.ru,c.en)}</span><small>${c.hex}</small></li>`).join('')}</ul></section>
-    <section class="source-section" id="source"><div class="shell source-layout"><div class="source-plan-wrap"><p class="eyebrow">${text('Исходная планировка','Source layout')}</p><svg class="source-plan" xmlns="http://www.w3.org/2000/svg" viewBox="${x} ${y} ${w} ${h}" role="img" aria-label="${esc(sourceLabel.ru)}" data-label-ru="${esc(sourceLabel.ru)}" data-label-en="${esc(sourceLabel.en)}"><title>${esc(sourceLabel.ru)}</title><image href="../assets/source/${p.source.file}" width="674" height="1536" x="0" y="0"/></svg><a class="text-link source-original" href="../assets/source/${p.source.file}" target="_blank" rel="noopener noreferrer">${text('Открыть исходный скриншот','Open the original screenshot')} ${arrow}</a></div><div class="source-data"><h2>${text('От плана','From a plan')}<br><em>${text('к идее интерьера.','to an interior idea.')}</em></h2>${p.rooms.length ? `<table class="room-table"><caption>${text('Площади по подписям исходного плана','Areas transcribed from the source plan')}</caption><thead><tr><th scope="col">${text('Помещение','Room')}</th><th scope="col">${text('Площадь','Area')}</th></tr></thead><tbody>${p.rooms.map(r=>`<tr><th scope="row">${text(r.ru,r.en)}</th><td>${area(r.area)}</td></tr>`).join('')}</tbody></table>` : `<p class="unverified-rooms">${text('Общая площадь в объявлении: 30,1 м². Для работы с площадями отдельных комнат нужен более чёткий исходный план.','Listing area: 30.1 m². A clearer source plan is needed to work with individual room areas.')}</p>`}<div class="source-note"><h3>${text('Особенности источника','Source details')}</h3><p>${dual(p.source.notes)}</p></div><p class="small-note">${text('План предоставлен для этой концепции. Визуализация передаёт дизайн-идею; точное положение проёмов, мебели и оборудования уточняется по обмерному плану.','The plan was supplied for this concept. The visualization communicates a design idea; exact openings, furniture and equipment positions are refined using a measured plan.')}</p></div></div></section>
+    <section class="source-section" id="source"><div class="shell source-layout"><div class="source-plan-wrap"><p class="eyebrow">${text('Исходная планировка','Source layout')}</p><svg class="source-plan" xmlns="http://www.w3.org/2000/svg" viewBox="${x} ${y} ${w} ${h}" role="img" aria-label="${esc(sourceLabel.ru)}" data-label-ru="${esc(sourceLabel.ru)}" data-label-en="${esc(sourceLabel.en)}"><title>${esc(sourceLabel[buildLanguage])}</title><image href="../assets/source/${p.source.file}" width="674" height="1536" x="0" y="0"/></svg><a class="text-link source-original" href="../assets/source/${p.source.file}" target="_blank" rel="noopener noreferrer">${text('Открыть исходный скриншот','Open the original screenshot')} ${arrow}</a></div><div class="source-data"><h2>${text('От плана','From a plan')}<br><em>${text('к идее интерьера.','to an interior idea.')}</em></h2>${p.rooms.length ? `<table class="room-table"><caption>${text('Площади по подписям исходного плана','Areas transcribed from the source plan')}</caption><thead><tr><th scope="col">${text('Помещение','Room')}</th><th scope="col">${text('Площадь','Area')}</th></tr></thead><tbody>${p.rooms.map(r=>`<tr><th scope="row">${text(r.ru,r.en)}</th><td>${area(r.area)}</td></tr>`).join('')}</tbody></table>` : `<p class="unverified-rooms">${text('Общая площадь в объявлении: 30,1 м². Для работы с площадями отдельных комнат нужен более чёткий исходный план.','Listing area: 30.1 m². A clearer source plan is needed to work with individual room areas.')}</p>`}<div class="source-note"><h3>${text('Особенности источника','Source details')}</h3><p>${dual(p.source.notes)}</p></div><p class="small-note">${text('План предоставлен для этой концепции. Визуализация передаёт дизайн-идею; точное положение проёмов, мебели и оборудования уточняется по обмерному плану.','The plan was supplied for this concept. The visualization communicates a design idea; exact openings, furniture and equipment positions are refined using a measured plan.')}</p></div></div></section>
     <section class="next-project shell"><div><p class="eyebrow">${text('Следующая история','Next story')}</p><a class="next-title" href="${next.id}.html">${dual(next.name)} ${arrow}</a><p>${dual(next.complex)} · ${area(next.area)}</p></div><a href="${next.id}.html" aria-label="${esc(next.name.ru)}" data-label-ru="${esc(next.name.ru)}" data-label-en="${esc(next.name.en)}"><img src="../assets/renders/${next.render}" width="1536" height="1024" alt="" loading="lazy"></a></section>
   </main>
   <dialog class="lightbox" aria-label="Визуализация" data-label-ru="Визуализация" data-label-en="Visualization"><button type="button" class="lightbox-close" data-close-lightbox autofocus aria-label="Закрыть" data-label-ru="Закрыть" data-label-en="Close">×</button><img width="1536" height="1024" alt=""></dialog>` + footer(prefix) + '</body></html>';
 }
 
-fs.mkdirSync(path.join(root, 'cases'), {recursive:true});
-fs.writeFileSync(path.join(root, 'index.html'), home());
-for (const [i,p] of projects.entries()) fs.writeFileSync(path.join(root, 'cases', `${p.id}.html`), casePage(p,i));
+for (const lang of ['ru','en']) {
+  buildLanguage=lang;
+  const outputRoot=lang==='en'?path.join(root,'en'):root;
+  fs.mkdirSync(path.join(outputRoot,'cases'),{recursive:true});
+  fs.writeFileSync(path.join(outputRoot,'index.html'),localizeAssets(home(),lang));
+  for(const [i,p] of projects.entries()) fs.writeFileSync(path.join(outputRoot,'cases',`${p.id}.html`),localizeAssets(casePage(p,i),lang));
+}
+writeSitemap(root,projects);
 const casebook=projects.map(p=>`<a name="${p.id}"></a>\n\n## ${p.number}. ${p.name.ru} / ${p.name.en}\n\n**${p.complex.ru} · ${String(p.area).replace('.',',')} м²**\n\n![${p.name.ru} — AI concept visualization](../assets/renders/${p.render})\n\n${p.intro.ru}\n\n${p.intro.en}\n\n**Сценарий / Brief:** ${p.brief.ru} / ${p.brief.en}\n\n${p.solutions.map(s=>`- ${s.ru}\n  ${s.en}`).join('\n')}\n\n**Свет / Lighting:** ${p.lighting.ru} / ${p.lighting.en}\n\n| Цвет / Material direction | HEX |\n| --- | --- |\n${p.palette.map(c=>`| ${c.ru} / ${c.en} | ${c.hex} |`).join('\n')}\n\n[Исходная планировка / Source screenshot](../assets/source/${p.source.file})\n\n> ${p.source.notes.ru}\n>\n> ${p.source.notes.en}\n`).join('\n---\n\n');
 fs.writeFileSync(path.join(root,'docs/CASEBOOK.md'),'# Safonov Interiors — 13 concepts\n\nКонцептуальное портфолио Алексея Сафонова. Все визуализации созданы с помощью AI и показывают атмосферу, материалы и идеи расстановки.\n\nAleksey Safonov’s concept portfolio. All images are AI-generated and communicate atmosphere, materials and furniture ideas.\n\n'+casebook);
-console.log(`Built homepage + ${projects.length} bilingual case pages.`);
+console.log(`Built RU + EN: 2 homepages, ${projects.length*2} case pages and sitemap.`);

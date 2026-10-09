@@ -1,5 +1,7 @@
 name: Publish portfolio to GitHub Pages
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -28,8 +30,8 @@ jobs:
       - name: Prepare static output
         run: |
           mkdir _site
-          cp index.html .nojekyll _site/
-          cp -R cases assets _site/
+          cp index.html .nojekyll sitemap.xml _site/
+          cp -R cases en assets _site/
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:

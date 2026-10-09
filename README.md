@@ -4,6 +4,8 @@
 
 **Aleksey Safonov · Small apartment interior concepts**
 
+[Открыть сайт / Open portfolio](https://safal207.github.io/safonov-interior-portfolio/) · [English](https://safal207.github.io/safonov-interior-portfolio/en/)
+
 ![Тихий свет — интерьерная концепция 37,2 м²](assets/renders/white-grad-37-2.webp)
 
 13 самостоятельных интерьерных концепций по 9 предоставленным скриншотам планировок. Повторяющиеся объявления объединены в один кейс. Коллекция охватывает квартиры от 25,3 до 44,4 м² в Московской области: студии, квартиры с отдельной спальней и семейный вариант с двумя спальнями.
@@ -74,7 +76,7 @@ node scripts/preview.mjs
 
 ## Публикация / Publishing
 
-Публичный репозиторий: [safal207/safonov-interior-portfolio](https://github.com/safal207/safonov-interior-portfolio). Все 13 концепций доступны в [CASEBOOK](docs/CASEBOOK.md). Публикация сайта через GitHub Pages запускается отдельно.
+Публичный репозиторий: [safal207/safonov-interior-portfolio](https://github.com/safal207/safonov-interior-portfolio). Все 13 концепций доступны в [CASEBOOK](docs/CASEBOOK.md). Сайт публикуется через GitHub Pages; обновляется после изменений в ветке main. [SEO и обложка ссылки](docs/SEO.md).
 
 [Порядок публикации / Publishing steps](docs/PUBLISHING.md)
 

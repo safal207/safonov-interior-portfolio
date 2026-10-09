@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-09",
+  "tool": "built-in image_gen",
+  "use_case": "ads-marketing",
+  "asset": "assets/social/share-cover-v1.jpg",
+  "size": [
+    1736,
+    906
+  ],
+  "reference": "assets/renders/white-grad-37-2.webp",
+  "text": [
+    "SAFONOV.",
+    "INTERIORS",
+    "Дизайн небольших квартир",
+    "13 концепций · 25–44 м²"
+  ],
+  "prompt": "One refined editorial OG banner, approximately 1.91:1. Left 40% deep olive-graphite, ivory Swiss/editorial typography with exact text. Right 60% supplied light oak and blue interior, retain its materials, daylight and objects; crop/scaling only. Readable at 600px. No people, URL, phone, UI, watermark or claims of completed works. Requested 1536x800; generated 1736x906. Saved JPEG at original dimensions, quality 92."
+}

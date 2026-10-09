@@ -22,10 +22,10 @@ h1 em,h2 em{font-weight:400}
 .site-header nav{display:flex;gap:37px;font-size:13px}
 .site-header nav a{padding-block:12px}
 .site-header nav a:hover{color:#7b875d}
-.language-switch{display:flex;align-items:center;gap:9px;font-size:12px}
+.language-switch{display:flex;align-items:center;gap:9px;font-size:14px}
 .language-switch>span{color:#9fa38f}
-.language-switch button{border:0;padding:12px 2px;background:none;color:var(--muted)}
-.language-switch button[aria-pressed=true]{color:var(--ink);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.language-switch a{border:0;padding:12px 2px;background:none;color:var(--muted)}
+.language-switch a[aria-current=page]{color:var(--ink);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
 .skip-link{position:fixed;top:10px;left:10px;transform:translateY(-150%);padding:10px 18px;background:var(--green);color:var(--paper);z-index:20}
 .skip-link:focus{transform:none}
 .eyebrow{font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:500;line-height:1.6}

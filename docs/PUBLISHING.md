@@ -12,7 +12,7 @@ cd safonov-interior-portfolio
 ```
 
 1. Проверять результат Verify portfolio после каждого изменения. Портфолио с визуализациями также читается прямо в README и docs/CASEBOOK.md.
-2. Чтобы опубликовать сайт, выбрать Settings → Pages → Source → GitHub Actions, затем вручную запустить Publish portfolio to GitHub Pages в Actions.
+2. Источник Pages настроен на GitHub Actions. Workflow Publish portfolio to GitHub Pages запускается после push в main; также доступен ручной запуск.
 3. Использовать URL, который вернёт успешно завершённая публикация. Проверить главную, RU/EN, один кейс и увеличение визуализации по этому URL.
 
 Во время публикации `actions/configure-pages` передаёт настоящий базовый URL в генератор. По нему создаются абсолютные Open Graph и canonical ссылки. Локальный просмотр не содержит заявления о существующем публичном адресе.
