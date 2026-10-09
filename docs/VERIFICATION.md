@@ -25,4 +25,11 @@ The two browser scripts require Playwright and a Chromium executable. In Codex, 
 
 The standalone preview is checked separately for filters, RU/EN, navigation, embedded source/render assets, the lightbox and absence of network dependencies.
 
-The JSON results in this directory record the completed runs. Browser checks cover Chromium; Firefox and Safari have not been exercised in this version. The public GitHub repository `safal207/safonov-interior-portfolio` was created on 9 October 2026 and confirmed through the signed-in GitHub UI and repository metadata. Actions runs and a hosted URL remain pending and are not represented as passed checks.
+The JSON results in this directory record the completed runs. Browser checks cover Chromium; Firefox and Safari have not been exercised in this version.
+
+## GitHub publication
+
+- The public repository `safal207/safonov-interior-portfolio` was created on 9 October 2026 and confirmed through the signed-in GitHub UI and repository metadata.
+- All 60 source files were uploaded. The published tree SHA `eadda244dfcf06d728c3fc1f4ef12b791962ef69` matched the locally verified source tree, including every render and original screenshot.
+- [Verify portfolio run 1](https://github.com/safal207/safonov-interior-portfolio/actions/runs/37896410588) passed for publication commit `8c9a5ae1c2ab39cc47663a99404dc5ddd308abce`.
+- A hosted GitHub Pages URL remains pending and is not represented as a passed check.
