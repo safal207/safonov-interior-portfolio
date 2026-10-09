@@ -2,7 +2,7 @@
   "name": "safonov-interior-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Aleksey Safonov — 13 compact-apartment interior design concepts",
+  "description": "Aleksey Safonov — 18 interior concepts, including five Moscow Premium apartments",
   "scripts": {
     "build": "node scripts/build.mjs",
     "verify": "node scripts/verify.mjs",

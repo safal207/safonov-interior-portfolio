@@ -7,12 +7,12 @@ const projects=JSON.parse(fs.readFileSync(path.join(root,'data/projects.json'),'
 const pageFiles=['index.html',...projects.map(p=>`cases/${p.id}.html`)];
 const pages=Object.fromEntries([...pageFiles,...pageFiles.map(file=>'en/'+file)].map(file=>[file,fs.readFileSync(path.join(root,file),'utf8')]));
 const files=['assets/favicon.svg',...fs.readdirSync(path.join(root,'assets/renders')).map(f=>'assets/renders/'+f),...fs.readdirSync(path.join(root,'assets/source')).map(f=>'assets/source/'+f)];
-const mime=filename=>filename.endsWith('.webp')?'image/webp':filename.endsWith('.jpg')?'image/jpeg':'image/svg+xml';
+const mime=filename=>filename.endsWith('.webp')?'image/webp':filename.endsWith('.png')?'image/png':filename.endsWith('.jpg')?'image/jpeg':'image/svg+xml';
 const assets=Object.fromEntries(files.map(file=>[file,{type:mime(file),data:fs.readFileSync(path.join(root,file)).toString('base64')}])) ;
 const safe=value=>JSON.stringify(value).replaceAll('<','\\u003c');
 const style=fs.readFileSync(path.join(root,'assets/style.css'),'utf8');
 const app=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
-const html=`<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Safonov Interiors — portfolio</title><meta name="theme-color" content="#364336"><style>html,body{margin:0;height:100%;background:#f3f0e8}iframe{display:block;border:0;width:100%;height:100%}</style></head><body><iframe id="portfolio" title="Safonov Interiors — 13 интерьерных концепций"></iframe>
+const html=`<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Safonov Interiors — portfolio</title><meta name="theme-color" content="#302c27"><style>html,body{margin:0;height:100%;background:#f3f0e8}iframe{display:block;border:0;width:100%;height:100%}</style></head><body><iframe id="portfolio" title="Safonov Interiors — ${projects.length} интерьерных концепций / Moscow Premium"></iframe>
 <script>
 const pages=${safe(pages)};
 const assets=${safe(assets)};
@@ -41,4 +41,4 @@ window.navigatePortfolio();
 </script></body></html>`;
 const out=path.join(root,'output');fs.mkdirSync(out,{recursive:true});
 fs.writeFileSync(path.join(out,'Safonov_Interiors_Portfolio.html'),html);
-console.log('Created standalone HTML preview with embedded assets and all 13 cases.');
+console.log(`Created standalone HTML preview with embedded assets and all ${projects.length} cases.`);

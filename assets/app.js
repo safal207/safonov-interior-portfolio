@@ -38,16 +38,18 @@
 
   const cards = [...document.querySelectorAll('[data-project-type]')];
   const filters = [...document.querySelectorAll('[data-filter]')];
-  filters.forEach(button => button.addEventListener('click', () => {
-    const selected = button.dataset.filter;
-    filters.forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+  const filterProjects = selected => {
+    filters.forEach(other => other.setAttribute('aria-pressed', String(other.dataset.filter === selected)));
     let count = 0;
     cards.forEach(card => {
-      card.hidden = selected !== 'all' && card.dataset.projectType !== selected;
+      card.hidden = selected !== 'all' && card.dataset.projectType !== selected && card.dataset.projectCollection !== selected;
       if (!card.hidden) count++;
     });
-    document.getElementById('shown-count').textContent = String(count);
-  }));
+    const shown = document.getElementById('shown-count');
+    if (shown) shown.textContent = String(count);
+  };
+  filters.forEach(button => button.addEventListener('click', () => filterProjects(button.dataset.filter)));
+  document.querySelectorAll('[data-select-collection]').forEach(anchor => anchor.addEventListener('click', () => filterProjects(anchor.dataset.selectCollection)));
 
   const dialog = document.querySelector('.lightbox');
   if (dialog) {

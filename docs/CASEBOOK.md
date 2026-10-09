@@ -1,8 +1,303 @@
-# Safonov Interiors — 13 concepts
+# Safonov Interiors — 18 concepts
 
 Концептуальное портфолио Алексея Сафонова. Все визуализации созданы с помощью AI и показывают атмосферу, материалы и идеи расстановки.
 
 Aleksey Safonov’s concept portfolio. All images are AI-generated and communicate atmosphere, materials and furniture ideas.
+
+<a name="level-seligerskaya-34-8"></a>
+
+## 14. Тихая роскошь / Quiet luxury
+
+**MOSCOW PREMIUM · Level Селигерская · 34,8 м²**
+
+![Тихая роскошь — AI concept visualization](../assets/renders/level-seligerskaya-34-8.webp)
+
+**Визуализация / Rendered room:** Кухня · 12,4 м² / Kitchen · 12.4 m²
+
+Кухня 12,4 м² в оттенках слоновой кости: светлый дуб, каменная фактура и матовая бронза. Круглый стол у окна задаёт спокойный ритм небольшой квартире.
+
+A 12.4 m² kitchen in ivory tones: pale oak, a stone texture and brushed bronze. A round table by the window sets a calm rhythm for the compact apartment.
+
+**Сценарий / Brief:** Для одного человека или пары: отдельная спальня и выразительная кухня для повседневной жизни. / For one person or a couple: a separate bedroom and an elegant kitchen for everyday living.
+
+- Сохранить линейную кухню вдоль внутренней стены; объединить фасады и встроенную технику в один спокойный объём.
+  Retain the linear kitchen along the internal wall; unify the cabinetry and integrated appliances into one calm volume.
+- Разместить круглый стол у кухонного окна. Диаметр стола и глубину стульев подобрать после проверки проходов на обмерах.
+  Place a round table by the kitchen window. Choose its diameter and chair depth after checking circulation against measured dimensions.
+- Повторить светлый дуб в спальне 14,8 м² и прихожей, связав отдельные комнаты общей палитрой.
+  Repeat pale oak in the 14.8 m² bedroom and hall to connect the separate rooms through a shared palette.
+
+**Свет / Lighting:** Мягкий потолочный свет, подсветка кухонной столешницы и лаконичный подвес над столом. Бронзовые детали поддерживают тёплый вечерний свет. / Soft ceiling light, worktop lighting and a restrained pendant over the table. Bronze details complement the warm evening light.
+
+| Цвет / Material direction | HEX |
+| --- | --- |
+| Слоновая кость / Ivory | #EAE3D7 |
+| Светлый дуб / Pale oak | #C6AA82 |
+| Известняк / Limestone | #BDB6A6 |
+| Матовая бронза / Brushed bronze | #8B7052 |
+
+**Материалы / Materials:**
+
+- Дуб с открытой текстурой / Open-grain oak
+- Светлый камень или керамогранит с фактурой известняка / Pale stone or limestone-textured porcelain
+- Льняная обивка / Linen upholstery
+- Матовая бронза в светильниках и фурнитуре / Brushed bronze lighting and hardware
+
+[Исходная планировка / Original source plan](../assets/source/01_level_seligerskaya_34_8.svg)
+
+[Квартира на сайте застройщика / Developer apartment listing](https://level.ru/selig/flat/1room/5-1-1/)
+
+[Оригинальный файл застройщика / Developer original file](https://cdn.level.ru/media/core/flat/plane/98fc53c620d6de87128fffa3a24d3a6684bac1c2.svg)
+
+**Источник / Credit:** Level Group / Level Group
+
+**Проверено / Checked:** 2026-10-10
+
+> Исходная планировка застройщика: корпус 5, этаж 2. Площади сохранены из источника. Визуализация показывает концепцию кухни; размеры мебели требуют обмеров.
+>
+> Original developer plan: building 5, floor 2. Room areas retain the source values. The render illustrates a kitchen concept; furniture dimensions require site measurements.
+
+Самостоятельная AI-концепция, не заказ застройщика или владельца. Геометрия требует проверки по обмерам; виды за окнами условные.
+
+Independent AI concept, not a developer or owner commission. Geometry requires a measured survey; exterior views are illustrative.
+
+---
+
+<a name="level-michurinsky-42-1"></a>
+
+## 15. Оливковое ателье / Olive atelier
+
+**MOSCOW PREMIUM · Level Мичуринский · этапы 3 и 4 · 42,1 м²**
+
+![Оливковое ателье — AI concept visualization](../assets/renders/level-michurinsky-42-1.webp)
+
+**Визуализация / Rendered room:** Гостиная · 17,2 м² / Living room · 17.2 m²
+
+Гостиная 17,2 м² собрана вокруг глубокого оливкового оттенка, ореха и светлого травертина. Чёткие линии мебели сочетаются с мягкой обивкой и дневным светом.
+
+The 17.2 m² living room pairs a deep olive tone with walnut and pale travertine. Clean furniture lines meet soft upholstery and natural daylight.
+
+**Сценарий / Brief:** Для пары: отдельная спальня, компактная кухня и гостиная с местом для неспешных ужинов. / For a couple: a separate bedroom, compact kitchen and a living room with space for unhurried dinners.
+
+- Сохранить диван вдоль левой стены гостиной и ТВ-зону у перегородки спальни, как на исходном плане.
+  Keep the sofa along the left living-room wall and the TV area against the bedroom partition, following the source plan.
+- Выделить обеденную зону между кухней и гостиной; использовать лёгкие по силуэту стулья и проверить проход к спальне.
+  Define a dining area between the kitchen and living room; choose visually light chairs and check the route to the bedroom.
+- Собрать кухню 5 м² в спокойные фасады и повторить орех в хранении гостиной, сохранив цельность интерьера.
+  Give the 5 m² kitchen calm, unified cabinetry and repeat walnut in the living-room storage for a coherent interior.
+
+**Свет / Lighting:** Отдельный свет над обеденным столом, мягкая подсветка ТВ-зоны и торшер у дивана. Рабочая поверхность кухни получает собственный свет. / Dedicated lighting above the dining table, soft TV-area lighting and a floor lamp by the sofa. The kitchen worktop has its own task light.
+
+| Цвет / Material direction | HEX |
+| --- | --- |
+| Глубокая олива / Deep olive | #6D7357 |
+| Орех / Walnut | #73533C |
+| Травертин / Travertine | #D8CDB8 |
+| Тёплый белый / Warm white | #E9E4DA |
+
+**Материалы / Materials:**
+
+- Орех с матовым покрытием / Matte-finished walnut
+- Травертин с неброским рисунком / Subtly patterned travertine
+- Фактурная оливковая обивка / Textured olive upholstery
+- Матовая штукатурка тёплого оттенка / Warm-toned matte plaster
+
+[Исходная планировка / Original source plan](../assets/source/02_level_michurinsky_42_1.svg)
+
+[Квартира на сайте застройщика / Developer apartment listing](https://level.ru/michkomf/flat/2room/8-1-49/)
+
+[Оригинальный файл застройщика / Developer original file](https://cdn.level.ru/media/core/flat/plane/568b20627053bc888ebc242dbda6147599ba2922.svg)
+
+**Источник / Credit:** Level Group / Level Group
+
+**Проверено / Checked:** 2026-10-10
+
+> Исходная планировка застройщика: корпус 8, этаж 6, условный номер 8-1-49. Визуализация — концепция гостиной; план сохраняет отдельную спальню и кухню.
+>
+> Original developer plan: building 8, floor 6, reference 8-1-49. The render is a living-room concept; the plan retains a separate bedroom and kitchen.
+
+Самостоятельная AI-концепция, не заказ застройщика или владельца. Геометрия требует проверки по обмерам; виды за окнами условные.
+
+Independent AI concept, not a developer or owner commission. Geometry requires a measured survey; exterior views are illustrative.
+
+---
+
+<a name="nazare-47-6"></a>
+
+## 16. Парижский вечер / Parisian evening
+
+**MOSCOW PREMIUM · НАЗАРÉ · 47,6 м²**
+
+![Парижский вечер — AI concept visualization](../assets/renders/nazare-47-6.webp)
+
+**Визуализация / Rendered room:** Гостиная 16,9 м² + кухня 6 м² / Living room 16.9 m² + kitchen 6 m²
+
+Гостиная 16,9 м² и кухня 6 м² получают общую палитру: тёплый серо-бежевый, орех и винный акцент. Камень и мягкие ткани создают камерную атмосферу.
+
+The 16.9 m² living room and 6 m² kitchen share warm greige, walnut and a wine-red accent. Stone and soft fabrics create an intimate atmosphere.
+
+**Сценарий / Brief:** Для пары, которая любит ужины дома: выразительная общая зона и спокойная отдельная спальня. / For a couple who enjoy dining at home: an expressive shared space and a quiet separate bedroom.
+
+- Сохранить кухню вдоль перегородки спальни; связать её с гостиной общим камнем и тёплыми деревянными фасадами.
+  Keep the kitchen along the bedroom partition; connect it to the living room through shared stone and warm wood cabinetry.
+- Развить обеденную зону у окна и расстановку дивана вдоль левой стены. Подобрать мебель после проверки фактических проходов.
+  Develop the dining area by the window and the sofa position along the left wall. Select furniture after checking actual circulation space.
+- Сделать винный цвет локальным акцентом в кресле или текстиле, оставив спальню 14,5 м² в спокойных нейтральных оттенках.
+  Use wine red as a local accent in an armchair or textiles, keeping the 14.5 m² bedroom in calm neutral tones.
+
+**Свет / Lighting:** Тёплый подвес над столом, направленный свет над кухонной поверхностью и мягкий свет у дивана. Вечерний сценарий подчёркивает фактуру тканей и камня. / A warm pendant over the table, task lighting over the kitchen surface and soft light beside the sofa. The evening setting brings out fabric and stone textures.
+
+| Цвет / Material direction | HEX |
+| --- | --- |
+| Тёплый серо-бежевый / Warm greige | #C6BAAE |
+| Тёмный орех / Dark walnut | #78523B |
+| Винный акцент / Wine-red accent | #713F42 |
+| Светлый камень / Pale stone | #E0D5C4 |
+
+**Материалы / Materials:**
+
+- Орех тёплого оттенка / Warm-toned walnut
+- Светлый камень с деликатными прожилками / Pale stone with subtle veining
+- Шерсть и лён в обивке / Wool and linen upholstery
+- Бронзовые акценты / Bronze accents
+
+[Исходная планировка / Original source plan](../assets/source/03_nazare_47_6.svg)
+
+[Квартира на сайте застройщика / Developer apartment listing](https://nazare.ru/genplan/4/20/1151/)
+
+[Оригинальный файл застройщика / Developer original file](https://api.nazare.ru/upload/iblock/a0c/ylu4wwcn8sn74o3glqrzksivnj2mt03g/tmp_importflat-00e36fdb-6d0e-40db-81d2-600410f599b2.svg)
+
+**Источник / Credit:** Мангазея / Mangazeya
+
+**Проверено / Checked:** 2026-10-10
+
+> Исходная планировка квартиры № 1151: корпус 4, этаж 20. Название концепции описывает настроение интерьера. Визуализация не является фотографией квартиры.
+>
+> Original plan for apartment 1151: building 4, floor 20. The concept name describes the interior mood. The render is not a photograph of the apartment.
+
+Самостоятельная AI-концепция, не заказ застройщика или владельца. Геометрия требует проверки по обмерам; виды за окнами условные.
+
+Independent AI concept, not a developer or owner commission. Geometry requires a measured survey; exterior views are illustrative.
+
+---
+
+<a name="nizhegorodskaya-60-64"></a>
+
+## 17. Семейная галерея / Family gallery
+
+**MOSCOW PREMIUM · Нижегородская · 60,64 м²**
+
+![Семейная галерея — AI concept visualization](../assets/renders/nizhegorodskaya-60-64.webp)
+
+**Визуализация / Rendered room:** Основная спальня · 20,81 м² / Main bedroom · 20.81 m²
+
+Спальня 20,81 м² — просторная личная зона с тёплым дубом, льняными тканями и мягкими бронзовыми деталями. Две стороны естественного света раскрывают фактуры без лишнего декора.
+
+The 20.81 m² bedroom is a generous private retreat with warm oak, linen fabrics and subtle bronze details. Daylight from two sides reveals the textures without excessive decoration.
+
+**Сценарий / Brief:** Для пары или небольшой семьи: две отдельные спальни, кухня 15,11 м² и спокойная палитра общих материалов. / For a couple or a small family: two separate bedrooms, a 15.11 m² kitchen and a calm shared material palette.
+
+- Сохранить спальни 20,81 и 11,64 м² отдельными. Большую комнату оформить как основную спальню, меньшую — по потребностям семьи.
+  Keep the 20.81 and 11.64 m² bedrooms separate. Design the larger room as the main bedroom and adapt the smaller one to the family’s needs.
+- Развить предусмотренное планом расположение кровати и хранения; избегать высоких предметов перед окнами основной спальни.
+  Develop the bed and storage arrangement shown in the plan; avoid tall furniture in front of the main bedroom windows.
+- Повторить дуб и светлый камень в кухне 15,11 м². Сохранить самостоятельную обеденную зону и проверить проходы на обмерах.
+  Repeat oak and pale stone in the 15.11 m² kitchen. Retain a dedicated dining area and check circulation against site measurements.
+
+**Свет / Lighting:** Рассеянный потолочный свет, отдельные светильники у кровати и подсветка хранения. Мягкий вечерний свет поддерживает спокойную атмосферу спальни. / Diffuse ceiling lighting, individual bedside lights and storage lighting. Soft evening light supports a restful bedroom atmosphere.
+
+| Цвет / Material direction | HEX |
+| --- | --- |
+| Тёплый дуб / Warm oak | #D8C0A1 |
+| Натуральный лён / Natural linen | #E8E0D3 |
+| Светлый камень / Pale stone | #BEB4A4 |
+| Приглушённая бронза / Muted bronze | #876A50 |
+
+**Материалы / Materials:**
+
+- Тёплый дуб на полу и в мебели / Warm oak flooring and furniture
+- Натуральный лён в текстиле / Natural linen textiles
+- Светлый камень в небольших деталях / Pale stone in small details
+- Матовые бронзовые светильники / Brushed bronze lighting
+
+[Исходная планировка / Original source plan](../assets/source/04_nizhegorodskaya_60_64.png)
+
+[Квартира на сайте застройщика / Developer apartment listing](https://granelle.ru/flats/mypriority-nizhegorodskaya/63660/)
+
+[Оригинальный файл застройщика / Developer original file](https://storage.yandexcloud.net/granelleprod/media/properties/property/plan/c037bba04d9cacc7b5460748ea9369c5126536a5.png)
+
+**Источник / Credit:** Гранель / Granel
+
+**Проверено / Checked:** 2026-10-10
+
+> Исходная планировка квартиры № 535: корпус 1, секция 7, этаж 2. Изображение показывает концепцию основной спальни; исходный план сохранён без изменений.
+>
+> Original plan for apartment 535: building 1, section 7, floor 2. The image illustrates a main-bedroom concept; the source plan is retained unchanged.
+
+Самостоятельная AI-концепция, не заказ застройщика или владельца. Геометрия требует проверки по обмерам; виды за окнами условные.
+
+Independent AI concept, not a developer or owner commission. Geometry requires a measured survey; exterior views are illustrative.
+
+---
+
+<a name="will-towers-72-6"></a>
+
+## 18. Резиденция света / Residence of light
+
+**MOSCOW PREMIUM · Will Towers · 72,6 м²**
+
+![Резиденция света — AI concept visualization](../assets/renders/will-towers-72-6.webp)
+
+**Визуализация / Rendered room:** Гостиная 25,1 м² + кухня 6,1 м² / Living room 25.1 m² + kitchen 6.1 m²
+
+Гостиная 25,1 м² и кухня 6,1 м² соединяют светлый камень, тёмный дуб и мягкую обивку букле. Ломаная линия остекления становится главным архитектурным акцентом.
+
+The 25.1 m² living room and 6.1 m² kitchen combine pale stone, dark oak and soft bouclé upholstery. The angled glazing line is the main architectural feature.
+
+**Сценарий / Brief:** Для пары: просторная общая зона, отдельная спальня 17,7 м² и предусмотренные планом гардеробная и два санузла. / For a couple: a generous shared space, a separate 17.7 m² bedroom, and a wardrobe room and two bathrooms shown in the plan.
+
+- Сохранить кухню у левой стены и обеденную группу в общей зоне. Связать их с гостиной единой каменной фактурой.
+  Keep the kitchen along the left wall and the dining group in the shared area. Connect them to the living room through a consistent stone texture.
+- Расположить низкую мягкую мебель в зоне гостиной, сохранив внимание к остеклению и маршруту к спальне.
+  Arrange low upholstered furniture in the living area, keeping attention on the glazing and the route to the bedroom.
+- Использовать гардеробную 2,4 м² и согласовать хранение в прихожей 13,2 м² после обмеров, не перегружая общую зону.
+  Use the 2.4 m² wardrobe room and plan storage in the 13.2 m² hall after site measurements to keep the shared area uncluttered.
+
+**Свет / Lighting:** Дневной свет у остекления, мягкий потолочный свет вечером и выразительный подвес над столом. Локальная подсветка подчёркивает камень и дерево. / Daylight by the glazing, soft ceiling lighting in the evening and a sculptural pendant above the table. Local lighting brings out the stone and wood.
+
+| Цвет / Material direction | HEX |
+| --- | --- |
+| Светлая слоновая кость / Light ivory | #EEE8DC |
+| Тёмный дуб / Dark oak | #5B493B |
+| Светлый камень / Pale stone | #D8CFBD |
+| Бронза / Bronze | #9A7B55 |
+
+**Материалы / Materials:**
+
+- Светлый камень с мягким рисунком / Pale stone with a soft pattern
+- Тёмный дуб в столярных деталях / Dark oak joinery
+- Молочное букле / Ivory bouclé
+- Бронзовые светильники / Bronze lighting
+
+[Исходная планировка / Original source plan](../assets/source/05_will_towers_72_6.svg)
+
+[Квартира на сайте застройщика / Developer apartment listing](https://ci.ru/choose/13577)
+
+[Оригинальный файл застройщика / Developer original file](https://api.ci.ru/upload/uf/c3b/dezf5zwt2dse5hh51ugfq6259ofwolgo.svg)
+
+**Источник / Credit:** Центр-Инвест / Centr-Invest
+
+**Проверено / Checked:** 2026-10-10
+
+> Исходная планировка квартиры № 1686: этаж 33. Линия фасада и площади взяты из источника. Визуализация представляет интерьерную концепцию общей зоны.
+>
+> Original plan for apartment 1686: floor 33. The façade line and room areas come from the source. The render presents an interior concept for the shared area.
+
+Самостоятельная AI-концепция, не заказ застройщика или владельца. Геометрия требует проверки по обмерам; виды за окнами условные.
+
+Independent AI concept, not a developer or owner commission. Geometry requires a measured survey; exterior views are illustrative.
+
+---
 
 <a name="white-grad-37-2"></a>
 
@@ -34,7 +329,7 @@ Pale oak, linen textures and a blue accent connect the compact kitchen and livin
 | Голубой лён / Blue linen | #A3B6C4 |
 | Мягкий графит / Soft graphite | #6A6C60 |
 
-[Исходная планировка / Source screenshot](../assets/source/01-1000028489.jpg)
+[Исходная планировка / Original source plan](../assets/source/01-1000028489.jpg)
 
 > Одна планировка встречается на 17-м и 20-м этажах. В портфолио это один кейс. Площади комнат приведены с округлением из источника.
 >
@@ -72,7 +367,7 @@ The kitchen-living room is the social centre. Terracotta cabinetry and a round t
 | Дуб / Oak | #C9A579 |
 | Бронза / Bronze | #65534A |
 
-[Исходная планировка / Source screenshot](../assets/source/01-1000028489.jpg)
+[Исходная планировка / Original source plan](../assets/source/01-1000028489.jpg)
 
 > Повтор планировки есть в другом объявлении. Площади комнат округлены в исходном плане.
 >
@@ -110,7 +405,7 @@ Stone texture and smoked wood create a calm interior. A separate bedroom and con
 | Дымчатый дуб / Smoked oak | #857057 |
 | Светлый металл / Light metal | #D4D2CB |
 
-[Исходная планировка / Source screenshot](../assets/source/05-1000028485.jpg)
+[Исходная планировка / Original source plan](../assets/source/05-1000028485.jpg)
 
 > Планировка повторяется на 15-м и 18-м этажах. Это один концептуальный проект.
 >
@@ -148,7 +443,7 @@ Olive cabinetry and pale oak give the compact daytime space a gentle, composed f
 | Тёплый мел / Warm chalk | #ECE6D9 |
 | Лён / Flax | #B9AA8F |
 
-[Исходная планировка / Source screenshot](../assets/source/07-1000028481.jpg)
+[Исходная планировка / Original source plan](../assets/source/07-1000028481.jpg)
 
 > Планировка встречается на 9-м и 22-м этажах. Сумма округлённых площадей комнат немного отличается от общей площади в объявлении.
 >
@@ -186,7 +481,7 @@ Graphite cabinetry and warm walnut create an intimate mood. Side-window light br
 | Песочный / Sand | #D5C4AD |
 | Тёплый белый / Warm white | #EBE5D9 |
 
-[Исходная планировка / Source screenshot](../assets/source/03-1000028487.jpg)
+[Исходная планировка / Original source plan](../assets/source/03-1000028487.jpg)
 
 > Общая площадь указана как 38,1 м²; подписи комнат дают 37,9 м². Для рабочего проекта потребуется уточнённый план.
 >
@@ -224,7 +519,7 @@ A studio with a kitchen niche gains a gentle separation between living and sleep
 | Дуб / Oak | #C7A781 |
 | Лён / Flax | #CDBFA9 |
 
-[Исходная планировка / Source screenshot](../assets/source/04-1000028484.jpg)
+[Исходная планировка / Original source plan](../assets/source/04-1000028484.jpg)
 
 > Нижняя часть плана обрезана в скриншоте. Положение мебели и границ спальной зоны показано как идея и требует полного плана.
 >
@@ -262,7 +557,7 @@ Two separate rooms accommodate adult and child routines. A calm green palette, b
 | Кремовый / Cream | #ECE5D6 |
 | Горчичный акцент / Mustard accent | #BBA05A |
 
-[Исходная планировка / Source screenshot](../assets/source/04-1000028484.jpg)
+[Исходная планировка / Original source plan](../assets/source/04-1000028484.jpg)
 
 > Назначение двух комнат предложено для выбранного семейного сценария. Все исходные стены и мокрые зоны сохранены в концепции.
 >
@@ -300,7 +595,7 @@ Blush tones and pale oak soften the compact daytime area. A round table and ligh
 | Слоновая кость / Ivory | #EDE4D5 |
 | Тёмный акцент / Dark accent | #4C4943 |
 
-[Исходная планировка / Source screenshot](../assets/source/06-1000028486.jpg)
+[Исходная планировка / Original source plan](../assets/source/06-1000028486.jpg)
 
 > Дневная зона компактная: точные размеры стола, дивана и открывание дверей требуют проверки на обмерах.
 >
@@ -338,7 +633,7 @@ Muted blue, natural oak and pale linen create a calm mood. Colour connects the k
 | Белый мел / White chalk | #EFE8DB |
 | Льняной / Flax | #B5A68D |
 
-[Исходная планировка / Source screenshot](../assets/source/06-1000028486.jpg)
+[Исходная планировка / Original source plan](../assets/source/06-1000028486.jpg)
 
 > Площади комнат округлены в исходном плане. Общая площадь взята из карточки объявления.
 >
@@ -376,7 +671,7 @@ The larger main room accommodates a bed and a quiet reading corner. The kitchen 
 | Алебастр / Alabaster | #DED6C5 |
 | Карамель / Caramel | #BA926E |
 
-[Исходная планировка / Source screenshot](../assets/source/07-1000028481.jpg)
+[Исходная планировка / Original source plan](../assets/source/07-1000028481.jpg)
 
 > В объявлении 40,9 м², на плане 38,93 / 40,93 м². Для лоджии подписаны 4,00 / 2,00 м². Эти значения сохранены раздельно; верхняя часть схемы обрезана.
 >
@@ -414,7 +709,7 @@ The smallest studio in the collection changes throughout the day: sleeping, work
 | Глина-тауп / Clay taupe | #A59580 |
 | Приглушённая олива / Muted olive | #7E856B |
 
-[Исходная планировка / Source screenshot](../assets/source/08-1000028483.jpg)
+[Исходная планировка / Original source plan](../assets/source/08-1000028483.jpg)
 
 > Исходный план небольшого разрешения. Трансформируемая мебель показана как принцип; для выбора механизма нужен размерный план.
 >
@@ -452,7 +747,7 @@ Warm caramel and pale oak connect cooking, relaxing and sleeping. A light fluted
 | Дуб / Oak | #C5A478 |
 | Тёмная линия / Dark line | #45453F |
 
-[Исходная планировка / Source screenshot](../assets/source/08-1000028483.jpg)
+[Исходная планировка / Original source plan](../assets/source/08-1000028483.jpg)
 
 > Карточка указывает 30,14 м² и этаж 9 из 12, текст объявления — 30,1 м² и этаж 9 из 13. Подписи комнат недостаточно чёткие и не перенесены в таблицу. Концепция предварительная.
 >
@@ -490,7 +785,7 @@ A separate kitchen and storage room keep the small bedroom uncluttered. A deep b
 | Тёплый белый / Warm white | #EAE4D7 |
 | Матовый металл / Brushed metal | #99998E |
 
-[Исходная планировка / Source screenshot](../assets/source/09-1000028482.jpg)
+[Исходная планировка / Original source plan](../assets/source/09-1000028482.jpg)
 
 > На плане лоджия подписана 1,5 / 3,0 м². Общая площадь в карточке — 37 м²; площадь лоджии не смешивается с площадями внутренних комнат.
 >

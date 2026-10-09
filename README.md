@@ -1,16 +1,16 @@
 # SAFONOV. INTERIORS
 
-**Алексей Сафонов · Концепции интерьеров небольших квартир**
+**Алексей Сафонов · Интерьерные концепции · Москва Premium**
 
-**Aleksey Safonov · Small apartment interior concepts**
+**Aleksey Safonov · Interior concepts · Moscow Premium**
 
 [Открыть сайт / Open portfolio](https://safal207.github.io/safonov-interior-portfolio/) · [English](https://safal207.github.io/safonov-interior-portfolio/en/)
 
-![Тихий свет — интерьерная концепция 37,2 м²](assets/renders/white-grad-37-2.webp)
+![Резиденция света — премиальная интерьерная концепция 72,6 м²](assets/renders/will-towers-72-6.webp)
 
-13 самостоятельных интерьерных концепций по 9 предоставленным скриншотам планировок. Повторяющиеся объявления объединены в один кейс. Коллекция охватывает квартиры от 25,3 до 44,4 м² в Московской области: студии, квартиры с отдельной спальней и семейный вариант с двумя спальнями.
+18 самостоятельных интерьерных концепций для квартир 25,3–72,6 м² в Москве и Московской области. Новая коллекция **[Москва · Premium](https://safal207.github.io/safonov-interior-portfolio/#moscow-premium)** объединяет пять квартир из разных районов Москвы: исходные планы, выразительные материалы, палитры и отдельные AI-визуализации.
 
-13 independent interior concepts based on 9 supplied plan screenshots. Repeated layouts form a single case. The collection covers 25.3–44.4 m² apartments in the Moscow region: studios, one-bedroom homes and a two-bedroom family home.
+18 independent concepts for 25.3–72.6 m² apartments in Moscow and the surrounding region. The new **Moscow · Premium** collection explores five apartments in different Moscow districts, with original plans, material selections, palettes and individual AI visualizations.
 
 **Статус проектов:** концепции. Визуализации созданы с помощью AI. Точная геометрия, мебель, инженерные решения и реализация уточняются после обмеров. Планы застройщиков используются как предоставленные исходные материалы; портфолио не заявляет авторство этих планов или партнёрство с застройщиками.
 
@@ -33,14 +33,19 @@
 | 11 | [Одна комната, три сценария / One room, three rhythms](docs/CASEBOOK.md#publicist-25-3) | Публицист | 25,3 м² |
 | 12 | [Карамельная студия / Caramel studio](docs/CASEBOOK.md#granel-30-1) | Гранель Мытищи | 30,1 м² |
 | 13 | [Комната для жизни / Space for everyday life](docs/CASEBOOK.md#kotelniki-37) | Котельники парк | 37 м² |
+| 14 | [Тихая роскошь / Quiet luxury](docs/CASEBOOK.md#level-seligerskaya-34-8) | Level Селигерская · Западное Дегунино | 34,8 м² |
+| 15 | [Оливковое ателье / Olive atelier](docs/CASEBOOK.md#level-michurinsky-42-1) | Level Мичуринский · Очаково-Матвеевское | 42,1 м² |
+| 16 | [Парижский вечер / Parisian evening](docs/CASEBOOK.md#nazare-47-6) | НАЗАРÉ · Богородское | 47,6 м² |
+| 17 | [Семейная галерея / Family gallery](docs/CASEBOOK.md#nizhegorodskaya-60-64) | Нижегородская · Нижегородский | 60,64 м² |
+| 18 | [Резиденция света / Residence of light](docs/CASEBOOK.md#will-towers-72-6) | Will Towers · Раменки | 72,6 м² |
 
 ## Что внутри / Contents
 
-- Адаптивный сайт: главная страница и 13 страниц проектов, RU/EN, фильтры, увеличиваемые изображения.
-- 13 финальных визуализаций в WebP, 9 неизменённых исходных скриншотов.
+- Адаптивный сайт: главная страница и 18 страниц проектов в каждой языковой версии, RU/EN, фильтры, увеличиваемые изображения.
+- 18 финальных визуализаций в WebP, 9 исходных скриншотов и 5 оригинальных планов застройщиков.
 - Для каждого проекта: сценарий жизни, решения по расстановке и хранению, свет, палитра, источник и его ограничения.
 - Markdown-каталог для просмотра непосредственно в GitHub.
-- Данные, генератор страниц, промпты и журнал двух визуальных правок.
+- Данные, генератор страниц, промпты и журнал двух визуальных правок. [Новая подборка: источники и промпты](docs/MOSCOW_PREMIUM.md).
 - Проверка файлов и контента, браузерная проверка, рабочий процесс GitHub Pages.
 
 ## Запуск / Run
@@ -76,7 +81,7 @@ node scripts/preview.mjs
 
 ## Публикация / Publishing
 
-Публичный репозиторий: [safal207/safonov-interior-portfolio](https://github.com/safal207/safonov-interior-portfolio). Все 13 концепций доступны в [CASEBOOK](docs/CASEBOOK.md). Сайт публикуется через GitHub Pages; обновляется после изменений в ветке main. [SEO и обложка ссылки](docs/SEO.md).
+Публичный репозиторий: [safal207/safonov-interior-portfolio](https://github.com/safal207/safonov-interior-portfolio). Все 18 концепций доступны в [CASEBOOK](docs/CASEBOOK.md). Сайт публикуется через GitHub Pages; обновляется после изменений в ветке main. [SEO и обложка ссылки](docs/SEO.md).
 
 [Порядок публикации / Publishing steps](docs/PUBLISHING.md)
 

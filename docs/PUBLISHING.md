@@ -1,6 +1,6 @@
 # Публикация отдельного репозитория
 
-Владелец: **safal207**. Имя: **safonov-interior-portfolio**. Описание: **Aleksey Safonov — 13 compact-apartment interior concepts, RU/EN portfolio**.
+Владелец: **safal207**. Имя: **safonov-interior-portfolio**. Описание: **Aleksey Safonov — 18 apartment interior concepts with Moscow Premium collection, RU/EN portfolio**.
 
 Публичный репозиторий [safal207/safonov-interior-portfolio](https://github.com/safal207/safonov-interior-portfolio) создан. Исходники портфолио находятся в ветке `main`.
 

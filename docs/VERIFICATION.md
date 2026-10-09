@@ -1,14 +1,16 @@
-# Verification — 9 October 2026
+# Verification — Moscow Premium · 10 October 2026
 
 ## Passed
 
-- Static verification: 14 HTML pages, 13 distinct concepts, RU/EN content, 39 linked assets, valid source viewports and palette values.
-- Chromium: homepage at 320, 390, 768 and 1440 px; all 13 case pages at 320 px in Russian and English and at 1440 px in Russian.
-- Filters: 13 total, 3 studios, 9 one-bedroom homes, 1 family home; visible count and announced count agree.
+- Static verification: 38 HTML pages, 18 distinct concepts, RU/EN content, 73 linked files, valid source viewports and palette values.
+- Chromium: homepage at 320, 390, 768 and 1440 px; all 18 case pages at 320 px in Russian and English and at 1440 px in Russian.
+- Filters: 18 total, 5 Moscow Premium concepts, 3 studios, 13 one-bedroom homes, 2 family homes; visible count and announced count agree.
 - English stays selected when navigating from the homepage to a case.
 - Keyboard: visualization opens with Enter, closes with Escape and restores focus to its opening button.
 - Render images and source links load; no JavaScript errors or HTTP failures in the browser run.
-- Source screenshots remain unchanged. Their displayed viewports use the original bytes.
+- All original source files remain unchanged. The five new developer plans use their full source dimensions; the previous screenshot crops are preserved. Room area sums match the new apartment areas.
+- Independent visual review checked the desktop and mobile collection, material selections and source-plan presentation. Long material names wrap inside cards at 320 px.
+- Standalone preview: 18 embedded cases, filters, RU/EN, navigation, source images and lightbox work without network dependencies.
 - Final visualization review corrected an extra kitchen window in the Kinokvartal studio and an unintended balcony door in the Kotelniki bedroom.
 
 ## Reproduction
@@ -27,7 +29,7 @@ The standalone preview is checked separately for filters, RU/EN, navigation, emb
 
 The JSON results in this directory record the completed runs. Browser checks cover Chromium; Firefox and Safari have not been exercised in this version.
 
-## GitHub publication
+## Previous publication records
 
 - The public repository `safal207/safonov-interior-portfolio` was created on 9 October 2026 and confirmed through the signed-in GitHub UI and repository metadata.
 - All 60 source files were uploaded. The published tree SHA `eadda244dfcf06d728c3fc1f4ef12b791962ef69` matched the locally verified source tree, including every render and original screenshot.

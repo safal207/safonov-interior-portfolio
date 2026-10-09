@@ -1,0 +1,2 @@
+# Downloaded developer plans are archival source assets; preserve their bytes.
+assets/source/*.svg binary

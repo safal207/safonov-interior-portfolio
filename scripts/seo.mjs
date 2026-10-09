@@ -15,17 +15,19 @@ export function pageHead({title, languageTitle, description, englishDescription,
   const currentDescription = en ? englishDescription : description;
   const assets = (en ? '../' : '') + prefix + 'assets/';
   const isHome = pagePath === 'index.html';
-  const imagePath = isHome ? 'assets/social/share-cover-v1.jpg' : 'assets/renders/' + image;
+  const imagePath = 'assets/renders/' + image;
   const imageURL = siteURL + '/' + imagePath;
+  const homeProject = projects.find(p => p.render === image) || projects[0];
   const imageAlt = isHome
-    ? (en ? 'Safonov Interiors — a light oak and blue apartment concept' : 'Safonov Interiors — светлый интерьер с дубом и голубым текстилем')
+    ? `Safonov Interiors — ${homeProject.name[language]} / ${en ? 'Moscow Premium AI concept' : 'Москва Premium, AI-концепция'}`
     : `${project.name[language]} — ${en ? 'AI interior concept visualization' : 'AI-визуализация интерьерной концепции'}`;
   const author = {'@type':'Person','@id':siteURL+'/#author',name:'Алексей Сафонов',alternateName:'Aleksey Safonov',sameAs:['https://github.com/safal207']};
   const website = {'@type':'WebSite','@id':siteURL+'/#website',url:siteURL+'/',name:'SAFONOV. INTERIORS',inLanguage:['ru','en'],author:{'@id':author['@id']}};
   const page = {'@type':isHome ? 'CollectionPage' : 'WebPage','@id':canonical+'#page',url:canonical,name:currentTitle,description:currentDescription,inLanguage:language,isPartOf:{'@id':website['@id']}};
   const graph = [author,website,page];
   if (isHome) {
-    page.mainEntity = {'@type':'ItemList',numberOfItems:projects.length,itemListElement:projects.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.name[language],url:pageURL(`cases/${p.id}.html`,language)}))};
+    const displayedProjects = [...projects.filter(p=>p.collection==='moscow-premium'),...projects.filter(p=>p.collection!=='moscow-premium')];
+    page.mainEntity = {'@type':'ItemList',numberOfItems:projects.length,itemListElement:displayedProjects.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.name[language],url:pageURL(`cases/${p.id}.html`,language)}))};
   } else {
     const concept = {'@type':'CreativeWork','@id':canonical+'#concept',name:project.name[language],description:project.intro[language],genre:en ? 'Interior design concept' : 'Концепция дизайна интерьера',inLanguage:language,creator:{'@id':author['@id']},image:{'@type':'ImageObject',url:imageURL,width:1536,height:1024,caption:imageAlt}};
     page.mainEntity = {'@id':concept['@id']};
@@ -40,7 +42,7 @@ export function pageHead({title, languageTitle, description, englishDescription,
   <meta name="description" content="${esc(currentDescription)}">
   <meta name="author" content="Алексей Сафонов">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#364336">
+  <meta name="theme-color" content="#302c27">
   <link rel="canonical" href="${esc(canonical)}">
   <link rel="alternate" hreflang="ru" href="${esc(pageURL(pagePath,'ru'))}">
   <link rel="alternate" hreflang="en" href="${esc(pageURL(pagePath,'en'))}">
@@ -54,9 +56,9 @@ export function pageHead({title, languageTitle, description, englishDescription,
   <meta property="og:url" content="${esc(canonical)}">
   <meta property="og:image" content="${esc(imageURL)}">
   <meta property="og:image:secure_url" content="${esc(imageURL)}">
-  <meta property="og:image:type" content="${isHome ? 'image/jpeg' : 'image/webp'}">
-  <meta property="og:image:width" content="${isHome ? 1736 : 1536}">
-  <meta property="og:image:height" content="${isHome ? 906 : 1024}">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="1024">
   <meta property="og:image:alt" content="${esc(imageAlt)}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${esc(currentTitle)}">
