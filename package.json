@@ -1,0 +1,11 @@
+{
+  "name": "safonov-interior-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aleksey Safonov — 13 compact-apartment interior design concepts",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "verify": "node scripts/verify.mjs",
+    "start": "python3 -m http.server 4173 --bind 0.0.0.0"
+  }
+}

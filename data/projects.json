@@ -1,0 +1,1409 @@
+[
+  {
+    "id": "white-grad-37-2",
+    "number": "01",
+    "area": 37.2,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Тихий свет",
+      "en": "Quiet light"
+    },
+    "complex": {
+      "ru": "Белый Град",
+      "en": "White Grad"
+    },
+    "location": {
+      "ru": "Мытищи · Инград",
+      "en": "Mytishchi · Ingrad"
+    },
+    "style": {
+      "ru": "Мягкий современный",
+      "en": "Soft contemporary"
+    },
+    "intro": {
+      "ru": "Светлый дуб, льняные фактуры и голубой акцент объединяют небольшую кухню с гостиной. Закрытая спальня остаётся спокойной зоной отдыха.",
+      "en": "Pale oak, linen textures and a blue accent connect the compact kitchen and living area. The separate bedroom stays a quiet retreat."
+    },
+    "brief": {
+      "ru": "Для одного человека или пары: полноценная спальня, обеды вдвоём и спокойные вечера дома.",
+      "en": "For one person or a couple: a separate bedroom, dinner for two and relaxed evenings at home."
+    },
+    "solutions": [
+      {
+        "ru": "Развить расстановку из исходного плана: прямой диван у правой стены и неглубокая ТВ-тумба у перегородки спальни.",
+        "en": "Develop the source layout: a straight sofa along the right wall and shallow TV storage against the bedroom partition."
+      },
+      {
+        "ru": "Собрать кухню в единый светлый объём; обеденный стол на двоих расположить на границе кухонной и жилой зон.",
+        "en": "Keep the kitchen visually unified and place a two-person table between the kitchen and living zones."
+      },
+      {
+        "ru": "Использовать шкаф в прихожей и место под кроватью; заменить разрозненные полки закрытым хранением.",
+        "en": "Use the hall wardrobe and under-bed space; replace scattered shelves with closed storage."
+      }
+    ],
+    "lighting": {
+      "ru": "Рассеянный потолочный свет, подсветка рабочей поверхности и отдельный торшер рядом с диваном.",
+      "en": "Diffuse ceiling light, task lighting over the worktop and a separate reading lamp beside the sofa."
+    },
+    "palette": [
+      {
+        "hex": "#E8E2D5",
+        "ru": "Мел",
+        "en": "Chalk"
+      },
+      {
+        "hex": "#C4A67E",
+        "ru": "Светлый дуб",
+        "en": "Pale oak"
+      },
+      {
+        "hex": "#A3B6C4",
+        "ru": "Голубой лён",
+        "en": "Blue linen"
+      },
+      {
+        "hex": "#6A6C60",
+        "ru": "Мягкий графит",
+        "en": "Soft graphite"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 3.9
+      },
+      {
+        "ru": "Санузел + постирочная",
+        "en": "Bathroom + laundry",
+        "area": 4.4
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 11.5
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 5.1
+      },
+      {
+        "ru": "Гостиная",
+        "en": "Living room",
+        "area": 12.4
+      }
+    ],
+    "source": {
+      "file": "01-1000028489.jpg",
+      "crop": [
+        185,
+        320,
+        305,
+        355
+      ],
+      "notes": {
+        "ru": "Одна планировка встречается на 17-м и 20-м этажах. В портфолио это один кейс. Площади комнат приведены с округлением из источника.",
+        "en": "The same layout appears on floors 17 and 20 and is presented as one case. Room areas retain the source's rounding."
+      }
+    },
+    "relatedSources": [
+      "02-1000028488.jpg"
+    ],
+    "render": "white-grad-37-2.webp"
+  },
+  {
+    "id": "white-grad-35-2",
+    "number": "02",
+    "area": 35.2,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Терракотовый завтрак",
+      "en": "Terracotta breakfast"
+    },
+    "complex": {
+      "ru": "Белый Град",
+      "en": "White Grad"
+    },
+    "location": {
+      "ru": "Мытищи · Инград",
+      "en": "Mytishchi · Ingrad"
+    },
+    "style": {
+      "ru": "Тёплый минимализм",
+      "en": "Warm minimalism"
+    },
+    "intro": {
+      "ru": "Кухня-гостиная становится главным местом встречи. Терракотовые фасады и круглый стол добавляют тепла, а ровные линии хранения сохраняют порядок.",
+      "en": "The kitchen-living room is the social centre. Terracotta cabinetry and a round table add warmth, while flush storage keeps the space calm."
+    },
+    "brief": {
+      "ru": "Для пары, которая любит готовить и принимать одного-двух гостей.",
+      "en": "For a couple who enjoy cooking and hosting one or two guests."
+    },
+    "solutions": [
+      {
+        "ru": "Сохранить кухню у входа в жилую зону; холодильник и бытовое хранение собрать в высокий шкаф.",
+        "en": "Keep the kitchen at the entrance end and combine the fridge and household storage in a tall unit."
+      },
+      {
+        "ru": "Выбрать круглый стол и компактный диван; проверить проход между столом и дверью спальни на обмерах.",
+        "en": "Choose a round table and compact sofa; check circulation to the bedroom door against measured dimensions."
+      },
+      {
+        "ru": "Продолжить спокойные фасады в спальню и прихожую, чтобы небольшая квартира воспринималась цельно.",
+        "en": "Repeat the calm cabinetry in the bedroom and hall to give the small home a coherent identity."
+      }
+    ],
+    "lighting": {
+      "ru": "Подвес над столом, свет под верхними шкафами и мягкий свет у дивана.",
+      "en": "A pendant above the table, under-cabinet task light and a soft lamp near the sofa."
+    },
+    "palette": [
+      {
+        "hex": "#E9DFCF",
+        "ru": "Тёплый белый",
+        "en": "Warm white"
+      },
+      {
+        "hex": "#AD735D",
+        "ru": "Терракота",
+        "en": "Terracotta"
+      },
+      {
+        "hex": "#C9A579",
+        "ru": "Дуб",
+        "en": "Oak"
+      },
+      {
+        "hex": "#65534A",
+        "ru": "Бронза",
+        "en": "Bronze"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 4.6
+      },
+      {
+        "ru": "Санузел + постирочная",
+        "en": "Bathroom + laundry",
+        "area": 4.2
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 10.6
+      },
+      {
+        "ru": "Кухня-гостиная",
+        "en": "Kitchen-living room",
+        "area": 15.7
+      }
+    ],
+    "source": {
+      "file": "01-1000028489.jpg",
+      "crop": [
+        173,
+        977,
+        333,
+        345
+      ],
+      "notes": {
+        "ru": "Повтор планировки есть в другом объявлении. Площади комнат округлены в исходном плане.",
+        "en": "This layout repeats in another listing. The source room areas are rounded."
+      }
+    },
+    "relatedSources": [
+      "05-1000028485.jpg"
+    ],
+    "render": "white-grad-35-2.webp"
+  },
+  {
+    "id": "white-grad-37-9",
+    "number": "03",
+    "area": 37.9,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Тёплый камень",
+      "en": "Warm stone"
+    },
+    "complex": {
+      "ru": "Белый Град",
+      "en": "White Grad"
+    },
+    "location": {
+      "ru": "Мытищи · Инград",
+      "en": "Mytishchi · Ingrad"
+    },
+    "style": {
+      "ru": "Современный с фактурами",
+      "en": "Textured contemporary"
+    },
+    "intro": {
+      "ru": "Каменная фактура и дымчатое дерево задают спокойный интерьер. Отдельная спальня и объединённая дневная зона поддерживают разные ритмы жизни.",
+      "en": "Stone texture and smoked wood create a calm interior. A separate bedroom and connected daytime spaces support different daily rhythms."
+    },
+    "brief": {
+      "ru": "Для пары: удобная кухня, место для отдыха и визуально спокойный фон для жизни.",
+      "en": "For a couple: a practical kitchen, a place to unwind and a visually calm home."
+    },
+    "solutions": [
+      {
+        "ru": "Сохранить кухонную нишу 5,8 м² и связать её с гостиной одинаковым напольным покрытием.",
+        "en": "Retain the 5.8 m² kitchen niche and connect it to the living room with continuous flooring."
+      },
+      {
+        "ru": "Использовать неглубокую ТВ-зону и компактный журнальный стол; оставить свободным маршрут от входа к окну.",
+        "en": "Use a shallow TV unit and compact coffee table; keep the route from the entrance to the window clear."
+      },
+      {
+        "ru": "В спальне предусмотреть закрытый шкаф и настенные светильники вместо крупных прикроватных тумб.",
+        "en": "Provide a closed wardrobe and wall lights in the bedroom instead of bulky bedside furniture."
+      }
+    ],
+    "lighting": {
+      "ru": "Спокойный общий свет, рабочая подсветка кухни и отдельный вечерний сценарий гостиной.",
+      "en": "Calm ambient light, kitchen task lighting and a separate evening setting for the living room."
+    },
+    "palette": [
+      {
+        "hex": "#C5BBA9",
+        "ru": "Тёплый камень",
+        "en": "Warm stone"
+      },
+      {
+        "hex": "#8D8272",
+        "ru": "Грибной серый",
+        "en": "Mushroom grey"
+      },
+      {
+        "hex": "#857057",
+        "ru": "Дымчатый дуб",
+        "en": "Smoked oak"
+      },
+      {
+        "hex": "#D4D2CB",
+        "ru": "Светлый металл",
+        "en": "Light metal"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 3.9
+      },
+      {
+        "ru": "Санузел + постирочная",
+        "en": "Bathroom + laundry",
+        "area": 4.5
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 11.6
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 5.8
+      },
+      {
+        "ru": "Гостиная",
+        "en": "Living room",
+        "area": 12.1
+      }
+    ],
+    "source": {
+      "file": "05-1000028485.jpg",
+      "crop": [
+        175,
+        337,
+        315,
+        355
+      ],
+      "notes": {
+        "ru": "Планировка повторяется на 15-м и 18-м этажах. Это один концептуальный проект.",
+        "en": "The layout appears on floors 15 and 18 and is treated as one concept project."
+      }
+    },
+    "relatedSources": [
+      "02-1000028488.jpg"
+    ],
+    "render": "white-grad-37-9.webp"
+  },
+  {
+    "id": "white-grad-34-6",
+    "number": "04",
+    "area": 34.6,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Оливковый ритм",
+      "en": "Olive rhythm"
+    },
+    "complex": {
+      "ru": "Белый Град",
+      "en": "White Grad"
+    },
+    "location": {
+      "ru": "Мытищи · Инград",
+      "en": "Mytishchi · Ingrad"
+    },
+    "style": {
+      "ru": "Природный минимализм",
+      "en": "Natural minimalism"
+    },
+    "intro": {
+      "ru": "Оливковая кухня и светлый дуб делают небольшую дневную зону мягкой и собранной. Спальня остаётся отдельной, а хранение встраивается в спокойные объёмы.",
+      "en": "Olive cabinetry and pale oak give the compact daytime space a gentle, composed feel. The bedroom remains separate, with storage integrated into quiet volumes."
+    },
+    "brief": {
+      "ru": "Для одного человека или пары: готовить, отдыхать и быстро возвращать квартире порядок.",
+      "en": "For one person or a couple: cooking, unwinding and easily restoring order."
+    },
+    "solutions": [
+      {
+        "ru": "Разместить компактную кухню вдоль существующих стен и отделить её от гостиной круглым столом.",
+        "en": "Keep a compact kitchen along the existing walls and use a round table to define its boundary with the living area."
+      },
+      {
+        "ru": "Поставить небольшой прямой диван в светлой части комнаты; бытовые мелочи убрать в закрытые шкафы.",
+        "en": "Place a small straight sofa in the brighter part of the room and store everyday items behind closed doors."
+      },
+      {
+        "ru": "В спальне использовать светлые фасады и текстиль; сохранить существующее расположение санузла.",
+        "en": "Use pale cabinetry and textiles in the bedroom and retain the existing bathroom location."
+      }
+    ],
+    "lighting": {
+      "ru": "Подвес над столом, подсветка кухни и мягкий боковой свет для отдыха.",
+      "en": "A dining pendant, kitchen task lighting and soft side light for relaxing."
+    },
+    "palette": [
+      {
+        "hex": "#73785C",
+        "ru": "Олива",
+        "en": "Olive"
+      },
+      {
+        "hex": "#CEB58F",
+        "ru": "Светлый дуб",
+        "en": "Pale oak"
+      },
+      {
+        "hex": "#ECE6D9",
+        "ru": "Тёплый мел",
+        "en": "Warm chalk"
+      },
+      {
+        "hex": "#B9AA8F",
+        "ru": "Лён",
+        "en": "Flax"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 4.8
+      },
+      {
+        "ru": "Санузел + постирочная",
+        "en": "Bathroom + laundry",
+        "area": 4.3
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 11.4
+      },
+      {
+        "ru": "Кухня-гостиная",
+        "en": "Kitchen-living room",
+        "area": 14
+      }
+    ],
+    "source": {
+      "file": "07-1000028481.jpg",
+      "crop": [
+        186,
+        246,
+        306,
+        365
+      ],
+      "notes": {
+        "ru": "Планировка встречается на 9-м и 22-м этажах. Сумма округлённых площадей комнат немного отличается от общей площади в объявлении.",
+        "en": "The layout appears on floors 9 and 22. The rounded room areas differ slightly from the listing's total area."
+      }
+    },
+    "relatedSources": [
+      "03-1000028487.jpg"
+    ],
+    "render": "white-grad-34-6.webp"
+  },
+  {
+    "id": "white-grad-38-1",
+    "number": "05",
+    "area": 38.1,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Графит и орех",
+      "en": "Graphite & walnut"
+    },
+    "complex": {
+      "ru": "Белый Град",
+      "en": "White Grad"
+    },
+    "location": {
+      "ru": "Мытищи · Инград",
+      "en": "Mytishchi · Ingrad"
+    },
+    "style": {
+      "ru": "Спокойный городской",
+      "en": "Calm urban"
+    },
+    "intro": {
+      "ru": "Графитовая кухня и тёплый орех создают более камерное настроение. Свет из бокового окна подчёркивает дерево, а светлый текстиль уравновешивает тёмные фасады.",
+      "en": "Graphite cabinetry and warm walnut create an intimate mood. Side-window light brings out the wood, while pale textiles balance the darker finishes."
+    },
+    "brief": {
+      "ru": "Для пары, которая предпочитает выразительные материалы и спокойный вечерний интерьер.",
+      "en": "For a couple who enjoy expressive materials and a calm evening atmosphere."
+    },
+    "solutions": [
+      {
+        "ru": "Развить Г-образную кухню по исходному плану; облегчить верхний ярус светлыми фасадами.",
+        "en": "Develop the source's L-shaped kitchen and use pale upper cabinetry to keep it visually light."
+      },
+      {
+        "ru": "Сохранить прямой диван и круглый стол; подобрать мебель после проверки открывания входной двери.",
+        "en": "Retain a straight sofa and round table; select their sizes after checking the entrance door swing."
+      },
+      {
+        "ru": "В спальне повторить дерево в небольших деталях, оставив основные поверхности светлыми.",
+        "en": "Repeat wood in small bedroom details while keeping the main surfaces pale."
+      }
+    ],
+    "lighting": {
+      "ru": "Рабочий свет кухни, подсветка хранения и локальные лампы для тёплого вечернего сценария.",
+      "en": "Kitchen task lights, storage lighting and local lamps for a warm evening setting."
+    },
+    "palette": [
+      {
+        "hex": "#4E504A",
+        "ru": "Графит",
+        "en": "Graphite"
+      },
+      {
+        "hex": "#79533B",
+        "ru": "Орех",
+        "en": "Walnut"
+      },
+      {
+        "hex": "#D5C4AD",
+        "ru": "Песочный",
+        "en": "Sand"
+      },
+      {
+        "hex": "#EBE5D9",
+        "ru": "Тёплый белый",
+        "en": "Warm white"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 3.7
+      },
+      {
+        "ru": "Санузел + постирочная",
+        "en": "Bathroom + laundry",
+        "area": 4.4
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 12.2
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 5.2
+      },
+      {
+        "ru": "Гостиная",
+        "en": "Living room",
+        "area": 12.4
+      }
+    ],
+    "source": {
+      "file": "03-1000028487.jpg",
+      "crop": [
+        162,
+        949,
+        386,
+        318
+      ],
+      "notes": {
+        "ru": "Общая площадь указана как 38,1 м²; подписи комнат дают 37,9 м². Для рабочего проекта потребуется уточнённый план.",
+        "en": "The listing states 38.1 m², while the room labels total 37.9 m². A verified plan is needed for detailed design."
+      }
+    },
+    "render": "white-grad-38-1.webp"
+  },
+  {
+    "id": "kino-33-3",
+    "number": "06",
+    "area": 33.3,
+    "type": "studio",
+    "name": {
+      "ru": "Средиземное утро",
+      "en": "Mediterranean morning"
+    },
+    "complex": {
+      "ru": "Киноквартал",
+      "en": "Kinokvartal"
+    },
+    "location": {
+      "ru": "Королёв · ГК Монолит",
+      "en": "Korolyov · Monolit"
+    },
+    "style": {
+      "ru": "Тёплая средиземная палитра",
+      "en": "Warm Mediterranean palette"
+    },
+    "intro": {
+      "ru": "Студия с отдельной кухонной нишей получает мягкое разделение отдыха и сна. Известковые оттенки, глина и простые ткани создают ощущение спокойного утра.",
+      "en": "A studio with a kitchen niche gains a gentle separation between living and sleeping. Limewash tones, clay and simple textiles create a quiet morning mood."
+    },
+    "brief": {
+      "ru": "Для одного человека: отдельное место для сна и светлая зона отдыха без капитальной перестройки.",
+      "en": "For one person: a defined sleeping area and a bright living zone without structural rebuilding."
+    },
+    "solutions": [
+      {
+        "ru": "Оставить кухню в нише; выделить спальное место лёгкой шторой, положение которой уточняется на полном плане.",
+        "en": "Keep the kitchen in its niche and define a sleeping area with a light curtain, positioned after reviewing the complete plan."
+      },
+      {
+        "ru": "Использовать компактный диван и небольшие столики вместо крупной мебельной группы.",
+        "en": "Use a compact loveseat and small tables instead of a large furniture grouping."
+      },
+      {
+        "ru": "Встроить хранение у входа; сохранить свободный подход к обоим окнам.",
+        "en": "Integrate storage at the entrance and keep access to both windows clear."
+      }
+    ],
+    "lighting": {
+      "ru": "Мягкий общий свет и отдельные лампы в зоне сна и отдыха.",
+      "en": "Soft ambient lighting and separate lamps for sleeping and relaxing."
+    },
+    "palette": [
+      {
+        "hex": "#EBE3D5",
+        "ru": "Известковый белый",
+        "en": "Limewash white"
+      },
+      {
+        "hex": "#B67D63",
+        "ru": "Глина",
+        "en": "Clay"
+      },
+      {
+        "hex": "#C7A781",
+        "ru": "Дуб",
+        "en": "Oak"
+      },
+      {
+        "hex": "#CDBFA9",
+        "ru": "Лён",
+        "en": "Flax"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Гостиная",
+        "en": "Living room",
+        "area": 16
+      },
+      {
+        "ru": "Кухня-ниша",
+        "en": "Kitchen niche",
+        "area": 7.8
+      },
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 5.1
+      },
+      {
+        "ru": "Санузел",
+        "en": "Bathroom",
+        "area": 4.4
+      }
+    ],
+    "source": {
+      "file": "04-1000028484.jpg",
+      "crop": [
+        104,
+        312,
+        412,
+        315
+      ],
+      "notes": {
+        "ru": "Нижняя часть плана обрезана в скриншоте. Положение мебели и границ спальной зоны показано как идея и требует полного плана.",
+        "en": "The bottom of the plan is cut off in the screenshot. Furniture and sleeping-zone boundaries are conceptual and require the complete plan."
+      }
+    },
+    "render": "kino-33-3-v2.webp"
+  },
+  {
+    "id": "ornament-44-4",
+    "number": "07",
+    "area": 44.4,
+    "type": "family",
+    "name": {
+      "ru": "Дом для троих",
+      "en": "A home for three"
+    },
+    "complex": {
+      "ru": "Орнамент",
+      "en": "Ornament"
+    },
+    "location": {
+      "ru": "Орехово-Зуево · G3 Group",
+      "en": "Orekhovo-Zuyevo · G3 Group"
+    },
+    "style": {
+      "ru": "Семейный скандинавский",
+      "en": "Family Scandinavian"
+    },
+    "intro": {
+      "ru": "Две отдельные комнаты позволяют разделить взрослый и детский ритмы. Спокойная зелёная палитра, берёза и закрытое хранение объединяют семейную квартиру.",
+      "en": "Two separate rooms accommodate adult and child routines. A calm green palette, birch and closed storage give this family home a coherent feel."
+    },
+    "brief": {
+      "ru": "Для семьи с одним ребёнком: две спальни, рабочее место ребёнка и отдельная кухня для общих завтраков.",
+      "en": "For a family with one child: two bedrooms, a child's desk and a separate kitchen for shared breakfasts."
+    },
+    "solutions": [
+      {
+        "ru": "Комнату 15,7 м² использовать как спальню родителей, 10 м² — как детскую с односпальной кроватью и столом.",
+        "en": "Use the 15.7 m² room as the parents' bedroom and the 10 m² room for a child's single bed and desk."
+      },
+      {
+        "ru": "Разместить детский стол у окна; книги хранить на доступной высоте, а одежду — в закрытом шкафу.",
+        "en": "Place the child's desk near the window, keep books within reach and clothes in a closed wardrobe."
+      },
+      {
+        "ru": "Сохранить отдельную кухню 8,1 м²; объединить бытовое хранение в прихожей, сохраняя свободные проходы.",
+        "en": "Retain the separate 8.1 m² kitchen and consolidate household storage in the hall while keeping circulation clear."
+      }
+    ],
+    "lighting": {
+      "ru": "Общий свет, рабочая лампа на столе и мягкий вечерний свет в детской.",
+      "en": "Ambient lighting, a desk lamp and gentle evening light in the child's room."
+    },
+    "palette": [
+      {
+        "hex": "#99AC8E",
+        "ru": "Шалфей",
+        "en": "Sage"
+      },
+      {
+        "hex": "#D8C098",
+        "ru": "Берёза",
+        "en": "Birch"
+      },
+      {
+        "hex": "#ECE5D6",
+        "ru": "Кремовый",
+        "en": "Cream"
+      },
+      {
+        "hex": "#BBA05A",
+        "ru": "Горчичный акцент",
+        "en": "Mustard accent"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Спальня родителей",
+        "en": "Parents' bedroom",
+        "area": 15.7
+      },
+      {
+        "ru": "Детская",
+        "en": "Child's room",
+        "area": 10
+      },
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 6.7
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 8.1
+      },
+      {
+        "ru": "Санузел",
+        "en": "Bathroom",
+        "area": 3.9
+      }
+    ],
+    "source": {
+      "file": "04-1000028484.jpg",
+      "crop": [
+        141,
+        875,
+        395,
+        417
+      ],
+      "notes": {
+        "ru": "Назначение двух комнат предложено для выбранного семейного сценария. Все исходные стены и мокрые зоны сохранены в концепции.",
+        "en": "Room uses are proposed for the selected family scenario. The concept retains the source walls and wet zones."
+      }
+    },
+    "render": "ornament-44-4.webp"
+  },
+  {
+    "id": "white-grad-34-9",
+    "number": "08",
+    "area": 34.9,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Пудра и дуб",
+      "en": "Blush & oak"
+    },
+    "complex": {
+      "ru": "Белый Град",
+      "en": "White Grad"
+    },
+    "location": {
+      "ru": "Мытищи · Инград",
+      "en": "Mytishchi · Ingrad"
+    },
+    "style": {
+      "ru": "Мягкий городской",
+      "en": "Soft urban"
+    },
+    "intro": {
+      "ru": "Пудровые оттенки и светлый дуб смягчают компактную дневную зону. Круглый стол и лёгкая мебель помогают сохранить цельное пространство кухни и гостиной.",
+      "en": "Blush tones and pale oak soften the compact daytime area. A round table and light furniture keep the kitchen and living room visually connected."
+    },
+    "brief": {
+      "ru": "Для пары: отдельная спальня, компактная кухня и уютное место для разговора.",
+      "en": "For a couple: a separate bedroom, compact kitchen and a comfortable place to talk."
+    },
+    "solutions": [
+      {
+        "ru": "Сохранить кухню 5,3 м² и расположение дивана из исходного плана; выбирать мебель по фактической ширине комнаты.",
+        "en": "Retain the 5.3 m² kitchen and source sofa position; select furniture using measured room widths."
+      },
+      {
+        "ru": "Для обедов предусмотреть небольшой круглый стол; настенные светильники освобождают поверхность мебели.",
+        "en": "Use a small round dining table and wall lights to keep furniture surfaces free."
+      },
+      {
+        "ru": "Собрать шкаф у входа и хранение в спальне в простые светлые объёмы.",
+        "en": "Organise the entry wardrobe and bedroom storage into simple pale volumes."
+      }
+    ],
+    "lighting": {
+      "ru": "Рабочая подсветка кухни, подвес над столом и настенные светильники у дивана.",
+      "en": "Kitchen task lighting, a dining pendant and wall lights near the sofa."
+    },
+    "palette": [
+      {
+        "hex": "#C6A293",
+        "ru": "Пудровый",
+        "en": "Blush"
+      },
+      {
+        "hex": "#CAB18A",
+        "ru": "Дуб",
+        "en": "Oak"
+      },
+      {
+        "hex": "#EDE4D5",
+        "ru": "Слоновая кость",
+        "en": "Ivory"
+      },
+      {
+        "hex": "#4C4943",
+        "ru": "Тёмный акцент",
+        "en": "Dark accent"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 3.9
+      },
+      {
+        "ru": "Санузел + постирочная",
+        "en": "Bathroom + laundry",
+        "area": 4.5
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 10.9
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 5.3
+      },
+      {
+        "ru": "Гостиная",
+        "en": "Living room",
+        "area": 10.3
+      }
+    ],
+    "source": {
+      "file": "06-1000028486.jpg",
+      "crop": [
+        166,
+        326,
+        379,
+        310
+      ],
+      "notes": {
+        "ru": "Дневная зона компактная: точные размеры стола, дивана и открывание дверей требуют проверки на обмерах.",
+        "en": "The daytime area is compact: table and sofa dimensions and door swings need checking against site measurements."
+      }
+    },
+    "render": "white-grad-34-9.webp"
+  },
+  {
+    "id": "white-grad-37-5",
+    "number": "09",
+    "area": 37.5,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Северный берег",
+      "en": "Northern shore"
+    },
+    "complex": {
+      "ru": "Белый Град",
+      "en": "White Grad"
+    },
+    "location": {
+      "ru": "Мытищи · Инград",
+      "en": "Mytishchi · Ingrad"
+    },
+    "style": {
+      "ru": "Светлый северный",
+      "en": "Light Nordic"
+    },
+    "intro": {
+      "ru": "Приглушённый синий, натуральный дуб и светлый лён поддерживают спокойное настроение. Кухня и гостиная объединены цветом, а спальня остаётся отдельной.",
+      "en": "Muted blue, natural oak and pale linen create a calm mood. Colour connects the kitchen and living room while the bedroom remains separate."
+    },
+    "brief": {
+      "ru": "Для одного человека или пары, которым нужен светлый дом с простым уходом и понятным хранением.",
+      "en": "For one person or a couple seeking a bright home with easy upkeep and organised storage."
+    },
+    "solutions": [
+      {
+        "ru": "Оставить кухню у входа в дневную зону; синим выделить нижние фасады, верхние сделать светлыми.",
+        "en": "Keep the kitchen at the entrance end; use blue for lower cabinetry and pale finishes above."
+      },
+      {
+        "ru": "Поставить прямой диван у боковой стены и небольшую ТВ-тумбу; сохранить свободный доступ к окну.",
+        "en": "Use a straight sofa along the side wall and a small TV unit, keeping access to the window clear."
+      },
+      {
+        "ru": "В спальне использовать хранение под кроватью и закрытый шкаф; повторить синий в текстиле.",
+        "en": "Use under-bed storage and a closed bedroom wardrobe, repeating blue in the textiles."
+      }
+    ],
+    "lighting": {
+      "ru": "Рассеянный общий свет, подсветка кухни и лампа для чтения в гостиной.",
+      "en": "Diffuse ambient lighting, kitchen task light and a living-room reading lamp."
+    },
+    "palette": [
+      {
+        "hex": "#839DA8",
+        "ru": "Северный синий",
+        "en": "Nordic blue"
+      },
+      {
+        "hex": "#CDB28D",
+        "ru": "Натуральный дуб",
+        "en": "Natural oak"
+      },
+      {
+        "hex": "#EFE8DB",
+        "ru": "Белый мел",
+        "en": "White chalk"
+      },
+      {
+        "hex": "#B5A68D",
+        "ru": "Льняной",
+        "en": "Flax"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 4.4
+      },
+      {
+        "ru": "Санузел + постирочная",
+        "en": "Bathroom + laundry",
+        "area": 4.4
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 10.5
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 5.1
+      },
+      {
+        "ru": "Гостиная",
+        "en": "Living room",
+        "area": 13.2
+      }
+    ],
+    "source": {
+      "file": "06-1000028486.jpg",
+      "crop": [
+        188,
+        972,
+        305,
+        355
+      ],
+      "notes": {
+        "ru": "Площади комнат округлены в исходном плане. Общая площадь взята из карточки объявления.",
+        "en": "Room areas are rounded in the source plan. Total area is taken from the listing card."
+      }
+    },
+    "render": "white-grad-37-5.webp"
+  },
+  {
+    "id": "sholokhovo-40-9",
+    "number": "10",
+    "area": 40.9,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Больше воздуха",
+      "en": "Room to breathe"
+    },
+    "complex": {
+      "ru": "Шолохово",
+      "en": "Sholokhovo"
+    },
+    "location": {
+      "ru": "Мытищинский район · РосЕвроСити",
+      "en": "Mytishchi district · RosEvroCity"
+    },
+    "style": {
+      "ru": "Спокойный натуральный",
+      "en": "Calm natural"
+    },
+    "intro": {
+      "ru": "Более просторная жилая комната получает полноценное место для сна и тихий уголок для чтения. Кухня остаётся отдельной, а существующая лоджия сохраняет своё назначение.",
+      "en": "The larger main room accommodates a bed and a quiet reading corner. The kitchen stays separate and the existing loggia retains its role."
+    },
+    "brief": {
+      "ru": "Для одного человека или пары: отдельная кухня и спокойная спальня с местом для чтения.",
+      "en": "For one person or a couple: a separate kitchen and calm bedroom with space to read."
+    },
+    "solutions": [
+      {
+        "ru": "В комнате 17,93 м² разместить кровать, неглубокое хранение и кресло либо небольшую скамью у окна.",
+        "en": "Use the 17.93 m² room for a bed, shallow storage and a chair or small bench near the window."
+      },
+      {
+        "ru": "Сохранить кухню 12,37 м² и существующие инженерные зоны; подобрать обеденную группу после обмеров.",
+        "en": "Retain the 12.37 m² kitchen and existing services; size the dining furniture after measurements."
+      },
+      {
+        "ru": "Лоджию использовать как сезонное пространство. Двери и тепловой контур остаются на своих местах.",
+        "en": "Use the loggia seasonally, retaining its doors and the home's existing thermal boundary."
+      }
+    ],
+    "lighting": {
+      "ru": "Отдельный свет для чтения, мягкое освещение у кровати и рабочий свет в кухне.",
+      "en": "A reading light, soft bedside lighting and kitchen task lighting."
+    },
+    "palette": [
+      {
+        "hex": "#E8DFCD",
+        "ru": "Кремовый",
+        "en": "Cream"
+      },
+      {
+        "hex": "#C5AC87",
+        "ru": "Светлый дуб",
+        "en": "Pale oak"
+      },
+      {
+        "hex": "#DED6C5",
+        "ru": "Алебастр",
+        "en": "Alabaster"
+      },
+      {
+        "hex": "#BA926E",
+        "ru": "Карамель",
+        "en": "Caramel"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Жилая комната",
+        "en": "Main room",
+        "area": 17.93
+      },
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 4.93
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 12.37
+      },
+      {
+        "ru": "Санузел",
+        "en": "Bathroom",
+        "area": 3.7
+      }
+    ],
+    "source": {
+      "file": "07-1000028481.jpg",
+      "crop": [
+        154,
+        874,
+        364,
+        411
+      ],
+      "notes": {
+        "ru": "В объявлении 40,9 м², на плане 38,93 / 40,93 м². Для лоджии подписаны 4,00 / 2,00 м². Эти значения сохранены раздельно; верхняя часть схемы обрезана.",
+        "en": "The listing states 40.9 m²; the plan shows 38.93 / 40.93 m² and a loggia marked 4.00 / 2.00 m². These figures remain distinct; the top of the drawing is cut off."
+      }
+    },
+    "render": "sholokhovo-40-9.webp"
+  },
+  {
+    "id": "publicist-25-3",
+    "number": "11",
+    "area": 25.3,
+    "type": "studio",
+    "name": {
+      "ru": "Одна комната, три сценария",
+      "en": "One room, three rhythms"
+    },
+    "complex": {
+      "ru": "Публицист",
+      "en": "Publicist"
+    },
+    "location": {
+      "ru": "Пушкино · Dogma",
+      "en": "Pushkino · Dogma"
+    },
+    "style": {
+      "ru": "Компактный функциональный",
+      "en": "Compact & functional"
+    },
+    "intro": {
+      "ru": "Самая маленькая студия в подборке меняет сценарий в течение дня: сон, работа и отдых. Закрытое хранение и трансформируемая мебель помогают освободить основную комнату.",
+      "en": "The smallest studio in the collection changes throughout the day: sleeping, working and relaxing. Closed storage and adaptable furniture free up the main room."
+    },
+    "brief": {
+      "ru": "Для одного человека: возможность работать дома и убирать спальное место днём.",
+      "en": "For one person: working from home and folding away the bed during the day."
+    },
+    "solutions": [
+      {
+        "ru": "Рассмотреть шкаф-кровать и компактный диван в комнате 12,7 м²; механизм и зоны открывания проверить по точным размерам.",
+        "en": "Consider a wall bed and compact sofa in the 12.7 m² room; verify the mechanism and opening clearances with exact measurements."
+      },
+      {
+        "ru": "Организовать небольшой откидной рабочий стол у окна и хранение до потолка в зоне входа.",
+        "en": "Provide a small foldable desk near the window and full-height storage at the entrance."
+      },
+      {
+        "ru": "Оставить кухонную нишу 3,9 м² и санузел 4,35 м² в исходном расположении.",
+        "en": "Retain the 3.9 m² kitchen niche and 4.35 m² bathroom in their source positions."
+      }
+    ],
+    "lighting": {
+      "ru": "Рабочая лампа, подсветка кухни и мягкий вечерний свет; управление по отдельным зонам.",
+      "en": "A desk lamp, kitchen task light and soft evening lighting, controlled by zone."
+    },
+    "palette": [
+      {
+        "hex": "#ECE5D8",
+        "ru": "Тёплый белый",
+        "en": "Warm white"
+      },
+      {
+        "hex": "#C8A77D",
+        "ru": "Дуб",
+        "en": "Oak"
+      },
+      {
+        "hex": "#A59580",
+        "ru": "Глина-тауп",
+        "en": "Clay taupe"
+      },
+      {
+        "hex": "#7E856B",
+        "ru": "Приглушённая олива",
+        "en": "Muted olive"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 4.33
+      },
+      {
+        "ru": "Санузел",
+        "en": "Bathroom",
+        "area": 4.35
+      },
+      {
+        "ru": "Кухня-ниша",
+        "en": "Kitchen niche",
+        "area": 3.9
+      },
+      {
+        "ru": "Жилая комната",
+        "en": "Main room",
+        "area": 12.7
+      }
+    ],
+    "source": {
+      "file": "08-1000028483.jpg",
+      "crop": [
+        380,
+        254,
+        161,
+        223
+      ],
+      "notes": {
+        "ru": "Исходный план небольшого разрешения. Трансформируемая мебель показана как принцип; для выбора механизма нужен размерный план.",
+        "en": "The source plan has limited resolution. Adaptable furniture is a design principle; a dimensioned plan is needed to specify its mechanism."
+      }
+    },
+    "relatedSources": [
+      "09-1000028482.jpg"
+    ],
+    "render": "publicist-25-3.webp"
+  },
+  {
+    "id": "granel-30-1",
+    "number": "12",
+    "area": 30.1,
+    "type": "studio",
+    "name": {
+      "ru": "Карамельная студия",
+      "en": "Caramel studio"
+    },
+    "complex": {
+      "ru": "Гранель Мытищи",
+      "en": "Granel Mytishchi"
+    },
+    "location": {
+      "ru": "Мытищи · ГК Гранель",
+      "en": "Mytishchi · Granel"
+    },
+    "style": {
+      "ru": "Тёплый современный",
+      "en": "Warm contemporary"
+    },
+    "intro": {
+      "ru": "Тёплая карамель и светлый дуб объединяют кухню, отдых и сон. Лёгкий экран из рифлёного стекла предлагает мягкое разделение общей комнаты.",
+      "en": "Warm caramel and pale oak connect cooking, relaxing and sleeping. A light fluted-glass screen suggests a gentle division of the main room."
+    },
+    "brief": {
+      "ru": "Для одного человека: визуально отделить спальное место и сохранить дневной свет в студии.",
+      "en": "For one person: give the bed visual privacy while preserving daylight in the studio."
+    },
+    "solutions": [
+      {
+        "ru": "Рассмотреть съёмный экран у спального места; его положение уточнить по читаемому плану и расположению окна.",
+        "en": "Consider a removable screen beside the bed; verify its position using a legible plan and window location."
+      },
+      {
+        "ru": "Выбрать компактный диван и стол на двоих; сохранить кухню в существующей нише.",
+        "en": "Choose a compact loveseat and table for two; keep the kitchen in its existing niche."
+      },
+      {
+        "ru": "Закрытое хранение сосредоточить у входа, чтобы основная комната оставалась спокойной.",
+        "en": "Concentrate closed storage near the entrance to keep the main room calm."
+      }
+    ],
+    "lighting": {
+      "ru": "Рабочий свет кухни, подвес над столом и локальный свет у кровати.",
+      "en": "Kitchen task lighting, a dining pendant and a bedside lamp."
+    },
+    "palette": [
+      {
+        "hex": "#BD9571",
+        "ru": "Карамель",
+        "en": "Caramel"
+      },
+      {
+        "hex": "#EDE3D4",
+        "ru": "Слоновая кость",
+        "en": "Ivory"
+      },
+      {
+        "hex": "#C5A478",
+        "ru": "Дуб",
+        "en": "Oak"
+      },
+      {
+        "hex": "#45453F",
+        "ru": "Тёмная линия",
+        "en": "Dark line"
+      }
+    ],
+    "rooms": [],
+    "source": {
+      "file": "08-1000028483.jpg",
+      "crop": [
+        328,
+        988,
+        196,
+        160
+      ],
+      "notes": {
+        "ru": "Карточка указывает 30,14 м² и этаж 9 из 12, текст объявления — 30,1 м² и этаж 9 из 13. Подписи комнат недостаточно чёткие и не перенесены в таблицу. Концепция предварительная.",
+        "en": "The graphic states 30.14 m² and floor 9 of 12; the listing text states 30.1 m² and floor 9 of 13. Room labels are too unclear to transcribe. This is a preliminary concept."
+      }
+    },
+    "render": "granel-30-1.webp"
+  },
+  {
+    "id": "kotelniki-37",
+    "number": "13",
+    "area": 37,
+    "type": "one-bedroom",
+    "name": {
+      "ru": "Комната для жизни",
+      "en": "Space for everyday life"
+    },
+    "complex": {
+      "ru": "Котельники парк",
+      "en": "Kotelniki Park"
+    },
+    "location": {
+      "ru": "Котельники · Русич",
+      "en": "Kotelniki · Rusich"
+    },
+    "style": {
+      "ru": "Практичный современный",
+      "en": "Practical contemporary"
+    },
+    "intro": {
+      "ru": "Отдельная кухня и гардеробная позволяют разгрузить небольшую спальню. Глубокий синий акцент, дуб и светлые стены создают собранный городской интерьер.",
+      "en": "A separate kitchen and storage room keep the small bedroom uncluttered. A deep blue accent, oak and pale walls create a composed urban home."
+    },
+    "brief": {
+      "ru": "Для одного человека или пары: отдельная спальня, самостоятельная кухня и удобное хранение одежды.",
+      "en": "For one person or a couple: a separate bedroom, independent kitchen and organised clothes storage."
+    },
+    "solutions": [
+      {
+        "ru": "Сохранить существующую гардеробную 3 м²; в спальне 10 м² ограничиться кроватью и лёгким рабочим местом, если размеры это позволят.",
+        "en": "Retain the existing 3 m² storage room; keep the 10 m² bedroom to a bed and a light desk, subject to measured clearances."
+      },
+      {
+        "ru": "Кухню 12 м² использовать как место для приготовления и совместных обедов.",
+        "en": "Use the 12 m² kitchen for cooking and shared meals."
+      },
+      {
+        "ru": "Лоджию сохранить отделённой от квартиры; хранение бытовых вещей организовать в прихожей.",
+        "en": "Keep the loggia separate from the apartment and organise household storage in the hall."
+      }
+    ],
+    "lighting": {
+      "ru": "Лампа для работы, свет у кровати и отдельная подсветка гардеробной.",
+      "en": "A task lamp, bedside lighting and a separate light for the storage room."
+    },
+    "palette": [
+      {
+        "hex": "#3C666D",
+        "ru": "Глубокий синий",
+        "en": "Petrol blue"
+      },
+      {
+        "hex": "#C7AC85",
+        "ru": "Светлый дуб",
+        "en": "Pale oak"
+      },
+      {
+        "hex": "#EAE4D7",
+        "ru": "Тёплый белый",
+        "en": "Warm white"
+      },
+      {
+        "hex": "#99998E",
+        "ru": "Матовый металл",
+        "en": "Brushed metal"
+      }
+    ],
+    "rooms": [
+      {
+        "ru": "Прихожая",
+        "en": "Hall",
+        "area": 6
+      },
+      {
+        "ru": "Санузел",
+        "en": "Bathroom",
+        "area": 4.5
+      },
+      {
+        "ru": "Гардеробная",
+        "en": "Storage room",
+        "area": 3
+      },
+      {
+        "ru": "Кухня",
+        "en": "Kitchen",
+        "area": 12
+      },
+      {
+        "ru": "Спальня",
+        "en": "Bedroom",
+        "area": 10
+      }
+    ],
+    "source": {
+      "file": "09-1000028482.jpg",
+      "crop": [
+        202,
+        204,
+        274,
+        414
+      ],
+      "notes": {
+        "ru": "На плане лоджия подписана 1,5 / 3,0 м². Общая площадь в карточке — 37 м²; площадь лоджии не смешивается с площадями внутренних комнат.",
+        "en": "The plan marks the loggia as 1.5 / 3.0 m². The listing total is 37 m²; the loggia figures remain separate from the internal room areas."
+      }
+    },
+    "render": "kotelniki-37-v2.webp"
+  }
+]

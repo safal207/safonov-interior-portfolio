@@ -1,0 +1,14 @@
+[
+  {
+    "id": "kino-33-3",
+    "prompt": "Use case: precise-object-edit. Edit target: the attached Mediterranean-style compact studio rendering. Change only the kitchen window on the distant back-right wall: remove that third window and replace the opening with a continuous warm limewashed plaster wall above the existing sink. The finished scene must have exactly the two existing windows along the left exterior wall. Keep the two left windows, sofa, bed alcove, curtain, kitchen cabinetry, furniture positions, materials, lighting, viewpoint, and overall architecture otherwise unchanged. Maintain realistic compact studio proportions. No text, labels or watermark.",
+    "mode": "built-in imagegen edit",
+    "selectedAsset": "kino-33-3-v2.webp"
+  },
+  {
+    "id": "kotelniki-37",
+    "prompt": "Use case: precise-object-edit. Edit target: the attached compact petrol-blue and oak bedroom rendering. Change only the far-wall glazing: replace the floor-height balcony door and adjacent window group with ONE ordinary medium-width rectangular double-pane window centred in that same far wall, with a normal windowsill and a radiator below. Fill the remaining far-wall area with matching warm off-white plaster. There is no balcony door in this bedroom. Preserve the bed position, desk, blue wall, shelving, wardrobe, lamps, materials, camera position, illumination and compact room proportions. No text, labels or watermark.",
+    "mode": "built-in imagegen edit",
+    "selectedAsset": "kotelniki-37-v2.webp"
+  }
+]

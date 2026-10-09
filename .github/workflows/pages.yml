@@ -1,0 +1,39 @@
+name: Publish portfolio to GitHub Pages
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build and verify
+        env:
+          PORTFOLIO_SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: |
+          node scripts/build.mjs
+          node scripts/verify.mjs
+      - name: Prepare static output
+        run: |
+          mkdir _site
+          cp index.html .nojekyll _site/
+          cp -R cases assets _site/
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

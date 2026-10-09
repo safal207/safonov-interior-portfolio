@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-09T05:17:43.600Z",
+  "checks": [
+    "13 embedded cases",
+    "Filters",
+    "RU/EN across routes",
+    "Next and back navigation",
+    "Source screenshot and render Blob assets",
+    "Lightbox",
+    "No network dependencies"
+  ],
+  "errors": [],
+  "network": []
+}

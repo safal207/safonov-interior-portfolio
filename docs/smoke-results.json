@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-09T05:16:21.045Z",
+  "checks": [
+    "Homepage 320px",
+    "Homepage 390px",
+    "Homepage 768px",
+    "Homepage 1440px",
+    "Filter studio: 3",
+    "Filter one-bedroom: 9",
+    "Filter family: 1",
+    "Filter all: 13",
+    "English language survives navigation; lightbox keyboard open/Escape/focus restoration",
+    "All 13 cases at 320px RU + EN",
+    "All 13 cases at 1440px RU"
+  ],
+  "errors": [],
+  "httpFailures": []
+}

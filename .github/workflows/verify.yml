@@ -1,0 +1,19 @@
+name: Verify portfolio
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build static pages
+        run: node scripts/build.mjs
+      - name: Verify links, sources and content
+        run: node scripts/verify.mjs
+      - name: Check generated pages are current
+        run: git diff --exit-code -- index.html cases/ docs/CASEBOOK.md
