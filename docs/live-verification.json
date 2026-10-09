@@ -1,0 +1,459 @@
+{
+  "status": "PASS",
+  "siteURL": "https://safal207.github.io/safonov-interior-portfolio/",
+  "pages": 28,
+  "assets": 26,
+  "sitemap": true,
+  "checks": [
+    "HTTPS 200 for all pages and linked assets",
+    "Deployed bytes match checked source",
+    "Absolute canonical, RU/EN alternates and structured data verified before publication",
+    "Public OG JPEG URL and accurate image dimensions"
+  ],
+  "results": [
+    {
+      "path": "index.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 38557,
+      "sha256": "7db5aa0da1560f85936bf7b3d6e61c1a1d9ede8168015b1d838a6848b240b480"
+    },
+    {
+      "path": "cases/white-grad-37-2.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/white-grad-37-2.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20823,
+      "sha256": "2996b17a8c50ddc00378abfe5ab4149217be20727197626728a4a9f3d583dc3e"
+    },
+    {
+      "path": "cases/white-grad-35-2.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/white-grad-35-2.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20620,
+      "sha256": "72e51bd5a11b05cfc43f022888e125003c6f05aad4e3366c834d066255628fc0"
+    },
+    {
+      "path": "cases/white-grad-37-9.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/white-grad-37-9.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20709,
+      "sha256": "f0d219d397d94a3e3abe8a346cfeb3443b84fe45514eb01b3e4d54a7acffedce"
+    },
+    {
+      "path": "cases/white-grad-34-6.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/white-grad-34-6.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20719,
+      "sha256": "d891c4a3c8c9a2b66af53988c7e31f7792f88c3762c6adf417d3fa3cc5066cad"
+    },
+    {
+      "path": "cases/white-grad-38-1.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/white-grad-38-1.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20925,
+      "sha256": "8efba07de73789471202a3ee9961fdac24b3aae804c492f80b77d9ce905aeda5"
+    },
+    {
+      "path": "cases/kino-33-3.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/kino-33-3.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20575,
+      "sha256": "e976da41b40672a3ad90dffeab7f8899125c9bce6112b7f62bc5c23b5ad41b2b"
+    },
+    {
+      "path": "cases/ornament-44-4.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/ornament-44-4.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20922,
+      "sha256": "0928180bcb8672534918eb7fa26cf262552403e9af0f119b4427b09682c3198d"
+    },
+    {
+      "path": "cases/white-grad-34-9.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/white-grad-34-9.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20714,
+      "sha256": "a94f5e37dea6986317bc60113fbf43a1ad1967b4a709f1348c09119134ec940b"
+    },
+    {
+      "path": "cases/white-grad-37-5.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/white-grad-37-5.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 20805,
+      "sha256": "941e438403fa7282426fd33eab32e951f3561eb2ed8920f88ee71a2c4340c186"
+    },
+    {
+      "path": "cases/sholokhovo-40-9.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/sholokhovo-40-9.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21014,
+      "sha256": "834ab5d4b9d15b0a87d89c284cb67f4f6b19c416274cb031d8fb6c3084c39ee2"
+    },
+    {
+      "path": "cases/publicist-25-3.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/publicist-25-3.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21181,
+      "sha256": "0593c3dbabd4ea9bc8b4f9b21ecddf82468d710275d6a41c076e752aa88c2f41"
+    },
+    {
+      "path": "cases/granel-30-1.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/granel-30-1.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19601,
+      "sha256": "5f62cdc887966b12142e8e24803c76637354327a613b789c54d1df35a1340828"
+    },
+    {
+      "path": "cases/kotelniki-37.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/cases/kotelniki-37.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 21009,
+      "sha256": "92802be2f847fff6c5fb19977bdbde9afdd126681491c591ddfe15ac4ebe5ce5"
+    },
+    {
+      "path": "en/index.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 37377,
+      "sha256": "ff08afe68003a0f5d8ad2d57db1a509e7cd3cdfb8c6b4cd58e7f96c839ebc6e7"
+    },
+    {
+      "path": "en/cases/white-grad-37-2.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/white-grad-37-2.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19734,
+      "sha256": "2faae3da872b3fc6192b93518f2df1e20894e9357a3e4e2002bbe0ea94f3479e"
+    },
+    {
+      "path": "en/cases/white-grad-35-2.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/white-grad-35-2.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19365,
+      "sha256": "5e257eda4e8684ec531471283198b40dd14d0bc953c5ef22957a6224933cf344"
+    },
+    {
+      "path": "en/cases/white-grad-37-9.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/white-grad-37-9.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19504,
+      "sha256": "a7e0c733b182b20436eecb7066205fe46c119137824396656873cbc8e0ffc16a"
+    },
+    {
+      "path": "en/cases/white-grad-34-6.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/white-grad-34-6.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19556,
+      "sha256": "85badde3b41c309cd130d60109e1ad69c3f0ca28b3de712fc256090a8b21f81f"
+    },
+    {
+      "path": "en/cases/white-grad-38-1.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/white-grad-38-1.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19744,
+      "sha256": "d55e32585a5795f0f75d338ffed26cfcc05ffd54bcfb69be9c9c8bfa65295d47"
+    },
+    {
+      "path": "en/cases/kino-33-3.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/kino-33-3.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19433,
+      "sha256": "ac56e5ba46b16244977661536e2732b5cc05f56ce5bc0a6af9e36e8f2460def9"
+    },
+    {
+      "path": "en/cases/ornament-44-4.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/ornament-44-4.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19739,
+      "sha256": "15bd15096279efd3c3fde73029a81af8d0f728e2e0c7eb571a3a9c5d58c49b7d"
+    },
+    {
+      "path": "en/cases/white-grad-34-9.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/white-grad-34-9.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19550,
+      "sha256": "ed1b89fc280502aa1d38e748d0cfd8fec5c221f58edbc11959ebb2353fe6937d"
+    },
+    {
+      "path": "en/cases/white-grad-37-5.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/white-grad-37-5.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19558,
+      "sha256": "cb4728cba5565b6eeab27d6d918ebc975b7f722295fcaf8ee22903c93665db9e"
+    },
+    {
+      "path": "en/cases/sholokhovo-40-9.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/sholokhovo-40-9.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19605,
+      "sha256": "b22b953f0ecb22aabc51e80b81293a21f17fed74ced1d0cefbc2d8df69f25d15"
+    },
+    {
+      "path": "en/cases/publicist-25-3.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/publicist-25-3.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19760,
+      "sha256": "b2c2eb2874477549efdeadf0e45052273b4c1fdccb38ddeac9f932a27125898a"
+    },
+    {
+      "path": "en/cases/granel-30-1.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/granel-30-1.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 18403,
+      "sha256": "dcf775e67226aba85c37a220b04569800006788bedca0e58f5016ace4f0871c4"
+    },
+    {
+      "path": "en/cases/kotelniki-37.html",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/en/cases/kotelniki-37.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19799,
+      "sha256": "ee45b114bf027183ddf1b19777431ee22e8d4664b9bfad930321849027fa3b93"
+    },
+    {
+      "path": "assets/app.js",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/app.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 3566,
+      "sha256": "801f2775f9f2ca93f5e1c423677cdcb9612421f5f82302c324efb121de81be98"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/favicon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 305,
+      "sha256": "80dae5bc45cf263e5a761ab63cd549f78c07b11e767af2bdcede99410888861a"
+    },
+    {
+      "path": "assets/language-init.js",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/language-init.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 468,
+      "sha256": "b22cd6ccc3cfbd08213316db596c0d3d3280067d0a907365b1ef041ba25092e0"
+    },
+    {
+      "path": "assets/renders/granel-30-1.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/granel-30-1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 364404,
+      "sha256": "b86ca8484450e3b1758d371d1b8d725a03c07679f7c7ad7dde2bcbdfc22058c1"
+    },
+    {
+      "path": "assets/renders/kino-33-3-v2.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/kino-33-3-v2.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 249952,
+      "sha256": "84f29e26d1a67e5ed01ab52bb1f3701fa1a1f067f54b35e2b3472723df86afd4"
+    },
+    {
+      "path": "assets/renders/kotelniki-37-v2.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/kotelniki-37-v2.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 257510,
+      "sha256": "6c899613c6d8a1c3bc326fb18cb959b76f02652f9ab4ead633c6d81a43e3b7e0"
+    },
+    {
+      "path": "assets/renders/ornament-44-4.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/ornament-44-4.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 244736,
+      "sha256": "523b33b86a199d635e780458a298f29f629f918c27cf7300e68278d5d08b8602"
+    },
+    {
+      "path": "assets/renders/publicist-25-3.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/publicist-25-3.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 238526,
+      "sha256": "9ffb2ef08558ffe84f6e2eb353613765cb304595b3360498616339079367b751"
+    },
+    {
+      "path": "assets/renders/sholokhovo-40-9.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/sholokhovo-40-9.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 261782,
+      "sha256": "862aaf08443ecb013f236c37cb3e10280832d5e2b14b8b9630322a93e2f28a3e"
+    },
+    {
+      "path": "assets/renders/white-grad-34-6.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/white-grad-34-6.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 246812,
+      "sha256": "e1e24e7a0a80fd4cf78b1b4570b9edb6972126ad68062fca1fc7b94874e9b827"
+    },
+    {
+      "path": "assets/renders/white-grad-34-9.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/white-grad-34-9.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 268692,
+      "sha256": "e99b71df61eff2cbca897adbe1c3e8bf5c0d18a583a08d43a9d5cd3eafcce2ed"
+    },
+    {
+      "path": "assets/renders/white-grad-35-2.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/white-grad-35-2.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 212682,
+      "sha256": "751149861db971f123b73dcc741a4fa0da3b1b8dc4ad2f15a8e766edb7d054a5"
+    },
+    {
+      "path": "assets/renders/white-grad-37-2.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/white-grad-37-2.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 200166,
+      "sha256": "6b1536e73b023426d9fffada310be181c40796275a681d965514f5923a51c63c"
+    },
+    {
+      "path": "assets/renders/white-grad-37-5.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/white-grad-37-5.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 240346,
+      "sha256": "391ba75f9387d4203084ada6768d42b98916d3fef05d92a503c62ca40e43a785"
+    },
+    {
+      "path": "assets/renders/white-grad-37-9.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/white-grad-37-9.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 289932,
+      "sha256": "0c3ae6c2d51fdf8e282bed1be4edad544b93ad73d6efa30e650fb772ee5cd11c"
+    },
+    {
+      "path": "assets/renders/white-grad-38-1.webp",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/renders/white-grad-38-1.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 327794,
+      "sha256": "6ef48806f5d19ec1fb6161041e0e8b82b553d20026eefca796c11b4fb6fe0da8"
+    },
+    {
+      "path": "assets/social/share-cover-v1.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/social/share-cover-v1.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 277470,
+      "sha256": "ec0a51e0eae0001cb2b2d9cf9c8a5f0a083d970c32d3dc0ad0bd30623d03787e"
+    },
+    {
+      "path": "assets/source/01-1000028489.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/01-1000028489.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 107064,
+      "sha256": "70caf8c11d7fab1b3397883546aa561cd15d769bb08463a4793aacb43f9b7908"
+    },
+    {
+      "path": "assets/source/03-1000028487.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/03-1000028487.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 118265,
+      "sha256": "56e471eeec80afd971cf6e4a92c5306ddd6e72e8e8774e5bdc28dcd8d8974a7a"
+    },
+    {
+      "path": "assets/source/04-1000028484.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/04-1000028484.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 101308,
+      "sha256": "c90b42892d83751ca522119fdb5fabb1e829657622a50ef8c94fedd4ffd96fbc"
+    },
+    {
+      "path": "assets/source/05-1000028485.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/05-1000028485.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 108364,
+      "sha256": "772f3eb7d6460b601ea114ce45cd24163737a771fa0e400a0066ca2f81b3f991"
+    },
+    {
+      "path": "assets/source/06-1000028486.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/06-1000028486.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 117515,
+      "sha256": "6210a6a6dcf390bbf0f5bfb4c5edbc6a72070ffb3989ce31314116394376387d"
+    },
+    {
+      "path": "assets/source/07-1000028481.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/07-1000028481.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 103369,
+      "sha256": "5b31fac130bad0d3e4e5cde9e910b8fdf9ec395e42bc83f65dd286111feff47f"
+    },
+    {
+      "path": "assets/source/08-1000028483.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/08-1000028483.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 118928,
+      "sha256": "79e60de016636fa3646e68d9e9af46f4bbebfe3264375d8c48768dda053e7222"
+    },
+    {
+      "path": "assets/source/09-1000028482.jpg",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/source/09-1000028482.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 107941,
+      "sha256": "a2cbcbe4e4e39d27ecff5818b9895d7e4749690582b6ca7832f86496ed3f4ae7"
+    },
+    {
+      "path": "assets/style.css",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/assets/style.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 16363,
+      "sha256": "2222bcd563ac101ecc34b1c2610d91ad78c86e3580e6d476d75c41ed94143536"
+    },
+    {
+      "path": "sitemap.xml",
+      "url": "https://safal207.github.io/safonov-interior-portfolio/sitemap.xml",
+      "status": 200,
+      "contentType": "application/xml",
+      "bytes": 18017,
+      "sha256": "e4fcaf75a0d51a69a9656e5f1a583957cd8352c4ea257aa2a478f7314d435558"
+    }
+  ],
+  "socialImage": "https://safal207.github.io/safonov-interior-portfolio/assets/social/share-cover-v1.jpg",
+  "publicationCommit": "018c2de9c7dcbf24b0ad1aae2feb55cc9af6cc70",
+  "deployRun": "https://github.com/safal207/safonov-interior-portfolio/actions/runs/37970169623",
+  "checkedAt": "2026-10-09T18:09:27.475283+00:00"
+}

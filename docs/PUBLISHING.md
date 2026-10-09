@@ -4,6 +4,10 @@
 
 Публичный репозиторий [safal207/safonov-interior-portfolio](https://github.com/safal207/safonov-interior-portfolio) создан. Исходники портфолио находятся в ветке `main`.
 
+Публичный сайт: https://safal207.github.io/safonov-interior-portfolio/
+
+Английская версия: https://safal207.github.io/safonov-interior-portfolio/en/
+
 Для дальнейшего редактирования:
 
 ```bash
