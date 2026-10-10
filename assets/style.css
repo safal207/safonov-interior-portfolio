@@ -222,3 +222,45 @@ h1 em,h2 em{font-weight:400}
 @media(max-width:760px){.site-header nav{flex-wrap:wrap;gap:6px 20px}.home-intro{grid-template-columns:1fr;gap:25px;padding-block:43px 34px}.home-intro h1{font-size:clamp(43px,8vw,58px)}.intro-aside{max-width:480px}.intro-facts{margin-top:18px}.collection-heading{padding-block:15px;gap:12px}.collection-heading .eyebrow{font-size:9px;letter-spacing:.1em}.collection-edition{font-size:8px;letter-spacing:.09em}.premium-editorial{grid-template-columns:1fr;gap:25px}.premium-cover img{aspect-ratio:1.33;object-position:center}.premium-cover figcaption{font-size:10px}.premium-intro{padding:28px 26px}.premium-intro h2{font-size:40px}.premium-seal{margin-bottom:22px}.premium-intro>p{font-size:12px;max-width:none}.premium-addresses{margin-top:24px}.premium-addresses a{font-size:12px;padding-block:14px}.premium-addresses small{font-size:10px}.premium-intro>.text-link{font-size:12px}.collection-disclaimer{font-size:10px;margin-top:21px}.moscow-collection{padding-bottom:0}.projects-section{padding-block:65px}.section-head h2{font-size:37px}.filters{gap:8px 21px}.project-premium .project-title h3{font-size:33px}.case-premium .case-cover img{aspect-ratio:1.33}.case-cover figcaption{gap:7px}.case-premium .case-intro>.eyebrow{font-size:9px;line-height:1.8}.materials-section{padding-bottom:55px}.materials-section .section-head.compact h2{font-size:33px}.material-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.material-grid li{min-height:185px;padding:18px}.material-grid h3{font-size:22px}.material-tone{margin-block:22px 18px}.source-provenance{padding:18px}.source-listing{font-size:10px}.source-original{font-size:11px}}
 @media(max-width:360px){.home-intro h1{font-size:42px}.premium-intro{padding:24px 21px}.premium-intro h2{font-size:35px}.premium-addresses a{font-size:11px;gap:8px}.premium-addresses small{font-size:9px}.project-premium .project-title h3{font-size:29px}.material-grid{gap:12px}.material-grid li{padding:16px;min-height:170px}.material-grid h3{font-size:19px}.materials-section .section-head.compact h2{font-size:30px}.collection-heading .eyebrow{font-size:8px}.collection-edition{font-size:7px}}
 @media print{.premium-editorial{display:block}.premium-cover img{max-height:100mm;object-fit:contain}.premium-intro{margin-top:20px;background:none;padding:0}.premium-addresses{display:none}.premium-seal{margin-bottom:10px}.materials-section{padding-bottom:25px}.material-grid li{break-inside:avoid;min-height:40mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}.collection-heading{margin-top:20px}.moscow-collection{padding-bottom:20px}}
+
+/* One-room concept offer and a complete sample deliverable. */
+.site-header nav{flex-wrap:wrap;gap:8px 22px}
+.service-section{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:7%;padding-block:48px 72px;border-top:1px solid var(--line)}
+.service-copy h2{font-size:clamp(36px,4vw,56px);margin-block:18px 25px}
+.service-copy h2 em{color:var(--bronze)}
+.service-lead{max-width:430px;font-size:15px;line-height:1.8}
+.service-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;margin-block:28px 16px}
+.service-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:48px;padding:14px 22px;background:var(--green);color:var(--paper);font-size:13px;line-height:1.5;text-align:center}
+.service-button:hover{background:#574a3c}
+.service-package{padding:30px 35px;background:#ebe4d9;min-width:0}
+.service-price{font-family:var(--serif);font-size:52px;line-height:1.2;margin-block:14px 20px;white-space:nowrap}
+.service-package ul{padding-left:18px;margin:0;font-size:13px}
+.service-package li{padding-block:4px}
+.service-terms{font-size:12px;margin-block:24px 18px}
+.service-terms>div{border-top:1px solid #cfc3b1;padding-block:12px}
+.service-terms dt{font-weight:600;margin-bottom:4px}
+.service-terms dd{margin:0;color:#5d564e}
+.service-scope{font-size:11px;color:#5d564e;border-top:1px solid #cfc3b1;padding-top:15px}
+.sample-section{padding-block:75px;border-bottom:1px solid var(--line)}
+.sample-intro{font-size:14px;line-height:1.85;max-width:880px;margin-bottom:30px}
+.sample-moodboard{margin-bottom:35px}
+.sample-moodboard img{width:100%;height:auto;background:#ebe4d9}
+.sample-moodboard figcaption{font-size:11px;line-height:1.8;color:var(--muted);margin-top:14px;max-width:900px}
+.shopping-table-wrap{overflow-x:auto;max-width:100%}
+.shopping-table{width:100%;border-collapse:collapse;text-align:left;font-size:13px;line-height:1.6}
+.shopping-table caption{text-align:left;font-size:11px;margin-bottom:18px;color:var(--muted)}
+.shopping-table th,.shopping-table td{padding:16px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.shopping-table thead th{font-weight:400;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.shopping-table tbody th{font-weight:400;width:40%}
+.shopping-table tbody th a{text-decoration:underline;text-underline-offset:4px}
+.shopping-table small{display:block;color:var(--muted);font-size:11px;margin-top:5px}
+.shopping-table td:last-child,.shopping-table th:last-child{white-space:nowrap;text-align:right}
+.sample-item-number{font-size:10px;color:var(--bronze);margin-right:12px}
+.sample-total{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:start;padding-top:25px}
+.sample-total>div{display:flex;flex-wrap:wrap;gap:15px;align-items:baseline;justify-content:space-between}
+.sample-total>div>span{font-size:12px;color:var(--muted)}
+.sample-total strong{font-family:var(--serif);font-size:35px;font-weight:400;white-space:nowrap}
+.sample-total p{font-size:11px;line-height:1.8;color:var(--muted)}
+.sample-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:30px}
+@media(max-width:760px){.service-section{grid-template-columns:1fr;gap:32px;padding-block:32px 48px}.service-copy h2{font-size:39px}.service-lead{font-size:13px}.service-package{padding:25px}.service-price{font-size:44px}.service-actions{align-items:start;flex-direction:column}.service-button{min-height:48px;max-width:100%;font-size:12px}.sample-section{padding-block:48px}.sample-section .section-head>.service-button{margin-top:24px}.sample-intro{font-size:13px}.shopping-table{min-width:660px}.sample-total{grid-template-columns:1fr;gap:20px}.sample-actions{align-items:start;flex-direction:column}}
+@media print{.service-actions,.sample-actions,.service-button{display:none!important}.service-section{padding-block:25px}.sample-section{padding-block:25px}.shopping-table-wrap{overflow:visible}.shopping-table{min-width:0}.sample-moodboard{break-inside:avoid}}

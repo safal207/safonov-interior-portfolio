@@ -18,6 +18,14 @@
 
 [Открыть все кейсы прямо на GitHub / Read every case on GitHub](docs/CASEBOOK.md)
 
+## Услуга / Service
+
+[Концепция одной комнаты — 5 000 ₽](https://safal207.github.io/safonov-interior-portfolio/#service): один стиль, коллаж и палитра, до восьми предметов со ссылками, одна итерация корректировок и итоговый PDF. Срок согласуется после получения исходных материалов, до начала работы.
+
+[«Оливковое ателье»: образец результата](assets/downloads/Olive_Atelier_Sample.pdf) · [Коллаж](assets/downloads/Olive_Atelier_Moodboard.jpg) · [Подбор на сайте](https://safal207.github.io/safonov-interior-portfolio/cases/level-michurinsky-42-1.html#shopping-sample)
+
+Образец — самостоятельный демонстрационный кейс. Товары подобраны по публичным карточкам магазинов на 10.10.2026; бюджет 200 000 ₽ условный. Источники, цены, размеры и фотографии перечислены в `data/olive-atelier-sample.json`. Подбор не подтверждает размещение мебели без проверки обмеров.
+
 | № | Концепция / Concept | ЖК / Development | Площадь |
 | --- | --- | --- | ---: |
 | 01 | [Тихий свет / Quiet light](docs/CASEBOOK.md#white-grad-37-2) | Белый Град | 37,2 м² |
@@ -65,6 +73,14 @@ node scripts/build.mjs
 node scripts/verify.mjs
 ```
 
+Для пересборки образца PDF и коллажа нужны Python с Pillow и reportlab и шрифты DejaVu:
+
+```bash
+python3 scripts/build-sample.py
+node scripts/build.mjs
+node scripts/verify.mjs
+```
+
 Для браузерной проверки нужен установленный Playwright и Chromium. В поддерживаемом Codex runtime используется предустановленный пакет. Для другого браузерного бинарника задайте `PORTFOLIO_CHROMIUM_EXECUTABLE`.
 
 ```bash
@@ -87,4 +103,4 @@ node scripts/preview.mjs
 
 ## Контакт / Contact
 
-[safal0645@protonmail.com](mailto:safal0645@protonmail.com) · [GitHub / safal207](https://github.com/safal207)
+[Telegram / @Alexfox14](https://t.me/Alexfox14) · [safal0645@protonmail.com](mailto:safal0645@protonmail.com) · [GitHub / safal207](https://github.com/safal207)
