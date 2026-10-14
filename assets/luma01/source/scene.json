@@ -1,0 +1,313 @@
+{
+  "name": "LUMA01",
+  "version": 1,
+  "units": "metres",
+  "coordinates": {
+    "x": "width; positive right",
+    "y": "depth; negative front",
+    "z": "up"
+  },
+  "materials": {
+    "ivory_boucle": {
+      "rgb": [
+        0.73,
+        0.67,
+        0.55
+      ],
+      "roughness": 0.93
+    },
+    "warm_walnut": {
+      "rgb": [
+        0.25,
+        0.12,
+        0.055
+      ],
+      "roughness": 0.43
+    }
+  },
+  "objects": [
+    {
+      "name": "seat_cushion",
+      "type": "rounded_box",
+      "center": [
+        0,
+        0,
+        0.44
+      ],
+      "half_sizes": [
+        0.3,
+        0.29,
+        0.075
+      ],
+      "radius": 0.055,
+      "rotation_x": 0,
+      "material": "ivory_boucle"
+    },
+    {
+      "name": "back_cushion",
+      "type": "rounded_box",
+      "center": [
+        0,
+        0.245,
+        0.725
+      ],
+      "half_sizes": [
+        0.3,
+        0.065,
+        0.225
+      ],
+      "radius": 0.055,
+      "rotation_x": -0.1,
+      "material": "ivory_boucle"
+    },
+    {
+      "name": "arm_left",
+      "type": "rounded_box",
+      "center": [
+        -0.355,
+        0,
+        0.655
+      ],
+      "half_sizes": [
+        0.035,
+        0.35,
+        0.028
+      ],
+      "radius": 0.025,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "side_rail_left",
+      "type": "rounded_box",
+      "center": [
+        -0.27,
+        0,
+        0.355
+      ],
+      "half_sizes": [
+        0.025,
+        0.3,
+        0.035
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "arm_post_left_front",
+      "type": "rounded_box",
+      "center": [
+        -0.335,
+        -0.24,
+        0.51
+      ],
+      "half_sizes": [
+        0.022,
+        0.022,
+        0.13
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "leg_left_front",
+      "type": "tapered_cylinder",
+      "top": [
+        -0.27,
+        -0.23,
+        0.4
+      ],
+      "bottom": [
+        -0.34,
+        -0.31,
+        0.0052
+      ],
+      "radius_top": 0.025,
+      "radius_bottom": 0.018,
+      "segments": 24,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "arm_post_left_rear",
+      "type": "rounded_box",
+      "center": [
+        -0.335,
+        0.24,
+        0.51
+      ],
+      "half_sizes": [
+        0.022,
+        0.022,
+        0.13
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "leg_left_rear",
+      "type": "tapered_cylinder",
+      "top": [
+        -0.27,
+        0.23,
+        0.4
+      ],
+      "bottom": [
+        -0.34,
+        0.31,
+        0.0052
+      ],
+      "radius_top": 0.025,
+      "radius_bottom": 0.018,
+      "segments": 24,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "arm_right",
+      "type": "rounded_box",
+      "center": [
+        0.355,
+        0,
+        0.655
+      ],
+      "half_sizes": [
+        0.035,
+        0.35,
+        0.028
+      ],
+      "radius": 0.025,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "side_rail_right",
+      "type": "rounded_box",
+      "center": [
+        0.27,
+        0,
+        0.355
+      ],
+      "half_sizes": [
+        0.025,
+        0.3,
+        0.035
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "arm_post_right_front",
+      "type": "rounded_box",
+      "center": [
+        0.335,
+        -0.24,
+        0.51
+      ],
+      "half_sizes": [
+        0.022,
+        0.022,
+        0.13
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "leg_right_front",
+      "type": "tapered_cylinder",
+      "top": [
+        0.27,
+        -0.23,
+        0.4
+      ],
+      "bottom": [
+        0.34,
+        -0.31,
+        0.0052
+      ],
+      "radius_top": 0.025,
+      "radius_bottom": 0.018,
+      "segments": 24,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "arm_post_right_rear",
+      "type": "rounded_box",
+      "center": [
+        0.335,
+        0.24,
+        0.51
+      ],
+      "half_sizes": [
+        0.022,
+        0.022,
+        0.13
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "leg_right_rear",
+      "type": "tapered_cylinder",
+      "top": [
+        0.27,
+        0.23,
+        0.4
+      ],
+      "bottom": [
+        0.34,
+        0.31,
+        0.0052
+      ],
+      "radius_top": 0.025,
+      "radius_bottom": 0.018,
+      "segments": 24,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "cross_rail_front",
+      "type": "rounded_box",
+      "center": [
+        0,
+        -0.255,
+        0.355
+      ],
+      "half_sizes": [
+        0.345,
+        0.022,
+        0.035
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    },
+    {
+      "name": "cross_rail_rear",
+      "type": "rounded_box",
+      "center": [
+        0,
+        0.255,
+        0.355
+      ],
+      "half_sizes": [
+        0.345,
+        0.022,
+        0.035
+      ],
+      "radius": 0.012,
+      "rotation_x": 0,
+      "material": "warm_walnut"
+    }
+  ],
+  "geometry_notes": [
+    "Rounded boxes: SDF box with core half_sizes-radius, then radius offset",
+    "Box rotation_x in radians around the specified center",
+    "Tapered legs have flat caps perpendicular to their centerline"
+  ],
+  "educational_concept": true,
+  "manufacturing_ready": false
+}

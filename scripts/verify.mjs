@@ -12,7 +12,7 @@ assert.equal(new Set(projects.map(p=>p.id)).size,projects.length,'Project ids mu
 assert.equal(premiumProjects.length,5,'The Moscow premium collection must contain five concepts.');
 assert.equal(projects.filter(p=>p.type==='studio').length,3,'The three existing studio concepts must be preserved.');
 assert(projects.every(p=>['studio','one-bedroom','family'].includes(p.type)),'Unknown apartment type.');
-const ruFiles = ['index.html', ...projects.map(p=>`cases/${p.id}.html`)];
+const ruFiles = ['index.html', ...projects.map(p=>`cases/${p.id}.html`), 'cases/luma-01.html'];
 const pageFiles = [...ruFiles,...ruFiles.map(file=>'en/'+file)];
 const titles = new Set();
 const rootLinks = new Set();

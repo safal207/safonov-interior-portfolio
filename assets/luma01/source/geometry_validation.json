@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "objects": 16,
+  "vertices": 52880,
+  "triangles": 97728,
+  "native_bounds_m": {
+    "min": [
+      -0.39,
+      -0.35,
+      0.0005365507305543828
+    ],
+    "max": [
+      0.39,
+      0.35,
+      0.9501442862535667
+    ]
+  },
+  "checks": [
+    "finite vertices",
+    "unit normals",
+    "indices in bounds",
+    "nondegenerate triangles",
+    "outward triangle winding",
+    "GLB header and chunks",
+    "aligned buffer views",
+    "GLB accessor readback and coordinate transform"
+  ]
+}

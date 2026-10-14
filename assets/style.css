@@ -223,6 +223,25 @@ h1 em,h2 em{font-weight:400}
 @media(max-width:360px){.home-intro h1{font-size:42px}.premium-intro{padding:24px 21px}.premium-intro h2{font-size:35px}.premium-addresses a{font-size:11px;gap:8px}.premium-addresses small{font-size:9px}.project-premium .project-title h3{font-size:29px}.material-grid{gap:12px}.material-grid li{padding:16px;min-height:170px}.material-grid h3{font-size:19px}.materials-section .section-head.compact h2{font-size:30px}.collection-heading .eyebrow{font-size:8px}.collection-edition{font-size:7px}}
 @media print{.premium-editorial{display:block}.premium-cover img{max-height:100mm;object-fit:contain}.premium-intro{margin-top:20px;background:none;padding:0}.premium-addresses{display:none}.premium-seal{margin-bottom:10px}.materials-section{padding-bottom:25px}.material-grid li{break-inside:avoid;min-height:40mm;-webkit-print-color-adjust:exact;print-color-adjust:exact}.collection-heading{margin-top:20px}.moscow-collection{padding-bottom:20px}}
 
+/* Product studies are separate from the apartment collection and its filters. */
+.product3d-section{padding-block:0 100px}
+.product3d-section>.section-head{padding-top:30px;border-top:1px solid var(--line)}
+.product3d-section h2{max-width:760px;font-size:clamp(35px,4vw,55px)}
+.product3d-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);background:#ebe4d9}
+.product3d-image{display:block;overflow:hidden;background:#e5ddd0}
+.product3d-image img{width:100%;height:auto;aspect-ratio:4/5;object-fit:contain}
+.product3d-copy{align-self:center;min-width:0;padding:38px 42px}
+.product3d-copy>.eyebrow{color:var(--bronze)}
+.product3d-copy>.project-title{margin-top:14px}
+.product3d-copy .project-title h3{font-size:clamp(36px,4vw,54px)}
+.product3d-description{max-width:430px;font-size:14px;line-height:1.85;margin-top:20px}
+.product3d-deliverables{font-size:11px;line-height:1.8;color:var(--muted);margin-block:20px 17px}
+.product3d-note{font-size:10px;line-height:1.8;color:var(--muted);margin-top:19px}
+@media(max-width:1100px){.product3d-copy{padding:30px}.product3d-description{font-size:13px}}
+@media(max-width:760px){.product3d-section{padding-bottom:60px}.product3d-section>.section-head{padding-top:24px}.product3d-section h2{font-size:37px}.product3d-card{grid-template-columns:1fr}.product3d-image img{height:auto;aspect-ratio:4/5}.product3d-copy{padding:28px}.product3d-copy .project-title h3{font-size:42px}.product3d-description{max-width:none;margin-top:17px}}
+@media(max-width:360px){.product3d-section h2{font-size:32px}.product3d-copy{padding:24px}}
+@media print{.product3d-section{padding-bottom:25px}.product3d-card{break-inside:avoid;background:none}.product3d-image img{max-height:85mm;object-fit:contain}.product3d-copy{padding:20px}}
+
 /* One-room concept offer and a complete sample deliverable. */
 .site-header nav{flex-wrap:wrap;gap:8px 22px}
 .service-section{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:7%;padding-block:48px 72px;border-top:1px solid var(--line)}

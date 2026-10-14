@@ -90,11 +90,12 @@ export function localizeAssets(html, lang) {
   return html.slice(0,boundary) + body;
 }
 
-export function writeSitemap(root, projects) {
-  const files = ['index.html',...projects.map(p=>`cases/${p.id}.html`)];
+export function writeSitemap(root, projects, extraPages=[]) {
+  const files = ['index.html',...projects.map(p=>`cases/${p.id}.html`),...extraPages.map(p=>p.path)];
   const entries = ['ru','en'].flatMap(lang=>files.map(file=>{
     const p = projects.find(p=>file===`cases/${p.id}.html`);
-    const image = siteURL+'/assets/renders/'+(p || projects[0]).render;
+    const extra=extraPages.find(p=>p.path===file);
+    const image = siteURL+'/'+(extra?.image || 'assets/renders/'+(p || projects[0]).render);
     return `  <url><loc>${esc(pageURL(file,lang))}</loc><xhtml:link rel="alternate" hreflang="ru" href="${esc(pageURL(file,'ru'))}"/><xhtml:link rel="alternate" hreflang="en" href="${esc(pageURL(file,'en'))}"/><xhtml:link rel="alternate" hreflang="x-default" href="${esc(pageURL(file,'ru'))}"/><image:image><image:loc>${esc(image)}</image:loc></image:image></url>`;
   }));
   fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${entries.join('\n')}\n</urlset>\n`);

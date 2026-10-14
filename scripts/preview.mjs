@@ -1,16 +1,18 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { productPages } from './product3d.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const projects=JSON.parse(fs.readFileSync(path.join(root,'data/projects.json'),'utf8'));
-const pageFiles=['index.html',...projects.map(p=>`cases/${p.id}.html`)];
+const pageFiles=['index.html',...projects.map(p=>`cases/${p.id}.html`),...productPages.map(p=>p.path)];
 const pages=Object.fromEntries([...pageFiles,...pageFiles.map(file=>'en/'+file)].map(file=>[file,fs.readFileSync(path.join(root,file),'utf8')]));
-const files=['assets/favicon.svg',...fs.readdirSync(path.join(root,'assets/renders')).map(f=>'assets/renders/'+f),...fs.readdirSync(path.join(root,'assets/source')).map(f=>'assets/source/'+f)];
-const mime=filename=>filename.endsWith('.webp')?'image/webp':filename.endsWith('.png')?'image/png':filename.endsWith('.jpg')?'image/jpeg':'image/svg+xml';
+const productFiles=['hero','front','profile','rear'].flatMap(name=>['png','webp'].map(ext=>`assets/luma01/${name}.${ext}`));
+const files=['assets/favicon.svg',...fs.readdirSync(path.join(root,'assets/renders')).map(f=>'assets/renders/'+f),...fs.readdirSync(path.join(root,'assets/source')).map(f=>'assets/source/'+f),...productFiles,'assets/luma01/LUMA01_turntable.mp4','assets/luma01/LUMA01_source.zip','assets/luma01/source/LUMA01.glb'];
+const mime=filename=>({'.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4','.zip':'application/zip','.glb':'model/gltf-binary','.svg':'image/svg+xml'}[path.extname(filename)]||'application/octet-stream');
 const assets=Object.fromEntries(files.map(file=>[file,{type:mime(file),data:fs.readFileSync(path.join(root,file)).toString('base64')}])) ;
 const safe=value=>JSON.stringify(value).replaceAll('<','\\u003c');
-const style=fs.readFileSync(path.join(root,'assets/style.css'),'utf8');
+const style=fs.readFileSync(path.join(root,'assets/style.css'),'utf8')+'\n'+fs.readFileSync(path.join(root,'assets/luma01/case.css'),'utf8');
 const app=fs.readFileSync(path.join(root,'assets/app.js'),'utf8');
 const html=`<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Safonov Interiors — portfolio</title><meta name="theme-color" content="#302c27"><style>html,body{margin:0;height:100%;background:#f3f0e8}iframe{display:block;border:0;width:100%;height:100%}</style></head><body><iframe id="portfolio" title="Safonov Interiors — ${projects.length} интерьерных концепций / Moscow Premium"></iframe>
 <script>
@@ -28,7 +30,7 @@ window.navigatePortfolio=(key='index.html',hash='',language=window.previewLangua
  window.previewLanguage=language==='en'?'en':'ru';
  const base='https://portfolio-preview.invalid/'+key;
  let html=pages[key].replace(/<script[^>]*src="[^"]*"[^>]*><\\/script>/g,'').replace(/<link rel="stylesheet"[^>]*>/g,'');
- html=html.replace(/\\b(src|href|data-lightbox)="([^"]+)"/g,(all,attribute,value)=>{try{const file=new URL(value,base).pathname.slice(1);if(assetUrls[file])return attribute+'="'+assetUrls[file]+'"';}catch{}return all;});
+ html=html.replace(/\\b(src|href|data-lightbox|poster)="([^"]+)"/g,(all,attribute,value)=>{try{const file=new URL(value,base).pathname.slice(1);if(assetUrls[file])return attribute+'="'+assetUrls[file]+'"';}catch{}return all;});
  html=html.replace('<head>','<head><base href="'+base+'"><style>'+css+'</style>');
  html=html.replace(/(<html[^>]* lang=")[^"]*(")/,'$1'+window.previewLanguage+'$2');
  const navigationCode='document.addEventListener("click",event=>{const a=event.target.closest("a[href]");if(!a)return;const url=new URL(a.getAttribute("href"),document.baseURI);if(url.hostname!=="portfolio-preview.invalid")return;const file=url.pathname.slice(1);if(!parent.hasPortfolioPage(file))return;event.preventDefault();parent.navigatePortfolio(file,url.hash,document.documentElement.lang);});document.querySelectorAll("[data-set-lang]").forEach(button=>button.addEventListener("click",()=>{parent.previewLanguage=document.documentElement.lang;}));';

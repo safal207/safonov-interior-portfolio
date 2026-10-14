@@ -18,6 +18,14 @@
 
 [Открыть все кейсы прямо на GitHub / Read every case on GitHub](docs/CASEBOOK.md)
 
+## Предметная 3D-визуализация / Product 3D
+
+[**LUMA 01 — кресло: четыре ракурса и анимация**](https://safal207.github.io/safonov-interior-portfolio/cases/luma-01.html) · [English](https://safal207.github.io/safonov-interior-portfolio/en/cases/luma-01.html) · [Описание на GitHub](docs/LUMA01.md)
+
+Отдельный учебный концепт, созданный с помощью кода и ИИ. Единая процедурная сцена, PNG, шестисекундный оборот камеры и открытая геометрия GLB/OBJ. Исходники и ограничения: [assets/luma01/source](assets/luma01/source/). Кейс не входит в коллекцию 18 квартир и не является коммерческим заказом.
+
+An educational product study created with code and AI assistance: one procedural scene, four stills, a six-second camera orbit and GLB/OBJ geometry. [Source and reproduction notes](assets/luma01/source/). This is separate from the 18 apartment concepts and is not a commercial commission.
+
 ## Услуга / Service
 
 [Концепция одной комнаты — 5 000 ₽](https://safal207.github.io/safonov-interior-portfolio/#service): один стиль, коллаж и палитра, до восьми предметов со ссылками, одна итерация корректировок и итоговый PDF. Срок согласуется после получения исходных материалов, до начала работы.
@@ -49,7 +57,7 @@
 
 ## Что внутри / Contents
 
-- Адаптивный сайт: главная страница и 18 страниц проектов в каждой языковой версии, RU/EN, фильтры, увеличиваемые изображения.
+- Адаптивный сайт: главная, 18 интерьерных кейсов и один предметный 3D-кейс в каждой языковой версии, RU/EN, фильтры, увеличиваемые изображения.
 - 18 финальных визуализаций в WebP, 9 исходных скриншотов и 5 оригинальных планов застройщиков.
 - Для каждого проекта: сценарий жизни, решения по расстановке и хранению, свет, палитра, источник и его ограничения.
 - Markdown-каталог для просмотра непосредственно в GitHub.
