@@ -20,7 +20,13 @@
       "availabilityEn": "Listed as in stock; confirm delivery date",
       "url": "https://www.divan.ru/product/divan-brukvil-velvet-olive",
       "imageUrl": "https://cdn.servicecdn.ru/@wmp-core/img/v1/rs:fit:1200:630:1:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQ4NDIyMjkucG5n.jpg",
-      "imageFile": "assets/products/olive-atelier/01.jpg"
+      "imageFile": "assets/products/olive-atelier/01.jpg",
+      "checkedAt": "2026-10-19",
+      "sku": "222673",
+      "color": "Серо-зелёный велюр",
+      "colorEn": "Grey-green velvet",
+      "rationale": "Более холодный зелёный уравновешивает тёплое дерево. Высокая спинка и прямой силуэт повторены в концепции.",
+      "rationaleEn": "A cooler green balances warm timber. The tall back and straight silhouette inform the concept."
     },
     {
       "name": "Кресло Витал Рогожка Оливковый",
@@ -36,7 +42,12 @@
       "availabilityEn": "In stock; confirm delivery date",
       "url": "https://www.divan.ru/product/kreslo-vital-rogojka-olivkovyj",
       "imageUrl": "https://cdn.servicecdn.ru/@wmp-core/img/v1/rs:fit:1200:630:1:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzYxNjg5NDUucG5n.jpg",
-      "imageFile": "assets/products/olive-atelier/02.jpg"
+      "imageFile": "assets/products/olive-atelier/02.jpg",
+      "checkedAt": "2026-10-10",
+      "color": "Тёплая оливковая рогожка",
+      "colorEn": "Warm olive woven fabric",
+      "rationale": "Более тёплый оттенок и выраженное плетение добавляют глубину к гладкому велюру дивана.",
+      "rationaleEn": "The warmer shade and visible weave add depth beside the smooth sofa velvet."
     },
     {
       "name": "Стол журнальный Halmar Dorotea",
@@ -54,7 +65,12 @@
       "imageUrl": "https://www.homeadore.ru/files/products/1200x630/37/e0/37e0e506-d4ee-4499-9a57-c8f714a80182.webp",
       "materialNote": "МДФ с пленкой под травертин; ореховый цвет основания. Это имитация, не натуральный камень.",
       "materialNoteEn": "MDF with travertine-look film and walnut-colour base; not natural stone.",
-      "imageFile": "assets/products/olive-atelier/03.webp"
+      "imageFile": "assets/products/olive-atelier/03.webp",
+      "checkedAt": "2026-10-10",
+      "color": "Светлый травертин / орех",
+      "colorEn": "Pale travertine look / walnut",
+      "rationale": "Круглая столешница смягчает линии мебели; ореховое основание связывает её с хранением.",
+      "rationaleEn": "The round top softens the furniture lines; its walnut-coloured base connects it to the storage."
     },
     {
       "name": "ТВ-тумба Греймут 200x55 Древесный темный",
@@ -70,7 +86,12 @@
       "availabilityEn": "In stock; published discounted price",
       "url": "https://shop.divan.ru/products/tv-tumba-greiymut-200x55-drevesnyiy-temnyiy-106959",
       "imageUrl": "https://avatars.mds.yandex.net/get-yastore/19393785/mhstvp2kk5hmqgzjnq7nr6njwv7s5bkk/orig",
-      "imageFile": "assets/products/olive-atelier/04.jpg"
+      "imageFile": "assets/products/olive-atelier/04.jpg",
+      "checkedAt": "2026-10-10",
+      "color": "Тёмное дерево",
+      "colorEn": "Dark timber",
+      "rationale": "Напольная тумба с видимыми опорами поддерживает деревянную перегородку.",
+      "rationaleEn": "A standing cabinet with visible legs complements the timber partition."
     },
     {
       "name": "Торшер Ларри Бежевый",
@@ -86,23 +107,36 @@
       "availabilityEn": "In stock; E27 bulb sold separately",
       "url": "https://shop.divan.ru/products/torsher-larri-bejevyiy-100023",
       "imageUrl": "https://avatars.mds.yandex.net/get-yastore/19393785/ps66rgb2lz5c7kzdvzsrwrhdnmmnchlx/orig",
-      "imageFile": "assets/products/olive-atelier/05.jpg"
+      "imageFile": "assets/products/olive-atelier/05.jpg",
+      "checkedAt": "2026-10-10",
+      "color": "Матовый бежевый",
+      "colorEn": "Matte beige",
+      "rationale": "Светлый купол и тонкая стойка спокойно сочетаются со штукатуркой и ковром.",
+      "rationaleEn": "The pale dome and slim stem sit quietly beside the plaster and rug."
     },
     {
-      "name": "Ковер Льерс 160x230",
-      "nameEn": "Lyers grey-beige rug",
+      "name": "Ковер Плюма Бежевый 160x230",
+      "nameEn": "Plyuma beige rug",
       "category": "Ковёр",
       "categoryEn": "Rug",
       "store": "Диван.ру",
-      "priceRub": 8990,
+      "sku": "253510",
+      "priceRub": 13490,
       "quantity": 1,
-      "dimensions": "160 × 230 см; ворс 0,6 см",
-      "dimensionsEn": "160 × 230 cm; 0.6 cm pile",
-      "availability": "Товар в наличии",
-      "availabilityEn": "In stock",
-      "url": "https://shop.divan.ru/products/kover-lers-160x230-106684",
-      "imageUrl": "https://avatars.mds.yandex.net/get-yastore/19393785/p8jws5jw6npmd2j99bbqw7dggrwdr4l4/orig",
-      "imageFile": "assets/products/olive-atelier/06.jpg"
+      "dimensions": "160 × 230 см; ворс 0,4 см",
+      "dimensionsEn": "160 × 230 cm; 0.4 cm pile",
+      "availability": "Доступен к заказу по публичной карточке; точный срок доставки не подтверждён",
+      "availabilityEn": "Available to order in the public listing; exact delivery date not confirmed",
+      "materialNote": "27% хлопок, 8% вискоза, 43% полиэстер, 18% акрил, 4% шерсть.",
+      "materialNoteEn": "27% cotton, 8% viscose, 43% polyester, 18% acrylic, 4% wool.",
+      "url": "https://www.divan.ru/product/kover-plyuma-beige-160x230",
+      "imageUrl": "https://cdn.servicecdn.ru/@wmp-core/img/v1/rs:fit:1200:630:1:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzU0NzY3MDUucG5n.jpg",
+      "imageFile": "assets/products/olive-atelier/06-plyuma-beige.jpg",
+      "checkedAt": "2026-10-19",
+      "color": "Светлый тёплый бежевый",
+      "colorEn": "Pale warm beige",
+      "rationale": "Однотонная основа без контрастной геометрии объединяет зону отдыха.",
+      "rationaleEn": "A plain base without contrasting geometry brings the seating area together."
     },
     {
       "name": "Ваза HOFF Velsen 25.5 см",
@@ -118,27 +152,40 @@
       "availabilityEn": "Available for delivery in Moscow as listed",
       "url": "https://hoff.ru/catalog/tovary_dlya_doma/dekor/vazy_i_tsvety/vazy/vaza_velsen_id10804502/?articul=80642719",
       "imageFile": "assets/products/olive-atelier/07.jpg",
-      "imageUrl": "https://hoff.ru/upload/iblock/ba7/1d63xwdkytrx0binnup1hb2f8gxg45je.jpg"
+      "imageUrl": "https://hoff.ru/upload/iblock/ba7/1d63xwdkytrx0binnup1hb2f8gxg45je.jpg",
+      "checkedAt": "2026-10-10",
+      "color": "Белая керамика",
+      "colorEn": "White ceramic",
+      "rationale": "Светлая вертикаль и рельефная поверхность завершают композицию стола.",
+      "rationaleEn": "A pale vertical accent and fluted surface complete the tabletop composition."
     },
     {
-      "name": "Плед Диалог 150x200",
-      "nameEn": "Dialog 150x200 throw",
+      "name": "Плед Бэй Молочный 150x200",
+      "nameEn": "Bei milk-white throw",
       "category": "Текстиль",
       "categoryEn": "Textile",
       "store": "Диван.ру",
-      "priceRub": 7690,
+      "sku": "229456",
+      "priceRub": 2190,
       "quantity": 1,
       "dimensions": "150 × 200 см",
       "dimensionsEn": "150 × 200 cm",
-      "availability": "Наличие указано магазином; остаток уточняется",
-      "availabilityEn": "Listed as in stock; confirm remaining quantity",
-      "url": "https://www.divan.ru/product/pled-dialog-150x200",
-      "imageUrl": "https://cdn.servicecdn.ru/@wmp-core/img/v1/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzU3MTk3ODAucG5n.jpg",
-      "imageFile": "assets/products/olive-atelier/08.jpg"
+      "availability": "Доступен к заказу по публичной карточке; есть самовывоз, срок доставки уточняется",
+      "availabilityEn": "Available to order in the public listing; pickup listed, confirm delivery date",
+      "materialNote": "58% хлопок, 32% акрил, 10% полиэстер. На исходном фото тёмно-синяя обмётка по краю.",
+      "materialNoteEn": "58% cotton, 32% acrylic, 10% polyester. Original photograph shows dark-blue blanket stitching.",
+      "url": "https://www.divan.ru/product/pled-bej-white-150x200",
+      "imageUrl": "https://cdn.servicecdn.ru/@wmp-core/img/v1/rs:fit:1200:630:1:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzUxODg2NDMucG5n.jpg",
+      "imageFile": "assets/products/olive-atelier/08-bei-milk.jpg",
+      "checkedAt": "2026-10-19",
+      "color": "Молочный / синяя обмётка",
+      "colorEn": "Cream / blue blanket stitching",
+      "rationale": "Кремовая ткань осветляет диван; тонкая синяя обмётка остаётся небольшим реальным акцентом.",
+      "rationaleEn": "Cream fabric lightens the sofa; the thin blue stitching remains a small, authentic accent."
     }
   ],
-  "totalRub": 187739,
-  "remainingRub": 12261,
+  "totalRub": 186739,
+  "remainingRub": 13261,
   "exclusions": [
     "Доставка",
     "Подъем",
@@ -149,8 +196,9 @@
     "Работа мастеров"
   ],
   "notes": [
-    "Подборка передаёт палитру и настроение концепции, не повторяет комплект предметов на AI-визуализации.",
+    "AI-визуализация обновлена с учётом форм и цветов выбранной мебели. Фотографии в карточках показывают сами товары; точные размеры и расстановка проверяются по обмерам.",
     "Фактическую расстановку и проходы необходимо проверить по обмерному плану. Площадь 17,2 м² сама по себе не подтверждает размещение всех предметов.",
     "Цены и статусы сохранены по публичным карточкам. Перед покупкой требуется повторная проверка."
-  ]
+  ],
+  "updatedAt": "2026-10-19"
 }

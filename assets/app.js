@@ -55,8 +55,12 @@
   if (dialog) {
     document.querySelectorAll('[data-lightbox]').forEach(button => button.addEventListener('click', () => {
       const img = dialog.querySelector('img');
+      const thumbnail = button.querySelector('img');
       img.src = button.dataset.lightbox;
-      img.alt = button.querySelector('img').alt;
+      img.alt = thumbnail.alt;
+      img.width = thumbnail.naturalWidth || thumbnail.width;
+      img.height = thumbnail.naturalHeight || thumbnail.height;
+      dialog.setAttribute('aria-label', thumbnail.alt);
       dialog.showModal();
       document.body.classList.add('modal-open');
     }));

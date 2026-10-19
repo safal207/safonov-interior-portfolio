@@ -3,6 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 import { fileURLToPath } from 'node:url';
 import { pageURL, siteURL } from './seo.mjs';
+import { verifyDesign } from './verify-design.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const projects = JSON.parse(fs.readFileSync(path.join(root,'data/projects.json'),'utf8'));
@@ -60,7 +61,7 @@ for (const filename of pageFiles) {
 for (const p of projects) {
   assert(p.name.ru && p.name.en && p.intro.ru && p.intro.en,`${p.id}: missing translations.`);
   assert.equal(p.solutions.length,3);
-  assert.equal(p.palette.length,4);
+  assert(Array.isArray(p.palette) && p.palette.length>0,`${p.id}: palette missing.`);
   assert(p.palette.every(c=>/^#[\da-fA-F]{6}$/.test(c.hex)),`${p.id}: invalid colour.`);
   const [x,y,w,h]=p.source.crop;
   const [sourceWidth,sourceHeight]=p.source.size || [674,1536];
@@ -94,4 +95,5 @@ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const sitemapURLs=[...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);
 assert.equal(sitemapURLs.length,pageFiles.length);assert.equal(new Set(sitemapURLs).size,pageFiles.length);
 for(const lang of ['ru','en']) for(const file of ruFiles) assert(sitemapURLs.includes(pageURL(file,lang)));
+verifyDesign(root,projects);
 console.log(`PASS: ${pageFiles.length} pages; ${projects.length} concepts (${premiumProjects.length} Moscow premium); bilingual content; ${rootLinks.size} linked files; source crops and render assets.`);

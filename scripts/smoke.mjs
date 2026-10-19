@@ -35,6 +35,33 @@ const noOverflow=async label=>{
   const dimensions=await page.evaluate(()=>({view:document.documentElement.clientWidth,content:document.documentElement.scrollWidth}));
   assert(dimensions.content<=dimensions.view,`${label}: horizontal overflow ${JSON.stringify(dimensions)}`);
 };
+const decodedImages=async()=>page.locator('img').evaluateAll(async images=>{
+  await Promise.all(images.filter(image=>!image.closest('dialog')&&image.getAttribute('src')).map(image=>{image.loading='eager';return image.decode();}));
+});
+const checkImageDialog=async(selector,label)=>{
+  const trigger=page.locator(selector).first();
+  const source=await trigger.getAttribute('data-lightbox');
+  const alt=await trigger.locator('img').getAttribute('alt');
+  await trigger.scrollIntoViewIfNeeded();
+  await trigger.focus();
+  await page.keyboard.press('Enter');
+  const dialog=page.locator('dialog.lightbox');
+  assert.equal(await dialog.evaluate(node=>node.open),true,`${label}: Enter opens image.`);
+  const image=dialog.locator('img');
+  await image.evaluate(image=>image.decode());
+  assert.equal(await image.getAttribute('src'),source,`${label}: dialog opens the selected image.`);
+  assert.equal(await image.getAttribute('alt'),alt,`${label}: dialog preserves the image description.`);
+  assert.equal(await dialog.evaluate(node=>node.contains(document.activeElement)),true,`${label}: focus enters the dialog.`);
+  const bounds=await image.boundingBox();
+  const viewport=page.viewportSize();
+  assert(bounds && bounds.x>=-1 && bounds.y>=-1 && bounds.x+bounds.width<=viewport.width+1 && bounds.y+bounds.height<=viewport.height+1,`${label}: enlarged image fits the viewport.`);
+  const ratio=await image.evaluate(image=>image.naturalWidth/image.naturalHeight);
+  assert(Math.abs((bounds.width/bounds.height)/ratio-1)<0.01,`${label}: enlarged image preserves its original proportions.`);
+  await page.keyboard.press('Escape');
+  assert.equal(await dialog.evaluate(node=>node.open),false,`${label}: Escape closes image.`);
+  assert.equal(await trigger.evaluate(node=>node===document.activeElement),true,`${label}: focus returns to the same image button.`);
+  await noOverflow(label);
+};
 try {
   for (const width of [320,390,768,1440]) {
     await page.setViewportSize({width,height:960});
@@ -75,7 +102,7 @@ try {
   await page.waitForLoadState('networkidle');
   assert.equal(await page.locator('html').getAttribute('lang'),'en');
   assert((await page.locator('h1').innerText()).includes(firstCase.name.en));
-  await page.locator('[data-lightbox]').focus();
+  await page.locator('[data-lightbox]').first().focus();
   await page.keyboard.press('Enter');
   assert.equal(await page.locator('dialog').evaluate(d=>d.open),true);
   await page.keyboard.press('Escape');
@@ -86,7 +113,7 @@ try {
     await page.setViewportSize({width,height:960});
     for(const lang of width===320?['ru','en']:['ru']) for(const p of projects) {
       await page.goto(`${origin}/${lang==='en'?'en/':''}cases/${p.id}.html`,{waitUntil:'networkidle'});
-      await page.locator('img').evaluateAll(async imgs=>{await Promise.all(imgs.filter(i=>!i.closest('dialog')&&i.getAttribute('src')).map(i=>{i.loading='eager';return i.decode();}));});
+      await decodedImages();
       await noOverflow(`${p.id} ${lang} ${width}`);
       const missing=await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>i.src&&!i.closest('dialog')&&(!i.complete||i.naturalWidth===0)).map(i=>i.src));
       assert.deepEqual(missing,[],`${p.id}: missing image`);
@@ -107,6 +134,83 @@ try {
       if(lang==='ru'&&p.id===firstCaseID)await page.screenshot({path:path.join(out,`premium-case-${width}.png`),fullPage:true});
     }
     checks.push(`All ${projects.length} cases at ${width}px ${width===320?'RU + EN':'RU'}; source images, dimensions and crops`);
+  }
+  const olive=projects.find(project=>project.id==='level-michurinsky-42-1');
+  const sample=JSON.parse(fs.readFileSync(path.join(root,'data/olive-atelier-sample.json'),'utf8'));
+  for(const viewport of [{width:1363,height:936},{width:390,height:844},{width:320,height:844}]) {
+    await page.setViewportSize(viewport);
+    for(const lang of ['ru','en']) {
+      const label=`Olive atelier ${lang} ${viewport.width}×${viewport.height}`;
+      const prefix=lang==='en'?'../../':'../';
+      await page.goto(`${origin}/${lang==='en'?'en/':''}cases/${olive.id}.html`,{waitUntil:'networkidle'});
+      await decodedImages();
+      await noOverflow(label);
+      assert.equal(await page.locator('#shopping-sample [data-product-id]').count(),8,`${label}: eight separately readable product cards.`);
+      for(const [index,item] of sample.items.entries()) {
+        const id=String(index+1).padStart(2,'0');
+        const card=page.locator(`#product-${id}`);
+        assert((await card.locator('h3').innerText()).includes(lang==='en'?item.nameEn:item.name),`${label}: ${id} full product title visible in the active language.`);
+        assert.equal(await card.locator('button.image-open.product-image').getAttribute('data-lightbox'),prefix+item.imageFile,`${label}: ${id} original product photograph.`);
+        assert.equal(await card.locator('img').getAttribute('src'),prefix+item.imageFile,`${label}: ${id} product thumbnail path.`);
+        assert.equal(await card.locator('time').getAttribute('datetime'),item.checkedAt,`${label}: ${id} individual verification date.`);
+        const clipped=await card.locator('h3').evaluate(node=>node.scrollWidth>node.clientWidth+1 || node.scrollHeight>node.clientHeight+1);
+        assert.equal(clipped,false,`${label}: ${id} product title must not be clipped.`);
+      }
+      for(const [index,material] of olive.materials.entries()) {
+        const card=page.locator('.material-grid>li').nth(index);
+        const colour=material.accentColor||olive.palette.find(colour=>colour.id===material.paletteId).hex;
+        assert.equal(await card.locator('.material-tone').getAttribute('data-material-color'),colour,`${label}: material keeps its assigned palette colour.`);
+        const actual=await card.locator('.material-tone').evaluate(node=>getComputedStyle(node).backgroundColor);
+        const expected=`rgb(${colour.slice(1).match(/../g).map(channel=>parseInt(channel,16)).join(', ')})`;
+        assert.equal(actual,expected,`${label}: rendered material swatch matches its palette reference.`);
+        if(material.preview) {
+          assert.equal(await card.locator('img').getAttribute('src'),prefix+material.preview.file,`${label}: material texture path.`);
+          assert.equal(await card.locator('img').getAttribute('alt'),material.preview.alt[lang],`${label}: translated material texture description.`);
+        }
+      }
+      const expectedTotal=sample.items.reduce((sum,item)=>sum+item.priceRub*item.quantity,0);
+      assert.equal(Number(await page.locator('.sample-total').getAttribute('data-total-rub')),expectedTotal,`${label}: calculated selection total.`);
+      const contrast=await page.locator('.case-intro>.eyebrow,.case-meta,.case-cover figcaption,.room-table caption,.source-data>.small-note').evaluateAll(nodes=>{
+        const rgb=value=>(value.match(/[\d.]+/g)||[]).map(Number);
+        const luminance=channels=>channels.slice(0,3).map(value=>{const channel=value/255;return channel<=0.04045?channel/12.92:((channel+0.055)/1.055)**2.4;}).reduce((sum,value,index)=>sum+value*[0.2126,0.7152,0.0722][index],0);
+        return nodes.map(node=>{
+          const foreground=rgb(getComputedStyle(node).color);
+          let ancestor=node;
+          let background;
+          while(ancestor) {
+            const candidate=rgb(getComputedStyle(ancestor).backgroundColor);
+            if(candidate.length===3||candidate[3]===1){background=candidate;break;}
+            ancestor=ancestor.parentElement;
+          }
+          const first=luminance(foreground),second=luminance(background||[255,255,255]);
+          return {selector:node.className||node.tagName,ratio:(Math.max(first,second)+0.05)/(Math.min(first,second)+0.05)};
+        });
+      });
+      assert.equal(contrast.length,5,`${label}: all five audited caption targets must be measured.`);
+      for(const item of contrast) assert(item.ratio>=4.5,`${label}: ${item.selector} caption contrast ${item.ratio.toFixed(2)}:1 is below 4.5:1.`);
+      if(viewport.width!==320) {
+        await page.screenshot({path:path.join(out,`olive-${lang}-${viewport.width}x${viewport.height}.png`),fullPage:true});
+        await page.locator('.material-grid').screenshot({path:path.join(out,`olive-materials-${lang}-${viewport.width}.png`)});
+        await page.locator('#shopping-sample').screenshot({path:path.join(out,`olive-products-${lang}-${viewport.width}.png`)});
+      }
+      await checkImageDialog('.case-cover button[data-lightbox]',`${label} concept image`);
+      const productIds=viewport.width===1363?sample.items.map((_,index)=>String(index+1).padStart(2,'0')):['01','08'];
+      for(const id of productIds) await checkImageDialog(`#product-${id} button[data-lightbox]`,`${label} product ${id}`);
+      if(await page.locator('.material-grid button[data-lightbox]').count()) await checkImageDialog('.material-grid button[data-lightbox]',`${label} material texture`);
+      const details=page.locator('.sample-details:has(.shopping-table)');
+      assert.equal(await details.evaluate(node=>node.open),false,`${label}: specifications are initially collapsed.`);
+      await details.locator('summary').click();
+      assert.equal(await details.evaluate(node=>node.open),true,`${label}: specifications can be expanded.`);
+      assert.equal(await details.locator('tbody tr:visible').count(),sample.items.length,`${label}: all specification rows are reachable.`);
+      await noOverflow(`${label} expanded specifications`);
+      const sheet=page.locator('.sample-board-details');
+      assert.equal(await sheet.evaluate(node=>node.open),false,`${label}: selection sheet is initially collapsed.`);
+      await sheet.locator('summary').click();
+      await checkImageDialog('.sample-board-details button[data-lightbox]',`${label} selection sheet`);
+      await noOverflow(`${label} expanded selection sheet`);
+      if(viewport.width===1363) await page.locator('.sample-moodboard').screenshot({path:path.join(out,`olive-sheet-${lang}-${viewport.width}.png`)});
+      checks.push(`${label}: full product titles/photos, palette references, texture assets, calculated total, caption contrast, image dialog Escape/focus/proportions, expandable specifications/sheet and no overflow`);
+    }
   }
   await page.setViewportSize({width:390,height:960});
   await page.goto(origin+'/cases/granel-30-1.html',{waitUntil:'networkidle'});
@@ -136,4 +240,8 @@ try {
   const report={status:'PASS',checkedAt:new Date().toISOString(),checks,errors,httpFailures:failures};
   fs.writeFileSync(path.join(out,'smoke-results.json'),JSON.stringify(report,null,2));
   console.log(JSON.stringify(report,null,2));
+} catch(error) {
+  await page.screenshot({path:path.join(out,'failure.png'),fullPage:true}).catch(()=>{});
+  fs.writeFileSync(path.join(out,'smoke-results.json'),JSON.stringify({status:'FAIL',checkedAt:new Date().toISOString(),url:page.url(),checks,error:error.stack||String(error),errors,httpFailures:failures},null,2));
+  throw error;
 } finally { await browser.close(); if(server)await new Promise(resolve=>server.close(resolve)); }

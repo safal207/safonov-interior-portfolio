@@ -1,0 +1,13 @@
+const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+export function materialSection(project, text) {
+  if (!project.materials?.length) return '';
+  const cards = project.materials.map((material, index) => {
+    const colour = material.accentColor || project.palette.find(entry => entry.id === material.paletteId)?.hex;
+    if (!/^#[\da-f]{6}$/i.test(colour || '')) throw new Error(`${project.id}: material ${material.ru} has no valid colour reference`);
+    const identity = material.paletteId ? `data-palette-id="${esc(material.paletteId)}"` : `data-accent-color="${esc(material.accentColor)}"`;
+    const preview = material.preview;
+    return `<li ${identity}><span class="material-index">${String(index + 1).padStart(2,'0')}</span>${preview ? `<button type="button" class="image-open material-preview" data-lightbox="../${esc(preview.file)}" aria-label="${esc('Увеличить фактуру: ' + material.ru)}" data-label-ru="${esc('Увеличить фактуру: ' + material.ru)}" data-label-en="${esc('Enlarge texture: ' + material.en)}"><img src="../${esc(preview.file)}" width="1024" height="1024" alt="${esc(preview.alt.ru)}" data-alt-ru="${esc(preview.alt.ru)}" data-alt-en="${esc(preview.alt.en)}" loading="lazy" decoding="async"><span class="enlarge-symbol" aria-hidden="true">↗</span></button>` : ''}<div class="material-color"><span class="material-tone" data-material-color="${colour}" style="background-color:${colour}" aria-hidden="true"></span><span>${colour}</span></div><h3>${text(material.ru,material.en)}</h3><p class="material-application">${text(material.application.ru,material.application.en)}</p>${preview ? `<a class="material-credit" href="${esc(preview.sourceUrl)}" target="_blank" rel="noopener noreferrer">${text('Фактура-референс','Texture reference')} · ${esc(preview.credit)} ↗</a>` : ''}</li>`;
+  }).join('');
+  return `<section class="materials-section shell" aria-labelledby="materials-heading"><div class="section-head compact"><div><p class="eyebrow">${text('Тактильная сторона интерьера','The tactile side of an interior')}</p><h2 id="materials-heading">${text('Выбор в деталях.','Considered details.')}<br><em>${text('Материалы с характером.','Materials with character.')}</em></h2></div><p class="section-note">${text('Оттенок, фактура и место в интерьере. Фотографии фактур — ориентиры для подбора; точные образцы отделки и ткани согласуются отдельно.','Shade, texture and a place in the room. Texture photographs guide the selection; exact finish and fabric samples are agreed separately.')}</p></div><ul class="material-grid">${cards}</ul></section>`;
+}
