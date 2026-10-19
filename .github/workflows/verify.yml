@@ -11,9 +11,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
       - name: Build static pages
         run: node scripts/build.mjs
       - name: Verify links, sources and content
         run: node scripts/verify.mjs
       - name: Check generated pages are current
         run: git diff --exit-code -- index.html cases/ en/ sitemap.xml docs/CASEBOOK.md
+  browser:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Install the browser test runtime
+        run: |
+          npm install --no-save --no-package-lock playwright@1.56.1
+          npx --no-install playwright install --with-deps chromium
+      - name: Build static pages
+        run: node scripts/build.mjs
+      - name: Check responsive pages and image dialogs
+        run: node scripts/smoke.mjs
+      - name: Save screenshots and browser results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-browser-${{ github.sha }}
+          path: output/qa/
+          if-no-files-found: error
+          retention-days: 7

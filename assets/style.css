@@ -137,8 +137,8 @@ h1 em,h2 em{font-weight:400}
 .next-title svg{width:30px;height:30px;flex:none}
 .next-project p:last-child{font-size:11px;color:var(--muted);margin-top:17px}
 .next-project img{width:100%;aspect-ratio:1.5;object-fit:cover}
-.lightbox{padding:0;border:0;max-width:94vw;max-height:92vh;background:#1e261e;overflow:visible;color:white}
-.lightbox::backdrop{background:#111810df}
+.lightbox{padding:0;border:0;max-width:94vw;max-height:92vh;background:#27231f;overflow:visible;color:white}
+.lightbox::backdrop{background:#171411e8}
 .lightbox img{width:auto;max-width:94vw;max-height:88vh;object-fit:contain}
 .lightbox-close{position:absolute;right:10px;top:10px;background:var(--paper);color:var(--green);border:0;width:44px;height:44px;border-radius:50%;font-size:29px;line-height:1}
 .modal-open{overflow:hidden}
@@ -150,7 +150,7 @@ h1 em,h2 em{font-weight:400}
 @media print{.site-header nav,.language-switch,.filters,.lightbox,.image-index,.enlarge-symbol,.back-link,.next-project{display:none!important}.shell{width:100%;max-width:none}.home-intro,.case-intro,.case-story,.author-section{padding-block:20px}.home-cover img,.case-cover img{max-height:90mm;object-fit:contain}.projects-section{padding-block:25px}.project-grid{gap:20px}.project-card{break-inside:avoid}.project-feature{display:block;background:none;color:var(--ink)}.project-feature .project-image img{min-height:0;max-height:70mm;object-fit:contain}.source-section,.approach-section{padding:25px 0;background:none}.palette-section{padding-bottom:25px}.swatch{-webkit-print-color-adjust:exact;print-color-adjust:exact}.source-plan{max-height:100mm}.site-footer{padding-block:15px}.portfolio-note{margin-top:20px}}
 
 /* Moscow Premium — warm paper, bronze and architectural photography. */
-:root{--paper:#f5f1e9;--ink:#302c27;--muted:#777067;--line:#d8d0c3;--green:#37322c;--accent:#a58260;--bronze:#967452}
+:root{--paper:#f5f1e9;--ink:#302c27;--muted:#5f5951;--line:#d8d0c3;--green:#37322c;--accent:#a58260;--bronze:#7c5b3c}
 .brand-dot,.home-intro h1 em{color:var(--bronze)}
 .site-header nav a:hover{color:var(--bronze)}
 .site-header nav{gap:27px}
@@ -283,3 +283,59 @@ h1 em,h2 em{font-weight:400}
 .sample-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:30px}
 @media(max-width:760px){.service-section{grid-template-columns:1fr;gap:32px;padding-block:32px 48px}.service-copy h2{font-size:39px}.service-lead{font-size:13px}.service-package{padding:25px}.service-price{font-size:44px}.service-actions{align-items:start;flex-direction:column}.service-button{min-height:48px;max-width:100%;font-size:12px}.sample-section{padding-block:48px}.sample-section .section-head>.service-button{margin-top:24px}.sample-intro{font-size:13px}.shopping-table{min-width:660px}.sample-total{grid-template-columns:1fr;gap:20px}.sample-actions{align-items:start;flex-direction:column}}
 @media print{.service-actions,.sample-actions,.service-button{display:none!important}.service-section{padding-block:25px}.sample-section{padding-block:25px}.shopping-table-wrap{overflow:visible}.shopping-table{min-width:0}.sample-moodboard{break-inside:avoid}}
+
+/* Keep useful case captions readable at every viewport width. */
+.case-main .eyebrow,.case-premium .case-intro>.eyebrow{font-size:12px;letter-spacing:.1em;line-height:1.65}
+.case-main .section-note{font-size:14px;line-height:1.75}
+.case-meta,.case-cover figcaption,.render-view-note{font-size:12px;line-height:1.75}
+.case-main .back-link,.palette li>span{font-size:13px}
+.palette li>small,.material-index,.solution-list li>span{font-size:12px}
+.case-main .room-table{font-size:14px}
+.room-table caption,.room-table thead th{font-size:12px;line-height:1.65}
+.case-main .source-original,.case-main .source-listing{font-size:13px;line-height:1.65}
+.source-note h3{font-size:14px}
+.source-note p{font-size:13px}
+.case-main .small-note,.case-main .source-provenance,.source-provenance>p:nth-child(3),.source-provenance>a{font-size:12px;line-height:1.8}
+.sample-moodboard figcaption,.shopping-table caption,.shopping-table thead th,.shopping-table small,.sample-total p,.sample-item-number{font-size:12px}
+.sample-total p{line-height:1.8}
+.site-footer{font-size:12px}
+
+/* Material names, their own swatches, and photographic texture references. */
+.material-grid li{min-width:0}
+.material-preview{display:block;min-width:0;margin-block:16px 14px;overflow:hidden;background:#e5ded2;border:1px solid #d3c8b7}
+.material-preview img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.material-grid .material-tone{height:12px;width:48px;margin-block:18px 14px;border-color:#302c2726;flex:none}
+.material-color{display:flex;align-items:center;gap:9px;margin-block:10px 14px;color:var(--muted);font-size:12px;line-height:1.5}
+.material-color .material-tone{width:28px;margin:0}
+.material-application{margin-top:12px;color:var(--muted);font-family:var(--sans);font-size:13px;line-height:1.7;overflow-wrap:anywhere}
+.material-credit{margin-top:16px;color:var(--muted);font-size:11px;line-height:1.7;text-underline-offset:3px;overflow-wrap:anywhere}
+.material-preview .enlarge-symbol{width:30px;height:30px;right:8px;bottom:8px;font-size:18px}
+.sample-selection-note{max-width:850px;font-size:13px;line-height:1.8;color:var(--muted);margin-bottom:30px}
+.sample-details{margin-block:24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sample-details summary{padding-block:18px;cursor:pointer;font-size:14px;font-weight:500;line-height:1.6}
+.sample-details summary:focus-visible{outline:2px solid var(--bronze);outline-offset:4px}
+.sample-details[open]{padding-bottom:22px}
+.sample-details .sample-moodboard{margin-block:10px 20px}
+.sample-total .sample-remaining{flex-basis:100%;font-size:13px}
+@media(max-width:480px){.material-grid{grid-template-columns:minmax(0,1fr)}.material-grid h3{max-width:none}.material-preview img{aspect-ratio:16/9}.material-grid li{padding:22px}.material-credit{font-size:12px}}
+
+/* Product photos and native text stay legible without a raster contact sheet. */
+.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 22px;align-items:stretch;list-style:none;padding:0;margin:0 0 38px}
+.product-card{display:flex;flex-direction:column;min-width:0;background:#fbf8f2;border:1px solid var(--line)}
+.product-card .product-image{display:grid;place-items:center;width:100%;aspect-ratio:4/3;background:#fff;border-bottom:1px solid var(--line)}
+.product-image img{width:100%;height:100%;min-height:0;padding:18px;object-fit:contain}
+.product-image .enlarge-symbol{right:12px;bottom:12px;width:36px;height:36px;font-size:22px;border:1px solid var(--line)}
+.product-image:focus-visible{outline-color:var(--bronze);outline-offset:4px;z-index:1}
+.product-copy{display:flex;flex-direction:column;flex:1;min-width:0;padding:20px}
+.product-index{color:var(--bronze);font-size:12px;letter-spacing:.1em;line-height:1.5}
+.product-category{margin-top:6px;color:var(--muted);font-size:12px;line-height:1.6}
+.product-copy h3{margin-block:12px 13px;font-family:var(--serif);font-size:23px;line-height:1.3;letter-spacing:-.015em;overflow-wrap:anywhere}
+.product-copy h3 a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.product-color{margin-bottom:8px;color:var(--ink);font-size:13px;font-weight:600;line-height:1.65}
+.product-rationale{margin-bottom:14px;color:var(--ink);font-size:13px;line-height:1.75;overflow-wrap:anywhere}
+.product-size,.product-note{margin-bottom:8px;color:var(--muted);font-size:12px;line-height:1.75;overflow-wrap:anywhere}
+.product-price{margin-top:auto;padding-top:18px;color:var(--ink);font-family:var(--serif);font-size:26px;line-height:1.3}
+.product-link{align-self:flex-start;min-height:44px;max-width:100%;margin-top:8px;font-size:13px;gap:8px;overflow-wrap:anywhere}
+@media(max-width:1099px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.product-copy{padding:22px}}
+@media(max-width:649px){.product-grid{grid-template-columns:minmax(0,1fr)}.product-copy h3{font-size:25px}.product-image img{padding:20px}}
+@media print{.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.product-card{break-inside:avoid;background:none}.product-image img{max-height:55mm}.product-copy{padding:15px}.material-preview{break-inside:avoid}}

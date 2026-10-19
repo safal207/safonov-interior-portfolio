@@ -1458,40 +1458,64 @@
       {
         "hex": "#EAE3D7",
         "ru": "Слоновая кость",
-        "en": "Ivory"
+        "en": "Ivory",
+        "id": "ivory"
       },
       {
         "hex": "#C6AA82",
         "ru": "Светлый дуб",
-        "en": "Pale oak"
+        "en": "Pale oak",
+        "id": "oak"
       },
       {
         "hex": "#BDB6A6",
         "ru": "Известняк",
-        "en": "Limestone"
+        "en": "Limestone",
+        "id": "limestone"
       },
       {
         "hex": "#8B7052",
         "ru": "Матовая бронза",
-        "en": "Brushed bronze"
+        "en": "Brushed bronze",
+        "id": "bronze"
       }
     ],
     "materials": [
       {
         "ru": "Дуб с открытой текстурой",
-        "en": "Open-grain oak"
+        "en": "Open-grain oak",
+        "paletteId": "oak",
+        "application": {
+          "ru": "Пол и столярные детали.",
+          "en": "Flooring and joinery."
+        }
       },
       {
         "ru": "Светлый камень или керамогранит с фактурой известняка",
-        "en": "Pale stone or limestone-textured porcelain"
+        "en": "Pale stone or limestone-textured porcelain",
+        "paletteId": "limestone",
+        "application": {
+          "ru": "Столешницы и локальная отделка.",
+          "en": "Worktops and selected finishes."
+        }
       },
       {
         "ru": "Льняная обивка",
-        "en": "Linen upholstery"
+        "en": "Linen upholstery",
+        "paletteId": "ivory",
+        "application": {
+          "ru": "Мягкая мебель и спокойная текстильная база.",
+          "en": "Upholstery and a calm textile base."
+        }
       },
       {
         "ru": "Матовая бронза в светильниках и фурнитуре",
-        "en": "Brushed bronze lighting and hardware"
+        "en": "Brushed bronze lighting and hardware",
+        "paletteId": "bronze",
+        "application": {
+          "ru": "Светильники и небольшая фурнитура.",
+          "en": "Lighting and small hardware details."
+        }
       }
     ],
     "renderRoom": {
@@ -1575,8 +1599,8 @@
       "en": "Contemporary with an olive accent"
     },
     "intro": {
-      "ru": "Гостиная 17,2 м² собрана вокруг глубокого оливкового оттенка, ореха и светлого травертина. Чёткие линии мебели сочетаются с мягкой обивкой и дневным светом.",
-      "en": "The 17.2 m² living room pairs a deep olive tone with walnut and pale travertine. Clean furniture lines meet soft upholstery and natural daylight."
+      "ru": "Гостиная 17,2 м² сочетает оливковый и серо-зелёный текстиль, тёплое дерево и светлую фактуру травертина. Формы выбранной мебели поддерживают спокойную архитектуру и дневной свет.",
+      "en": "The 17.2 m² living room combines olive and grey-green textiles, warm timber and a pale travertine texture. The selected furniture forms complement calm architecture and natural daylight."
     },
     "brief": {
       "ru": "Для пары: отдельная спальня, компактная кухня и гостиная с местом для неспешных ужинов.",
@@ -1604,40 +1628,100 @@
       {
         "hex": "#6D7357",
         "ru": "Глубокая олива",
-        "en": "Deep olive"
+        "en": "Deep olive",
+        "id": "olive"
       },
       {
         "hex": "#73533C",
         "ru": "Орех",
-        "en": "Walnut"
+        "en": "Walnut",
+        "id": "walnut"
       },
       {
         "hex": "#D8CDB8",
         "ru": "Травертин",
-        "en": "Travertine"
+        "en": "Travertine",
+        "id": "travertine"
       },
       {
         "hex": "#E9E4DA",
         "ru": "Тёплый белый",
-        "en": "Warm white"
+        "en": "Warm white",
+        "id": "warm-white"
       }
     ],
     "materials": [
       {
         "ru": "Орех с матовым покрытием",
-        "en": "Matte-finished walnut"
+        "en": "Matte-finished walnut",
+        "paletteId": "walnut",
+        "application": {
+          "ru": "ТВ-тумба и хранение: тёплое дерево объединяет зоны.",
+          "en": "TV cabinet and storage: warm timber connects the zones."
+        },
+        "preview": {
+          "file": "assets/materials/olive-atelier/walnut.webp",
+          "alt": {
+            "ru": "Фактура натурального орехового шпона — референс",
+            "en": "Natural walnut veneer texture reference"
+          },
+          "sourceUrl": "https://polyhaven.com/a/natural_walnut_veneer",
+          "credit": "Poly Haven · CC0"
+        }
       },
       {
         "ru": "Травертин с неброским рисунком",
-        "en": "Subtly patterned travertine"
+        "en": "Subtly patterned travertine",
+        "paletteId": "travertine",
+        "application": {
+          "ru": "Светлая столешница журнального стола. В подборе — МДФ с покрытием под травертин.",
+          "en": "A pale coffee-table top. The selection uses MDF with a travertine-look finish."
+        },
+        "preview": {
+          "file": "assets/materials/olive-atelier/travertine.webp",
+          "alt": {
+            "ru": "Светлый травертин — референс фактуры камня",
+            "en": "Pale travertine stone texture reference"
+          },
+          "sourceUrl": "https://ambientcg.com/view?id=Travertine001",
+          "credit": "ambientCG · CC0"
+        }
       },
       {
         "ru": "Фактурная оливковая обивка",
-        "en": "Textured olive upholstery"
+        "en": "Textured olive upholstery",
+        "paletteId": "olive",
+        "application": {
+          "ru": "Обивка кресла; серо-зелёный диван поддерживает оливковую гамму более холодным оттенком.",
+          "en": "Armchair upholstery; the grey-green sofa adds a cooler shade within the green palette."
+        },
+        "preview": {
+          "file": "assets/materials/olive-atelier/olive-weave.webp",
+          "alt": {
+            "ru": "Фактура оливковой ткани — референс плетения",
+            "en": "Olive fabric weave texture reference"
+          },
+          "sourceUrl": "https://polyhaven.com/a/book_pattern",
+          "credit": "Poly Haven · CC0"
+        }
       },
       {
         "ru": "Матовая штукатурка тёплого оттенка",
-        "en": "Warm-toned matte plaster"
+        "en": "Warm-toned matte plaster",
+        "paletteId": "warm-white",
+        "application": {
+          "ru": "Стены гостиной: матовая поверхность сохраняет мягкий дневной свет.",
+          "en": "Living-room walls: a matte surface keeps daylight soft."
+        },
+        "preview": {
+          "file": "assets/materials/olive-atelier/plaster.webp",
+          "alt": {
+            "ru": "Матовая штукатурка — референс фактуры",
+            "en": "Matte plaster texture reference"
+          },
+          "sourceUrl": "https://polyhaven.com/a/plastered_wall",
+          "credit": "Poly Haven · CC0"
+        }
       }
     ],
     "renderRoom": {
@@ -1696,7 +1780,11 @@
       }
     },
     "relatedSources": [],
-    "render": "level-michurinsky-42-1.webp"
+    "render": "level-michurinsky-42-1-selection.webp",
+    "renderCaption": {
+      "ru": "AI-визуализация · Формы и цвета выбранной мебели",
+      "en": "AI visualization · Selected furniture forms and colours"
+    }
   },
   {
     "id": "nazare-47-6",
@@ -1750,40 +1838,64 @@
       {
         "hex": "#C6BAAE",
         "ru": "Тёплый серо-бежевый",
-        "en": "Warm greige"
+        "en": "Warm greige",
+        "id": "greige"
       },
       {
         "hex": "#78523B",
         "ru": "Тёмный орех",
-        "en": "Dark walnut"
+        "en": "Dark walnut",
+        "id": "walnut"
       },
       {
         "hex": "#713F42",
         "ru": "Винный акцент",
-        "en": "Wine-red accent"
+        "en": "Wine-red accent",
+        "id": "wine"
       },
       {
         "hex": "#E0D5C4",
         "ru": "Светлый камень",
-        "en": "Pale stone"
+        "en": "Pale stone",
+        "id": "stone"
       }
     ],
     "materials": [
       {
         "ru": "Орех тёплого оттенка",
-        "en": "Warm-toned walnut"
+        "en": "Warm-toned walnut",
+        "paletteId": "walnut",
+        "application": {
+          "ru": "Мебель и столярные акценты.",
+          "en": "Furniture and joinery accents."
+        }
       },
       {
         "ru": "Светлый камень с деликатными прожилками",
-        "en": "Pale stone with subtle veining"
+        "en": "Pale stone with subtle veining",
+        "paletteId": "stone",
+        "application": {
+          "ru": "Столешницы и небольшие каменные детали.",
+          "en": "Tabletops and small stone details."
+        }
       },
       {
         "ru": "Шерсть и лён в обивке",
-        "en": "Wool and linen upholstery"
+        "en": "Wool and linen upholstery",
+        "paletteId": "greige",
+        "application": {
+          "ru": "Обивка и текстиль в нейтральной базе.",
+          "en": "Upholstery and textiles in a neutral base."
+        }
       },
       {
         "ru": "Бронзовые акценты",
-        "en": "Bronze accents"
+        "en": "Bronze accents",
+        "accentColor": "#967452",
+        "application": {
+          "ru": "Светильники и фурнитура; отдельный металлический акцент.",
+          "en": "Lighting and hardware; a separate metallic accent."
+        }
       }
     ],
     "renderRoom": {
@@ -1896,40 +2008,64 @@
       {
         "hex": "#D8C0A1",
         "ru": "Тёплый дуб",
-        "en": "Warm oak"
+        "en": "Warm oak",
+        "id": "oak"
       },
       {
         "hex": "#E8E0D3",
         "ru": "Натуральный лён",
-        "en": "Natural linen"
+        "en": "Natural linen",
+        "id": "linen"
       },
       {
         "hex": "#BEB4A4",
         "ru": "Светлый камень",
-        "en": "Pale stone"
+        "en": "Pale stone",
+        "id": "stone"
       },
       {
         "hex": "#876A50",
         "ru": "Приглушённая бронза",
-        "en": "Muted bronze"
+        "en": "Muted bronze",
+        "id": "bronze"
       }
     ],
     "materials": [
       {
         "ru": "Тёплый дуб на полу и в мебели",
-        "en": "Warm oak flooring and furniture"
+        "en": "Warm oak flooring and furniture",
+        "paletteId": "oak",
+        "application": {
+          "ru": "Пол и мебель объединяют общую зону.",
+          "en": "Flooring and furniture connect the shared space."
+        }
       },
       {
         "ru": "Натуральный лён в текстиле",
-        "en": "Natural linen textiles"
+        "en": "Natural linen textiles",
+        "paletteId": "linen",
+        "application": {
+          "ru": "Шторы и мягкий текстиль.",
+          "en": "Curtains and soft textiles."
+        }
       },
       {
         "ru": "Светлый камень в небольших деталях",
-        "en": "Pale stone in small details"
+        "en": "Pale stone in small details",
+        "paletteId": "stone",
+        "application": {
+          "ru": "Столешницы и небольшие детали.",
+          "en": "Tabletops and small details."
+        }
       },
       {
         "ru": "Матовые бронзовые светильники",
-        "en": "Brushed bronze lighting"
+        "en": "Brushed bronze lighting",
+        "paletteId": "bronze",
+        "application": {
+          "ru": "Подвесы и локальный вечерний свет.",
+          "en": "Pendants and local evening lighting."
+        }
       }
     ],
     "renderRoom": {
@@ -2052,40 +2188,64 @@
       {
         "hex": "#EEE8DC",
         "ru": "Светлая слоновая кость",
-        "en": "Light ivory"
+        "en": "Light ivory",
+        "id": "ivory"
       },
       {
         "hex": "#5B493B",
         "ru": "Тёмный дуб",
-        "en": "Dark oak"
+        "en": "Dark oak",
+        "id": "dark-oak"
       },
       {
         "hex": "#D8CFBD",
         "ru": "Светлый камень",
-        "en": "Pale stone"
+        "en": "Pale stone",
+        "id": "stone"
       },
       {
         "hex": "#9A7B55",
         "ru": "Бронза",
-        "en": "Bronze"
+        "en": "Bronze",
+        "id": "bronze"
       }
     ],
     "materials": [
       {
         "ru": "Светлый камень с мягким рисунком",
-        "en": "Pale stone with a soft pattern"
+        "en": "Pale stone with a soft pattern",
+        "paletteId": "stone",
+        "application": {
+          "ru": "Светлые поверхности и столешницы.",
+          "en": "Pale surfaces and tabletops."
+        }
       },
       {
         "ru": "Тёмный дуб в столярных деталях",
-        "en": "Dark oak joinery"
+        "en": "Dark oak joinery",
+        "paletteId": "dark-oak",
+        "application": {
+          "ru": "Столярные детали и акцентная мебель.",
+          "en": "Joinery details and statement furniture."
+        }
       },
       {
         "ru": "Молочное букле",
-        "en": "Ivory bouclé"
+        "en": "Ivory bouclé",
+        "paletteId": "ivory",
+        "application": {
+          "ru": "Обивка мягкой мебели.",
+          "en": "Soft furniture upholstery."
+        }
       },
       {
         "ru": "Бронзовые светильники",
-        "en": "Bronze lighting"
+        "en": "Bronze lighting",
+        "paletteId": "bronze",
+        "application": {
+          "ru": "Подвесные и локальные светильники.",
+          "en": "Pendant and local lighting."
+        }
       }
     ],
     "renderRoom": {

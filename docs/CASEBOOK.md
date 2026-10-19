@@ -69,13 +69,13 @@ Independent AI concept, not a developer or owner commission. Geometry requires a
 
 **MOSCOW PREMIUM · Level Мичуринский · этапы 3 и 4 · 42,1 м²**
 
-![Оливковое ателье — AI concept visualization](../assets/renders/level-michurinsky-42-1.webp)
+![Оливковое ателье — AI concept visualization](../assets/renders/level-michurinsky-42-1-selection.webp)
 
 **Визуализация / Rendered room:** Гостиная · 17,2 м² / Living room · 17.2 m²
 
-Гостиная 17,2 м² собрана вокруг глубокого оливкового оттенка, ореха и светлого травертина. Чёткие линии мебели сочетаются с мягкой обивкой и дневным светом.
+Гостиная 17,2 м² сочетает оливковый и серо-зелёный текстиль, тёплое дерево и светлую фактуру травертина. Формы выбранной мебели поддерживают спокойную архитектуру и дневной свет.
 
-The 17.2 m² living room pairs a deep olive tone with walnut and pale travertine. Clean furniture lines meet soft upholstery and natural daylight.
+The 17.2 m² living room combines olive and grey-green textiles, warm timber and a pale travertine texture. The selected furniture forms complement calm architecture and natural daylight.
 
 **Сценарий / Brief:** Для пары: отдельная спальня, компактная кухня и гостиная с местом для неспешных ужинов. / For a couple: a separate bedroom, compact kitchen and a living room with space for unhurried dinners.
 
